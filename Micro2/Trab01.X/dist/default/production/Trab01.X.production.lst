@@ -1,0 +1,1655 @@
+
+
+Microchip Technology PIC18 LITE Macro Assembler V1.45 build -152302408 
+                                                                                               Wed Sep 28 20:08:31 2022
+
+Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160504
+     1                           	processor	18F4520
+     2                           	fnconf	rparam,??,?,0
+     3                           	opt	pw 120
+     4                           	opt	lm
+     5                           	psect	idataCOMRAM,global,class=CODE,delta=1,noexec
+     6                           	psect	cinit,global,reloc=2,class=CODE,delta=1
+     7                           	psect	bssCOMRAM,global,class=COMRAM,space=1,delta=1,noexec
+     8                           	psect	dataCOMRAM,global,class=COMRAM,space=1,delta=1,noexec
+     9                           	psect	cstackCOMRAM,global,class=COMRAM,space=1,delta=1,noexec
+    10                           	psect	text0,global,reloc=2,class=CODE,delta=1
+    11                           	psect	text1,global,reloc=2,class=CODE,delta=1
+    12                           	psect	text2,global,reloc=2,class=CODE,delta=1
+    13                           	psect	text3,global,reloc=2,class=CODE,delta=1
+    14                           	psect	text4,global,reloc=2,class=CODE,delta=1
+    15                           	psect	text5,global,reloc=2,class=CODE,delta=1
+    16                           	psect	text6,global,reloc=2,class=CODE,delta=1
+    17                           	psect	text7,global,reloc=2,class=CODE,delta=1
+    18                           	psect	text8,global,reloc=2,class=CODE,delta=1
+    19                           	psect	text9,global,reloc=2,class=CODE,delta=1
+    20                           	psect	intsave_regs,global,class=BIGRAM,space=1,delta=1,noexec
+    21                           	psect	rparam,global,class=COMRAM,space=1,delta=1,noexec
+    22  0000                     
+    23                           ; Version 1.45
+    24                           ; Generated 16/11/2017 GMT
+    25                           ; 
+    26                           ; Copyright © 2017, Microchip Technology Inc. and its subsidiaries ("Microchip")
+    27                           ; All rights reserved.
+    28                           ; 
+    29                           ; This software is developed by Microchip Technology Inc. and its subsidiaries ("Microch
+      +                          ip").
+    30                           ; 
+    31                           ; Redistribution and use in source and binary forms, with or without modification, are
+    32                           ; permitted provided that the following conditions are met:
+    33                           ; 
+    34                           ;     1. Redistributions of source code must retain the above copyright notice, this lis
+      +                          t of
+    35                           ;        conditions and the following disclaimer.
+    36                           ; 
+    37                           ;     2. Redistributions in binary form must reproduce the above copyright notice, this 
+      +                          list
+    38                           ;        of conditions and the following disclaimer in the documentation and/or other
+    39                           ;        materials provided with the distribution.
+    40                           ; 
+    41                           ;     3. Microchip's name may not be used to endorse or promote products derived from th
+      +                          is
+    42                           ;        software without specific prior written permission.
+    43                           ; 
+    44                           ; THIS SOFTWARE IS PROVIDED BY MICROCHIP "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES,
+    45                           ; INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS F
+      +                          OR
+    46                           ; PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL MICROCHIP BE LIABLE FOR ANY DIRECT, INDIREC
+      +                          T,
+    47                           ; INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING BUT NOT LIMITED TO
+    48                           ; PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA OR PROFITS; OR BUSINESS
+    49                           ; INTERRUPTION) HOWSOEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, ST
+      +                          RICT
+    50                           ; LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE U
+      +                          SE OF
+    51                           ; THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+    52                           ; 
+    53                           ; 
+    54                           ; Code-generator required, PIC18F4520 Definitions
+    55                           ; 
+    56                           ; SFR Addresses
+    57  0000                     
+    58                           	psect	idataCOMRAM
+    59  007D0A                     __pidataCOMRAM:
+    60                           	opt stack 0
+    61                           
+    62                           ;initializer for acende_subindo@contador
+    63  007D0A  80                 	db	128
+    64                           
+    65                           ;initializer for acende_descendo@contador
+    66  007D0B  01                 	db	1
+    67                           
+    68                           ;initializer for tecla@m_o
+    69  007D0C  01                 	db	1
+    70                           
+    71                           ;initializer for tecla@m_d
+    72  007D0D  01                 	db	1
+    73  0000                     _PORTB	set	3969
+    74  0000                     _LATB	set	3978
+    75  0000                     _LATD	set	3980
+    76  0000                     _TRISD	set	3989
+    77  0000                     _TRISB	set	3987
+    78  0000                     _ADCON1	set	4033
+    79                           
+    80                           ; #config settings
+    81  0000                     
+    82                           	psect	cinit
+    83  007D68                     __pcinit:
+    84                           	opt stack 0
+    85  007D68                     start_initialization:
+    86                           	opt stack 0
+    87  007D68                     __initialization:
+    88                           	opt stack 0
+    89                           
+    90                           ; Initialize objects allocated to COMRAM (4 bytes)
+    91                           ; load TBLPTR registers with __pidataCOMRAM
+    92  007D68  0E0A               	movlw	low __pidataCOMRAM
+    93  007D6A  6EF6               	movwf	tblptrl,c
+    94  007D6C  0E7D               	movlw	high __pidataCOMRAM
+    95  007D6E  6EF7               	movwf	tblptrh,c
+    96  007D70  0E00               	movlw	low (__pidataCOMRAM shr (0+16))
+    97  007D72  6EF8               	movwf	tblptru,c
+    98  007D74  EE00  F00E         	lfsr	0,__pdataCOMRAM
+    99  007D78  EE10 F004          	lfsr	1,4
+   100  007D7C                     copy_data0:
+   101  007D7C  0009               	tblrd		*+
+   102  007D7E  CFF5 FFEE          	movff	tablat,postinc0
+   103  007D82  50E5               	movf	postdec1,w,c
+   104  007D84  50E1               	movf	fsr1l,w,c
+   105  007D86  E1FA               	bnz	copy_data0
+   106                           
+   107                           ; Clear objects allocated to COMRAM (13 bytes)
+   108  007D88  EE00  F001         	lfsr	0,__pbssCOMRAM
+   109  007D8C  0E0D               	movlw	13
+   110  007D8E                     clear_0:
+   111  007D8E  6AEE               	clrf	postinc0,c
+   112  007D90  06E8               	decf	wreg,f,c
+   113  007D92  E1FD               	bnz	clear_0
+   114  007D94                     end_of_initialization:
+   115                           	opt stack 0
+   116  007D94                     __end_of__initialization:
+   117                           	opt stack 0
+   118  007D94  0E00               	movlw	low (__Lmediumconst shr (0+16))
+   119  007D96  6EF8               	movwf	tblptru,c
+   120  007D98  0100               	movlb	0
+   121  007D9A  EF8A  F03E         	goto	_main	;jump to C main() function
+   122                           tblptru	equ	0xFF8
+   123                           tblptrh	equ	0xFF7
+   124                           tblptrl	equ	0xFF6
+   125                           tablat	equ	0xFF5
+   126                           postinc0	equ	0xFEE
+   127                           wreg	equ	0xFE8
+   128                           postdec1	equ	0xFE5
+   129                           fsr1l	equ	0xFE1
+   130                           
+   131                           	psect	bssCOMRAM
+   132  000001                     __pbssCOMRAM:
+   133                           	opt stack 0
+   134  000001                     acende_subindo_e_descendo@primeira_vez:
+   135                           	opt stack 0
+   136  000001                     	ds	1
+   137  000002                     acende_subindo_e_descendo@sentido:
+   138                           	opt stack 0
+   139  000002                     	ds	1
+   140  000003                     acende_subindo_e_descendo@estado:
+   141                           	opt stack 0
+   142  000003                     	ds	1
+   143  000004                     acende_subindo_e_descendo@contador:
+   144                           	opt stack 0
+   145  000004                     	ds	1
+   146  000005                     acende_subindo@estado:
+   147                           	opt stack 0
+   148  000005                     	ds	1
+   149  000006                     acende_descendo@estado:
+   150                           	opt stack 0
+   151  000006                     	ds	1
+   152  000007                     _estado_de_operacao:
+   153                           	opt stack 0
+   154  000007                     	ds	1
+   155  000008                     _modo:
+   156                           	opt stack 0
+   157  000008                     	ds	1
+   158  000009                     _f_on_off:
+   159                           	opt stack 0
+   160  000009                     	ds	1
+   161  00000A                     _f_direcao:
+   162                           	opt stack 0
+   163  00000A                     	ds	1
+   164  00000B                     _saida:
+   165                           	opt stack 0
+   166  00000B                     	ds	1
+   167  00000C                     _estado:
+   168                           	opt stack 0
+   169  00000C                     	ds	1
+   170  00000D                     _contador:
+   171                           	opt stack 0
+   172  00000D                     	ds	1
+   173                           tblptru	equ	0xFF8
+   174                           tblptrh	equ	0xFF7
+   175                           tblptrl	equ	0xFF6
+   176                           tablat	equ	0xFF5
+   177                           postinc0	equ	0xFEE
+   178                           wreg	equ	0xFE8
+   179                           postdec1	equ	0xFE5
+   180                           fsr1l	equ	0xFE1
+   181                           
+   182                           	psect	dataCOMRAM
+   183  00000E                     __pdataCOMRAM:
+   184                           	opt stack 0
+   185  00000E                     acende_subindo@contador:
+   186                           	opt stack 0
+   187  00000E                     	ds	1
+   188  00000F                     acende_descendo@contador:
+   189                           	opt stack 0
+   190  00000F                     	ds	1
+   191  000010                     tecla@m_o:
+   192                           	opt stack 0
+   193  000010                     	ds	1
+   194  000011                     tecla@m_d:
+   195                           	opt stack 0
+   196  000011                     	ds	1
+   197                           tblptru	equ	0xFF8
+   198                           tblptrh	equ	0xFF7
+   199                           tblptrl	equ	0xFF6
+   200                           tablat	equ	0xFF5
+   201                           postinc0	equ	0xFEE
+   202                           wreg	equ	0xFE8
+   203                           postdec1	equ	0xFE5
+   204                           fsr1l	equ	0xFE1
+   205                           
+   206                           	psect	cstackCOMRAM
+   207  000012                     __pcstackCOMRAM:
+   208                           	opt stack 0
+   209  000012                     tecla@d_o:
+   210                           	opt stack 0
+   211  000012                     atraso_ms@tempo:
+   212                           	opt stack 0
+   213                           
+   214                           ; 2 bytes @ 0x0
+   215  000012                     	ds	1
+   216  000013                     tecla@dado:
+   217                           	opt stack 0
+   218                           
+   219                           ; 1 bytes @ 0x1
+   220  000013                     	ds	1
+   221  000014                     tecla@d_d:
+   222                           	opt stack 0
+   223                           
+   224                           ; 1 bytes @ 0x2
+   225  000014                     	ds	1
+   226  000015                     tblptru	equ	0xFF8
+   227                           tblptrh	equ	0xFF7
+   228                           tblptrl	equ	0xFF6
+   229                           tablat	equ	0xFF5
+   230                           postinc0	equ	0xFEE
+   231                           wreg	equ	0xFE8
+   232                           postdec1	equ	0xFE5
+   233                           fsr1l	equ	0xFE1
+   234                           
+   235                           ; 1 bytes @ 0x3
+   236 ;;
+   237 ;;Main: autosize = 0, tempsize = 0, incstack = 0, save=0
+   238 ;;
+   239 ;; *************** function _main *****************
+   240 ;; Defined at:
+   241 ;;		line 38 in file "main.c"
+   242 ;; Parameters:    Size  Location     Type
+   243 ;;		None
+   244 ;; Auto vars:     Size  Location     Type
+   245 ;;		None
+   246 ;; Return value:  Size  Location     Type
+   247 ;;                  2   48[None  ] int 
+   248 ;; Registers used:
+   249 ;;		wreg, status,2, status,0, cstack
+   250 ;; Tracked objects:
+   251 ;;		On entry : 0/0
+   252 ;;		On exit  : 0/0
+   253 ;;		Unchanged: 0/0
+   254 ;; Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5
+   255 ;;      Params:         0       0       0       0       0       0       0
+   256 ;;      Locals:         0       0       0       0       0       0       0
+   257 ;;      Temps:          0       0       0       0       0       0       0
+   258 ;;      Totals:         0       0       0       0       0       0       0
+   259 ;;Total ram usage:        0 bytes
+   260 ;; Hardware stack levels required when called:    2
+   261 ;; This function calls:
+   262 ;;		_loop
+   263 ;;		_setup
+   264 ;; This function is called by:
+   265 ;;		Startup code after reset
+   266 ;; This function uses a non-reentrant model
+   267 ;;
+   268                           
+   269                           	psect	text0
+   270  007D14                     __ptext0:
+   271                           	opt stack 0
+   272  007D14                     _main:
+   273                           	opt stack 29
+   274                           
+   275                           ;main.c: 39: setup();
+   276                           
+   277                           ;incstack = 0
+   278  007D14  ECA5  F03E         	call	_setup	;wreg free
+   279  007D18  ECCF  F03E         	call	_loop	;wreg free
+   280  007D1C  D7FD               	goto	l49
+   281  007D1E                     __end_of_main:
+   282                           	opt stack 0
+   283                           tblptru	equ	0xFF8
+   284                           tblptrh	equ	0xFF7
+   285                           tblptrl	equ	0xFF6
+   286                           tablat	equ	0xFF5
+   287                           postinc0	equ	0xFEE
+   288                           wreg	equ	0xFE8
+   289                           postdec1	equ	0xFE5
+   290                           fsr1l	equ	0xFE1
+   291                           
+   292 ;; *************** function _setup *****************
+   293 ;; Defined at:
+   294 ;;		line 54 in file "main.c"
+   295 ;; Parameters:    Size  Location     Type
+   296 ;;		None
+   297 ;; Auto vars:     Size  Location     Type
+   298 ;;		None
+   299 ;; Return value:  Size  Location     Type
+   300 ;;                  1    wreg      void 
+   301 ;; Registers used:
+   302 ;;		wreg, status,2
+   303 ;; Tracked objects:
+   304 ;;		On entry : 0/0
+   305 ;;		On exit  : 0/0
+   306 ;;		Unchanged: 0/0
+   307 ;; Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5
+   308 ;;      Params:         0       0       0       0       0       0       0
+   309 ;;      Locals:         0       0       0       0       0       0       0
+   310 ;;      Temps:          0       0       0       0       0       0       0
+   311 ;;      Totals:         0       0       0       0       0       0       0
+   312 ;;Total ram usage:        0 bytes
+   313 ;; Hardware stack levels used:    1
+   314 ;; This function calls:
+   315 ;;		Nothing
+   316 ;; This function is called by:
+   317 ;;		_main
+   318 ;; This function uses a non-reentrant model
+   319 ;;
+   320                           
+   321                           	psect	text1
+   322  007D4A                     __ptext1:
+   323                           	opt stack 0
+   324  007D4A                     _setup:
+   325                           	opt stack 30
+   326                           
+   327                           ;main.c: 56: ADCON1 = 0b00001111;
+   328                           
+   329                           ;incstack = 0
+   330  007D4A  0E0F               	movlw	15
+   331  007D4C  6EC1               	movwf	4033,c	;volatile
+   332                           
+   333                           ;main.c: 57: TRISB = 0b11111100;
+   334  007D4E  0EFC               	movlw	252
+   335  007D50  6E93               	movwf	3987,c	;volatile
+   336                           
+   337                           ;main.c: 58: TRISD = 0b00000000;
+   338  007D52  0E00               	movlw	0
+   339  007D54  6E95               	movwf	3989,c	;volatile
+   340                           
+   341                           ;main.c: 59: LATD = 0b00000000;
+   342  007D56  0E00               	movlw	0
+   343  007D58  6E8C               	movwf	3980,c	;volatile
+   344                           
+   345                           ;main.c: 60: LATB = 0b00000000;
+   346  007D5A  0E00               	movlw	0
+   347  007D5C  6E8A               	movwf	3978,c	;volatile
+   348                           
+   349                           ;main.c: 62: f_direcao = 0;
+   350  007D5E  0E00               	movlw	0
+   351  007D60  6E0A               	movwf	_f_direcao,c
+   352                           
+   353                           ;main.c: 63: f_on_off = 0;
+   354  007D62  0E00               	movlw	0
+   355  007D64  6E09               	movwf	_f_on_off,c
+   356  007D66  0012               	return		;funcret
+   357  007D68                     __end_of_setup:
+   358                           	opt stack 0
+   359                           tblptru	equ	0xFF8
+   360                           tblptrh	equ	0xFF7
+   361                           tblptrl	equ	0xFF6
+   362                           tablat	equ	0xFF5
+   363                           postinc0	equ	0xFEE
+   364                           wreg	equ	0xFE8
+   365                           postdec1	equ	0xFE5
+   366                           fsr1l	equ	0xFE1
+   367                           
+   368 ;; *************** function _loop *****************
+   369 ;; Defined at:
+   370 ;;		line 67 in file "main.c"
+   371 ;; Parameters:    Size  Location     Type
+   372 ;;		None
+   373 ;; Auto vars:     Size  Location     Type
+   374 ;;		None
+   375 ;; Return value:  Size  Location     Type
+   376 ;;                  1    wreg      void 
+   377 ;; Registers used:
+   378 ;;		wreg, status,2, status,0, cstack
+   379 ;; Tracked objects:
+   380 ;;		On entry : 0/0
+   381 ;;		On exit  : 0/0
+   382 ;;		Unchanged: 0/0
+   383 ;; Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5
+   384 ;;      Params:         0       0       0       0       0       0       0
+   385 ;;      Locals:         0       0       0       0       0       0       0
+   386 ;;      Temps:          0       0       0       0       0       0       0
+   387 ;;      Totals:         0       0       0       0       0       0       0
+   388 ;;Total ram usage:        0 bytes
+   389 ;; Hardware stack levels used:    1
+   390 ;; Hardware stack levels required when called:    1
+   391 ;; This function calls:
+   392 ;;		_acende_descendo
+   393 ;;		_acende_subindo
+   394 ;;		_acende_subindo_e_descendo
+   395 ;;		_apagar_leds
+   396 ;;		_atraso_ms
+   397 ;;		_maq_1
+   398 ;;		_tecla
+   399 ;; This function is called by:
+   400 ;;		_main
+   401 ;; This function uses a non-reentrant model
+   402 ;;
+   403                           
+   404                           	psect	text2
+   405  007D9E                     __ptext2:
+   406                           	opt stack 0
+   407  007D9E                     _loop:
+   408                           	opt stack 29
+   409                           
+   410                           ;main.c: 69: tecla();
+   411                           
+   412                           ;incstack = 0
+   413  007D9E  ECF4  F03E         	call	_tecla	;wreg free
+   414                           
+   415                           ;main.c: 71: maq_1();
+   416  007DA2  EC8F  F03E         	call	_maq_1	;wreg free
+   417                           
+   418                           ;main.c: 72: switch(estado_de_operacao)
+   419  007DA6  D00C               	goto	l64
+   420  007DA8                     
+   421                           ;main.c: 75: apagar_leds();
+   422  007DA8  EC87  F03E         	call	_apagar_leds	;wreg free
+   423                           
+   424                           ;main.c: 76: break;
+   425  007DAC  D016               	goto	l66
+   426  007DAE                     
+   427                           ;main.c: 79: acende_descendo();
+   428  007DAE  EC71  F03F         	call	_acende_descendo	;wreg free
+   429                           
+   430                           ;main.c: 80: break;
+   431  007DB2  D013               	goto	l66
+   432  007DB4                     
+   433                           ;main.c: 83: acende_subindo();
+   434  007DB4  ECB8  F03F         	call	_acende_subindo	;wreg free
+   435                           
+   436                           ;main.c: 84: break;
+   437  007DB8  D010               	goto	l66
+   438  007DBA                     
+   439                           ;main.c: 87: acende_subindo_e_descendo();
+   440  007DBA  EC2C  F03F         	call	_acende_subindo_e_descendo	;wreg free
+   441                           
+   442                           ;main.c: 89: }
+   443                           
+   444                           ;main.c: 88: break;
+   445  007DBE  D00D               	goto	l66
+   446  007DC0                     l64:
+   447  007DC0  5007               	movf	_estado_de_operacao,w,c
+   448                           
+   449                           ; Switch size 1, requested type "space"
+   450                           ; Number of cases is 4, Range of values is 0 to 3
+   451                           ; switch strategies available:
+   452                           ; Name         Instructions Cycles
+   453                           ; simple_byte           13     7 (average)
+   454                           ;	Chosen strategy is simple_byte
+   455  007DC2  0A00               	xorlw	0	; case 0
+   456  007DC4  B4D8               	btfsc	status,2,c
+   457  007DC6  D7F0               	goto	l65
+   458  007DC8  0A01               	xorlw	1	; case 1
+   459  007DCA  B4D8               	btfsc	status,2,c
+   460  007DCC  D7F0               	goto	l67
+   461  007DCE  0A03               	xorlw	3	; case 2
+   462  007DD0  B4D8               	btfsc	status,2,c
+   463  007DD2  D7F0               	goto	l68
+   464  007DD4  0A01               	xorlw	1	; case 3
+   465  007DD6  B4D8               	btfsc	status,2,c
+   466  007DD8  D7F0               	goto	l69
+   467  007DDA                     l66:
+   468                           
+   469                           ;main.c: 91: atraso_ms(10);
+   470  007DDA  0E00               	movlw	0
+   471  007DDC  6E13               	movwf	atraso_ms@tempo+1,c
+   472  007DDE  0E0A               	movlw	10
+   473  007DE0  6E12               	movwf	atraso_ms@tempo,c
+   474  007DE2  EC98  F03E         	call	_atraso_ms	;wreg free
+   475  007DE6  0012               	return		;funcret
+   476  007DE8                     __end_of_loop:
+   477                           	opt stack 0
+   478                           tblptru	equ	0xFF8
+   479                           tblptrh	equ	0xFF7
+   480                           tblptrl	equ	0xFF6
+   481                           tablat	equ	0xFF5
+   482                           postinc0	equ	0xFEE
+   483                           wreg	equ	0xFE8
+   484                           postdec1	equ	0xFE5
+   485                           fsr1l	equ	0xFE1
+   486                           status	equ	0xFD8
+   487                           
+   488 ;; *************** function _tecla *****************
+   489 ;; Defined at:
+   490 ;;		line 106 in file "main.c"
+   491 ;; Parameters:    Size  Location     Type
+   492 ;;		None
+   493 ;; Auto vars:     Size  Location     Type
+   494 ;;  d_d             1    2[COMRAM] unsigned char 
+   495 ;;  dado            1    1[COMRAM] unsigned char 
+   496 ;;  d_o             1    0[COMRAM] unsigned char 
+   497 ;; Return value:  Size  Location     Type
+   498 ;;                  1    wreg      void 
+   499 ;; Registers used:
+   500 ;;		wreg, status,2, status,0
+   501 ;; Tracked objects:
+   502 ;;		On entry : 0/0
+   503 ;;		On exit  : 0/0
+   504 ;;		Unchanged: 0/0
+   505 ;; Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5
+   506 ;;      Params:         0       0       0       0       0       0       0
+   507 ;;      Locals:         3       0       0       0       0       0       0
+   508 ;;      Temps:          0       0       0       0       0       0       0
+   509 ;;      Totals:         3       0       0       0       0       0       0
+   510 ;;Total ram usage:        3 bytes
+   511 ;; Hardware stack levels used:    1
+   512 ;; This function calls:
+   513 ;;		Nothing
+   514 ;; This function is called by:
+   515 ;;		_loop
+   516 ;; This function uses a non-reentrant model
+   517 ;;
+   518                           
+   519                           	psect	text3
+   520  007DE8                     __ptext3:
+   521                           	opt stack 0
+   522  007DE8                     _tecla:
+   523                           	opt stack 29
+   524                           
+   525                           ;main.c: 108: uint8_t dado , d_d, d_o;
+   526                           ;main.c: 109: static uint8_t m_d=1, m_o=1;
+   527                           ;main.c: 111: dado = PORTB;
+   528                           
+   529                           ;incstack = 0
+   530  007DE8  CF81 F013          	movff	3969,tecla@dado	;volatile
+   531                           
+   532                           ;main.c: 112: if(dado & 0b00001000)
+   533  007DEC  A613               	btfss	tecla@dado,3,c
+   534  007DEE  D002               	goto	l82
+   535                           
+   536                           ;main.c: 113: d_d=1;
+   537  007DF0  0E01               	movlw	1
+   538  007DF2  D001               	goto	L1
+   539  007DF4                     l82:
+   540                           
+   541                           ;main.c: 115: else
+   542                           ;main.c: 116: d_d=0;
+   543  007DF4  0E00               	movlw	0
+   544  007DF6                     L1:
+   545  007DF6  6E14               	movwf	tecla@d_d,c
+   546                           
+   547                           ;main.c: 118: if(d_d < m_d)
+   548  007DF8  5011               	movf	tecla@m_d,w,c
+   549  007DFA  5C14               	subwf	tecla@d_d,w,c
+   550  007DFC  A0D8               	btfss	status,0,c
+   551  007DFE  D01A               	goto	l85
+   552  007E00  D026               	goto	l87
+   553  007E02                     l86:
+   554                           
+   555                           ;main.c: 124: LATB = modo;
+   556  007E02  C008  FF8A         	movff	_modo,3978	;volatile
+   557                           
+   558                           ;main.c: 125: estado_de_operacao = modo;
+   559  007E06  C008  F007         	movff	_modo,_estado_de_operacao
+   560                           
+   561                           ;main.c: 126: modo = 1;
+   562  007E0A  0E01               	movlw	1
+   563  007E0C  D011               	goto	L4
+   564  007E0E                     l88:
+   565                           
+   566                           ;main.c: 130: LATB = modo;
+   567  007E0E  C008  FF8A         	movff	_modo,3978	;volatile
+   568                           
+   569                           ;main.c: 131: estado_de_operacao = modo;
+   570  007E12  C008  F007         	movff	_modo,_estado_de_operacao
+   571                           
+   572                           ;main.c: 132: modo = 2;
+   573  007E16  0E02               	movlw	2
+   574  007E18  D00B               	goto	L4
+   575  007E1A                     l89:
+   576                           
+   577                           ;main.c: 137: estado_de_operacao = modo;
+   578  007E1A  C008  F007         	movff	_modo,_estado_de_operacao
+   579                           
+   580                           ;main.c: 138: LATB = modo;
+   581  007E1E  C008  FF8A         	movff	_modo,3978	;volatile
+   582                           
+   583                           ;main.c: 139: modo = 3;
+   584  007E22  0E03               	movlw	3
+   585  007E24  D005               	goto	L4
+   586  007E26                     l90:
+   587                           
+   588                           ;main.c: 144: estado_de_operacao = modo;
+   589  007E26  C008  F007         	movff	_modo,_estado_de_operacao
+   590                           
+   591                           ;main.c: 145: LATB = modo;
+   592  007E2A  C008  FF8A         	movff	_modo,3978	;volatile
+   593                           
+   594                           ;main.c: 146: modo = 0;
+   595  007E2E  0E00               	movlw	0
+   596  007E30                     L4:
+   597  007E30  6E08               	movwf	_modo,c
+   598                           
+   599                           ;main.c: 148: }
+   600                           
+   601                           ;main.c: 147: break;
+   602  007E32  D00D               	goto	l87
+   603  007E34                     l85:
+   604  007E34  5008               	movf	_modo,w,c
+   605                           
+   606                           ; Switch size 1, requested type "space"
+   607                           ; Number of cases is 4, Range of values is 0 to 3
+   608                           ; switch strategies available:
+   609                           ; Name         Instructions Cycles
+   610                           ; simple_byte           13     7 (average)
+   611                           ;	Chosen strategy is simple_byte
+   612  007E36  0A00               	xorlw	0	; case 0
+   613  007E38  B4D8               	btfsc	status,2,c
+   614  007E3A  D7E3               	goto	l86
+   615  007E3C  0A01               	xorlw	1	; case 1
+   616  007E3E  B4D8               	btfsc	status,2,c
+   617  007E40  D7E6               	goto	l88
+   618  007E42  0A03               	xorlw	3	; case 2
+   619  007E44  B4D8               	btfsc	status,2,c
+   620  007E46  D7E9               	goto	l89
+   621  007E48  0A01               	xorlw	1	; case 3
+   622  007E4A  B4D8               	btfsc	status,2,c
+   623  007E4C  D7EC               	goto	l90
+   624  007E4E                     l87:
+   625                           
+   626                           ;main.c: 149: }
+   627                           ;main.c: 151: m_d = d_d;
+   628  007E4E  C014  F011         	movff	tecla@d_d,tecla@m_d
+   629                           
+   630                           ;main.c: 152: m_o = d_o;
+   631  007E52  C012  F010         	movff	tecla@d_o,tecla@m_o
+   632  007E56  0012               	return		;funcret
+   633  007E58                     __end_of_tecla:
+   634                           	opt stack 0
+   635                           tblptru	equ	0xFF8
+   636                           tblptrh	equ	0xFF7
+   637                           tblptrl	equ	0xFF6
+   638                           tablat	equ	0xFF5
+   639                           postinc0	equ	0xFEE
+   640                           wreg	equ	0xFE8
+   641                           postdec1	equ	0xFE5
+   642                           fsr1l	equ	0xFE1
+   643                           status	equ	0xFD8
+   644                           
+   645 ;; *************** function _maq_1 *****************
+   646 ;; Defined at:
+   647 ;;		line 94 in file "main.c"
+   648 ;; Parameters:    Size  Location     Type
+   649 ;;		None
+   650 ;; Auto vars:     Size  Location     Type
+   651 ;;		None
+   652 ;; Return value:  Size  Location     Type
+   653 ;;                  1    wreg      void 
+   654 ;; Registers used:
+   655 ;;		wreg, status,2, status,0
+   656 ;; Tracked objects:
+   657 ;;		On entry : 0/0
+   658 ;;		On exit  : 0/0
+   659 ;;		Unchanged: 0/0
+   660 ;; Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5
+   661 ;;      Params:         0       0       0       0       0       0       0
+   662 ;;      Locals:         0       0       0       0       0       0       0
+   663 ;;      Temps:          0       0       0       0       0       0       0
+   664 ;;      Totals:         0       0       0       0       0       0       0
+   665 ;;Total ram usage:        0 bytes
+   666 ;; Hardware stack levels used:    1
+   667 ;; This function calls:
+   668 ;;		Nothing
+   669 ;; This function is called by:
+   670 ;;		_loop
+   671 ;; This function uses a non-reentrant model
+   672 ;;
+   673                           
+   674                           	psect	text4
+   675  007D1E                     __ptext4:
+   676                           	opt stack 0
+   677  007D1E                     _maq_1:
+   678                           	opt stack 29
+   679                           
+   680                           ;main.c: 96: if (estado == 2)
+   681                           
+   682                           ;incstack = 0
+   683  007D1E  0E02               	movlw	2
+   684  007D20  180C               	xorwf	_estado,w,c
+   685  007D22  A4D8               	btfss	status,2,c
+   686  007D24  D003               	goto	l73
+   687                           
+   688                           ;main.c: 97: {
+   689                           ;main.c: 98: estado = 0;
+   690  007D26  0E00               	movlw	0
+   691  007D28  6E0C               	movwf	_estado,c
+   692                           
+   693                           ;main.c: 99: }
+   694  007D2A  0012               	return	
+   695  007D2C                     l73:
+   696                           
+   697                           ;main.c: 100: else
+   698                           ;main.c: 101: {
+   699                           ;main.c: 102: estado++;
+   700  007D2C  2A0C               	incf	_estado,f,c
+   701  007D2E  0012               	return	
+   702  007D30                     __end_of_maq_1:
+   703                           	opt stack 0
+   704                           tblptru	equ	0xFF8
+   705                           tblptrh	equ	0xFF7
+   706                           tblptrl	equ	0xFF6
+   707                           tablat	equ	0xFF5
+   708                           postinc0	equ	0xFEE
+   709                           wreg	equ	0xFE8
+   710                           postdec1	equ	0xFE5
+   711                           fsr1l	equ	0xFE1
+   712                           status	equ	0xFD8
+   713                           
+   714 ;; *************** function _atraso_ms *****************
+   715 ;; Defined at:
+   716 ;;		line 45 in file "main.c"
+   717 ;; Parameters:    Size  Location     Type
+   718 ;;  tempo           2    0[COMRAM] unsigned int 
+   719 ;; Auto vars:     Size  Location     Type
+   720 ;;		None
+   721 ;; Return value:  Size  Location     Type
+   722 ;;                  1    wreg      void 
+   723 ;; Registers used:
+   724 ;;		wreg, status,2, status,0
+   725 ;; Tracked objects:
+   726 ;;		On entry : 0/0
+   727 ;;		On exit  : 0/0
+   728 ;;		Unchanged: 0/0
+   729 ;; Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5
+   730 ;;      Params:         2       0       0       0       0       0       0
+   731 ;;      Locals:         0       0       0       0       0       0       0
+   732 ;;      Temps:          0       0       0       0       0       0       0
+   733 ;;      Totals:         2       0       0       0       0       0       0
+   734 ;;Total ram usage:        2 bytes
+   735 ;; Hardware stack levels used:    1
+   736 ;; This function calls:
+   737 ;;		Nothing
+   738 ;; This function is called by:
+   739 ;;		_loop
+   740 ;; This function uses a non-reentrant model
+   741 ;;
+   742                           
+   743                           	psect	text5
+   744  007D30                     __ptext5:
+   745                           	opt stack 0
+   746  007D30                     _atraso_ms:
+   747                           	opt stack 29
+   748                           
+   749                           ;main.c: 47: while(tempo)
+   750                           
+   751                           ;incstack = 0
+   752  007D30  D007               	goto	l55
+   753  007D32                     
+   754                           ;main.c: 48: {
+   755                           ;main.c: 49: tempo--;
+   756  007D32  0612               	decf	atraso_ms@tempo,f,c
+   757  007D34  A0D8               	btfss	status,0,c
+   758  007D36  0613               	decf	atraso_ms@tempo+1,f,c
+   759                           
+   760                           ;main.c: 50: _delay((unsigned long)((1)*(4000000UL/4000.0)));
+   761  007D38  0EC8               	movlw	200
+   762  007D3A                     u127:
+   763  007D3A  D000               	nop2	
+   764  007D3C  2EE8               	decfsz	wreg,f,c
+   765  007D3E  D7FD               	bra	u127
+   766  007D40                     l55:
+   767  007D40  5012               	movf	atraso_ms@tempo,w,c
+   768  007D42  1013               	iorwf	atraso_ms@tempo+1,w,c
+   769  007D44  B4D8               	btfsc	status,2,c
+   770  007D46  0012               	return	
+   771  007D48  D7F4               	goto	l56
+   772  007D4A                     __end_of_atraso_ms:
+   773                           	opt stack 0
+   774                           tblptru	equ	0xFF8
+   775                           tblptrh	equ	0xFF7
+   776                           tblptrl	equ	0xFF6
+   777                           tablat	equ	0xFF5
+   778                           postinc0	equ	0xFEE
+   779                           wreg	equ	0xFE8
+   780                           postdec1	equ	0xFE5
+   781                           fsr1l	equ	0xFE1
+   782                           status	equ	0xFD8
+   783                           
+   784 ;; *************** function _apagar_leds *****************
+   785 ;; Defined at:
+   786 ;;		line 155 in file "main.c"
+   787 ;; Parameters:    Size  Location     Type
+   788 ;;		None
+   789 ;; Auto vars:     Size  Location     Type
+   790 ;;		None
+   791 ;; Return value:  Size  Location     Type
+   792 ;;                  1    wreg      void 
+   793 ;; Registers used:
+   794 ;;		wreg, status,2
+   795 ;; Tracked objects:
+   796 ;;		On entry : 0/0
+   797 ;;		On exit  : 0/0
+   798 ;;		Unchanged: 0/0
+   799 ;; Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5
+   800 ;;      Params:         0       0       0       0       0       0       0
+   801 ;;      Locals:         0       0       0       0       0       0       0
+   802 ;;      Temps:          0       0       0       0       0       0       0
+   803 ;;      Totals:         0       0       0       0       0       0       0
+   804 ;;Total ram usage:        0 bytes
+   805 ;; Hardware stack levels used:    1
+   806 ;; This function calls:
+   807 ;;		Nothing
+   808 ;; This function is called by:
+   809 ;;		_loop
+   810 ;; This function uses a non-reentrant model
+   811 ;;
+   812                           
+   813                           	psect	text6
+   814  007D0E                     __ptext6:
+   815                           	opt stack 0
+   816  007D0E                     _apagar_leds:
+   817                           	opt stack 29
+   818                           
+   819                           ;main.c: 157: LATD = 0b00000000;
+   820                           
+   821                           ;incstack = 0
+   822  007D0E  0E00               	movlw	0
+   823  007D10  6E8C               	movwf	3980,c	;volatile
+   824  007D12  0012               	return		;funcret
+   825  007D14                     __end_of_apagar_leds:
+   826                           	opt stack 0
+   827                           tblptru	equ	0xFF8
+   828                           tblptrh	equ	0xFF7
+   829                           tblptrl	equ	0xFF6
+   830                           tablat	equ	0xFF5
+   831                           postinc0	equ	0xFEE
+   832                           wreg	equ	0xFE8
+   833                           postdec1	equ	0xFE5
+   834                           fsr1l	equ	0xFE1
+   835                           status	equ	0xFD8
+   836                           
+   837 ;; *************** function _acende_subindo_e_descendo *****************
+   838 ;; Defined at:
+   839 ;;		line 285 in file "main.c"
+   840 ;; Parameters:    Size  Location     Type
+   841 ;;		None
+   842 ;; Auto vars:     Size  Location     Type
+   843 ;;		None
+   844 ;; Return value:  Size  Location     Type
+   845 ;;                  1    wreg      void 
+   846 ;; Registers used:
+   847 ;;		wreg, status,2, status,0
+   848 ;; Tracked objects:
+   849 ;;		On entry : 0/0
+   850 ;;		On exit  : 0/0
+   851 ;;		Unchanged: 0/0
+   852 ;; Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5
+   853 ;;      Params:         0       0       0       0       0       0       0
+   854 ;;      Locals:         0       0       0       0       0       0       0
+   855 ;;      Temps:          0       0       0       0       0       0       0
+   856 ;;      Totals:         0       0       0       0       0       0       0
+   857 ;;Total ram usage:        0 bytes
+   858 ;; Hardware stack levels used:    1
+   859 ;; This function calls:
+   860 ;;		Nothing
+   861 ;; This function is called by:
+   862 ;;		_loop
+   863 ;; This function uses a non-reentrant model
+   864 ;;
+   865                           
+   866                           	psect	text7
+   867  007E58                     __ptext7:
+   868                           	opt stack 0
+   869  007E58                     _acende_subindo_e_descendo:
+   870                           	opt stack 29
+   871                           
+   872                           ;main.c: 287: static uint8_t contador = 0;
+   873                           ;main.c: 288: static uint8_t estado = 0;
+   874                           ;main.c: 289: static uint8_t sentido = 0, primeira_vez = 0;
+   875                           ;main.c: 292: if (estado == 30)
+   876                           
+   877                           ;incstack = 0
+   878  007E58  0E1E               	movlw	30
+   879  007E5A  1803               	xorwf	acende_subindo_e_descendo@estado,w,c
+   880  007E5C  B4D8               	btfsc	status,2,c
+   881  007E5E  D02C               	goto	l146
+   882  007E60  D03E               	goto	l145
+   883  007E62                     l147:
+   884                           
+   885                           ;main.c: 297: LATD = contador;
+   886  007E62  C004  FF8C         	movff	acende_subindo_e_descendo@contador,3980	;volatile
+   887                           
+   888                           ;main.c: 298: contador = 0b10000001;
+   889  007E66  0E81               	movlw	129
+   890  007E68  D025               	goto	L6
+   891  007E6A                     l149:
+   892                           
+   893                           ;main.c: 302: LATD = contador;
+   894  007E6A  C004  FF8C         	movff	acende_subindo_e_descendo@contador,3980	;volatile
+   895                           
+   896                           ;main.c: 303: contador = 0b01000010;
+   897  007E6E  0E42               	movlw	66
+   898  007E70  D021               	goto	L6
+   899  007E72                     l150:
+   900                           
+   901                           ;main.c: 307: LATD = contador;
+   902  007E72  C004  FF8C         	movff	acende_subindo_e_descendo@contador,3980	;volatile
+   903                           
+   904                           ;main.c: 308: if(sentido || !primeira_vez)
+   905  007E76  5002               	movf	acende_subindo_e_descendo@sentido,w,c
+   906  007E78  A4D8               	btfss	status,2,c
+   907  007E7A  D003               	goto	u90
+   908  007E7C  5001               	movf	acende_subindo_e_descendo@primeira_vez,w,c
+   909  007E7E  A4D8               	btfss	status,2,c
+   910  007E80  D005               	goto	l151
+   911  007E82                     u90:
+   912                           
+   913                           ;main.c: 309: {
+   914                           ;main.c: 310: contador = 0b00100100;
+   915  007E82  0E24               	movlw	36
+   916  007E84  6E04               	movwf	acende_subindo_e_descendo@contador,c
+   917                           
+   918                           ;main.c: 311: primeira_vez = 1;
+   919  007E86  0E01               	movlw	1
+   920  007E88  6E01               	movwf	acende_subindo_e_descendo@primeira_vez,c
+   921  007E8A  D00F               	goto	L9
+   922  007E8C                     l151:
+   923                           
+   924                           ;main.c: 315: else
+   925                           ;main.c: 316: {
+   926                           ;main.c: 317: contador = 0b10000001;
+   927  007E8C  0E81               	movlw	129
+   928  007E8E  D008               	goto	L8
+   929  007E90                     L7:
+   930  007E90  6E02               	movwf	acende_subindo_e_descendo@sentido,c
+   931                           
+   932                           ;main.c: 319: }
+   933                           ;main.c: 320: break;
+   934  007E92  D022               	goto	l148
+   935  007E94                     l155:
+   936                           
+   937                           ;main.c: 323: LATD = contador;
+   938  007E94  C004  FF8C         	movff	acende_subindo_e_descendo@contador,3980	;volatile
+   939                           
+   940                           ;main.c: 324: if(!sentido)
+   941  007E98  5002               	movf	acende_subindo_e_descendo@sentido,w,c
+   942  007E9A  A4D8               	btfss	status,2,c
+   943  007E9C  D004               	goto	l156
+   944                           
+   945                           ;main.c: 325: {
+   946                           ;main.c: 326: contador = 0b00011000;
+   947  007E9E  0E18               	movlw	24
+   948  007EA0                     L8:
+   949  007EA0  6E04               	movwf	acende_subindo_e_descendo@contador,c
+   950                           
+   951                           ;main.c: 327: sentido = 1;
+   952  007EA2  0E01               	movlw	1
+   953  007EA4  D7F5               	goto	L7
+   954  007EA6                     l156:
+   955                           
+   956                           ;main.c: 330: else
+   957                           ;main.c: 331: {
+   958                           ;main.c: 332: contador = 0b01000010;
+   959  007EA6  0E42               	movlw	66
+   960  007EA8  6E04               	movwf	acende_subindo_e_descendo@contador,c
+   961  007EAA                     L9:
+   962                           
+   963                           ;main.c: 333: sentido = 0;
+   964  007EAA  0E00               	movlw	0
+   965  007EAC  D7F1               	goto	L7
+   966  007EAE                     l158:
+   967                           
+   968                           ;main.c: 338: LATD = contador;
+   969  007EAE  C004  FF8C         	movff	acende_subindo_e_descendo@contador,3980	;volatile
+   970                           
+   971                           ;main.c: 339: contador = 0b00100100;
+   972  007EB2  0E24               	movlw	36
+   973  007EB4                     L6:
+   974  007EB4  6E04               	movwf	acende_subindo_e_descendo@contador,c
+   975                           
+   976                           ;main.c: 343: }
+   977                           
+   978                           ;main.c: 340: break;
+   979  007EB6  D010               	goto	l148
+   980  007EB8                     l146:
+   981  007EB8  5004               	movf	acende_subindo_e_descendo@contador,w,c
+   982                           
+   983                           ; Switch size 1, requested type "space"
+   984                           ; Number of cases is 5, Range of values is 0 to 129
+   985                           ; switch strategies available:
+   986                           ; Name         Instructions Cycles
+   987                           ; simple_byte           16     9 (average)
+   988                           ;	Chosen strategy is simple_byte
+   989  007EBA  0A00               	xorlw	0	; case 0
+   990  007EBC  B4D8               	btfsc	status,2,c
+   991  007EBE  D7D1               	goto	l147
+   992  007EC0  0A18               	xorlw	24	; case 24
+   993  007EC2  B4D8               	btfsc	status,2,c
+   994  007EC4  D7F4               	goto	l158
+   995  007EC6  0A3C               	xorlw	60	; case 36
+   996  007EC8  B4D8               	btfsc	status,2,c
+   997  007ECA  D7E4               	goto	l155
+   998  007ECC  0A66               	xorlw	102	; case 66
+   999  007ECE  B4D8               	btfsc	status,2,c
+  1000  007ED0  D7D0               	goto	l150
+  1001  007ED2  0AC3               	xorlw	195	; case 129
+  1002  007ED4  B4D8               	btfsc	status,2,c
+  1003  007ED6  D7C9               	goto	l149
+  1004  007ED8                     l148:
+  1005                           
+  1006                           ;main.c: 344: estado = 0;
+  1007  007ED8  0E00               	movlw	0
+  1008  007EDA  6E03               	movwf	acende_subindo_e_descendo@estado,c
+  1009                           
+  1010                           ;main.c: 345: }
+  1011  007EDC  0012               	return	
+  1012  007EDE                     l145:
+  1013                           
+  1014                           ;main.c: 346: else
+  1015                           ;main.c: 347: {
+  1016                           ;main.c: 348: estado++;
+  1017  007EDE  2A03               	incf	acende_subindo_e_descendo@estado,f,c
+  1018  007EE0  0012               	return	
+  1019  007EE2                     __end_of_acende_subindo_e_descendo:
+  1020                           	opt stack 0
+  1021                           tblptru	equ	0xFF8
+  1022                           tblptrh	equ	0xFF7
+  1023                           tblptrl	equ	0xFF6
+  1024                           tablat	equ	0xFF5
+  1025                           postinc0	equ	0xFEE
+  1026                           wreg	equ	0xFE8
+  1027                           postdec1	equ	0xFE5
+  1028                           fsr1l	equ	0xFE1
+  1029                           status	equ	0xFD8
+  1030                           
+  1031 ;; *************** function _acende_subindo *****************
+  1032 ;; Defined at:
+  1033 ;;		line 223 in file "main.c"
+  1034 ;; Parameters:    Size  Location     Type
+  1035 ;;		None
+  1036 ;; Auto vars:     Size  Location     Type
+  1037 ;;		None
+  1038 ;; Return value:  Size  Location     Type
+  1039 ;;                  1    wreg      void 
+  1040 ;; Registers used:
+  1041 ;;		wreg, status,2, status,0
+  1042 ;; Tracked objects:
+  1043 ;;		On entry : 0/0
+  1044 ;;		On exit  : 0/0
+  1045 ;;		Unchanged: 0/0
+  1046 ;; Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5
+  1047 ;;      Params:         0       0       0       0       0       0       0
+  1048 ;;      Locals:         0       0       0       0       0       0       0
+  1049 ;;      Temps:          0       0       0       0       0       0       0
+  1050 ;;      Totals:         0       0       0       0       0       0       0
+  1051 ;;Total ram usage:        0 bytes
+  1052 ;; Hardware stack levels used:    1
+  1053 ;; This function calls:
+  1054 ;;		Nothing
+  1055 ;; This function is called by:
+  1056 ;;		_loop
+  1057 ;; This function uses a non-reentrant model
+  1058 ;;
+  1059                           
+  1060                           	psect	text8
+  1061  007F70                     __ptext8:
+  1062                           	opt stack 0
+  1063  007F70                     _acende_subindo:
+  1064                           	opt stack 29
+  1065                           
+  1066                           ;main.c: 225: static uint8_t contador = 128;
+  1067                           ;main.c: 226: static uint8_t estado = 0;
+  1068                           ;main.c: 228: if (estado == 30)
+  1069                           
+  1070                           ;incstack = 0
+  1071  007F70  0E1E               	movlw	30
+  1072  007F72  1805               	xorwf	acende_subindo@estado,w,c
+  1073  007F74  B4D8               	btfsc	status,2,c
+  1074  007F76  D023               	goto	l122
+  1075  007F78  D041               	goto	l121
+  1076  007F7A                     l852:
+  1077                           
+  1078                           ;main.c: 234: contador = 128;
+  1079  007F7A  0E80               	movlw	128
+  1080  007F7C                     L10:
+  1081  007F7C  6E0E               	movwf	acende_subindo@contador,c
+  1082                           
+  1083                           ;main.c: 235: break;
+  1084  007F7E  D03B               	goto	l124
+  1085  007F80                     l125:
+  1086                           
+  1087                           ;main.c: 238: LATD = contador;
+  1088  007F80  C00E  FF8C         	movff	acende_subindo@contador,3980	;volatile
+  1089  007F84  D7FA               	goto	l852
+  1090  007F86                     l126:
+  1091                           
+  1092                           ;main.c: 243: LATD = contador;
+  1093  007F86  C00E  FF8C         	movff	acende_subindo@contador,3980	;volatile
+  1094                           
+  1095                           ;main.c: 244: contador = 1;
+  1096  007F8A  0E01               	movlw	1
+  1097  007F8C  D7F7               	goto	L10
+  1098  007F8E                     l127:
+  1099                           
+  1100                           ;main.c: 248: LATD = contador;
+  1101  007F8E  C00E  FF8C         	movff	acende_subindo@contador,3980	;volatile
+  1102                           
+  1103                           ;main.c: 249: contador = 2;
+  1104  007F92  0E02               	movlw	2
+  1105  007F94  D7F3               	goto	L10
+  1106  007F96                     l128:
+  1107                           
+  1108                           ;main.c: 253: LATD = contador;
+  1109  007F96  C00E  FF8C         	movff	acende_subindo@contador,3980	;volatile
+  1110                           
+  1111                           ;main.c: 254: contador = 4;
+  1112  007F9A  0E04               	movlw	4
+  1113  007F9C  D7EF               	goto	L10
+  1114  007F9E                     l129:
+  1115                           
+  1116                           ;main.c: 258: LATD = contador;
+  1117  007F9E  C00E  FF8C         	movff	acende_subindo@contador,3980	;volatile
+  1118                           
+  1119                           ;main.c: 259: contador = 8;
+  1120  007FA2  0E08               	movlw	8
+  1121  007FA4  D7EB               	goto	L10
+  1122  007FA6                     l130:
+  1123                           
+  1124                           ;main.c: 263: LATD = contador;
+  1125  007FA6  C00E  FF8C         	movff	acende_subindo@contador,3980	;volatile
+  1126                           
+  1127                           ;main.c: 264: contador = 16;
+  1128  007FAA  0E10               	movlw	16
+  1129  007FAC  D7E7               	goto	L10
+  1130  007FAE                     l131:
+  1131                           
+  1132                           ;main.c: 268: LATD = contador;
+  1133  007FAE  C00E  FF8C         	movff	acende_subindo@contador,3980	;volatile
+  1134                           
+  1135                           ;main.c: 269: contador = 32;
+  1136  007FB2  0E20               	movlw	32
+  1137  007FB4  D7E3               	goto	L10
+  1138  007FB6                     l132:
+  1139                           
+  1140                           ;main.c: 273: LATD = contador;
+  1141  007FB6  C00E  FF8C         	movff	acende_subindo@contador,3980	;volatile
+  1142                           
+  1143                           ;main.c: 274: contador = 64;
+  1144  007FBA  0E40               	movlw	64
+  1145  007FBC  D7DF               	goto	L10
+  1146  007FBE                     l122:
+  1147  007FBE  500E               	movf	acende_subindo@contador,w,c
+  1148                           
+  1149                           ; Switch size 1, requested type "space"
+  1150                           ; Number of cases is 9, Range of values is 0 to 128
+  1151                           ; switch strategies available:
+  1152                           ; Name         Instructions Cycles
+  1153                           ; simple_byte           28    15 (average)
+  1154                           ;	Chosen strategy is simple_byte
+  1155  007FC0  0A00               	xorlw	0	; case 0
+  1156  007FC2  B4D8               	btfsc	status,2,c
+  1157  007FC4  D7DD               	goto	l125
+  1158  007FC6  0A01               	xorlw	1	; case 1
+  1159  007FC8  B4D8               	btfsc	status,2,c
+  1160  007FCA  D7DA               	goto	l125
+  1161  007FCC  0A03               	xorlw	3	; case 2
+  1162  007FCE  B4D8               	btfsc	status,2,c
+  1163  007FD0  D7DA               	goto	l126
+  1164  007FD2  0A06               	xorlw	6	; case 4
+  1165  007FD4  B4D8               	btfsc	status,2,c
+  1166  007FD6  D7DB               	goto	l127
+  1167  007FD8  0A0C               	xorlw	12	; case 8
+  1168  007FDA  B4D8               	btfsc	status,2,c
+  1169  007FDC  D7DC               	goto	l128
+  1170  007FDE  0A18               	xorlw	24	; case 16
+  1171  007FE0  B4D8               	btfsc	status,2,c
+  1172  007FE2  D7DD               	goto	l129
+  1173  007FE4  0A30               	xorlw	48	; case 32
+  1174  007FE6  B4D8               	btfsc	status,2,c
+  1175  007FE8  D7DE               	goto	l130
+  1176  007FEA  0A60               	xorlw	96	; case 64
+  1177  007FEC  B4D8               	btfsc	status,2,c
+  1178  007FEE  D7DF               	goto	l131
+  1179  007FF0  0AC0               	xorlw	192	; case 128
+  1180  007FF2  B4D8               	btfsc	status,2,c
+  1181  007FF4  D7E0               	goto	l132
+  1182  007FF6                     l124:
+  1183                           
+  1184                           ;main.c: 278: estado = 0;
+  1185  007FF6  0E00               	movlw	0
+  1186  007FF8  6E05               	movwf	acende_subindo@estado,c
+  1187                           
+  1188                           ;main.c: 279: }
+  1189  007FFA  0012               	return	
+  1190  007FFC                     l121:
+  1191                           
+  1192                           ;main.c: 280: else
+  1193                           ;main.c: 281: {
+  1194                           ;main.c: 282: estado++;
+  1195  007FFC  2A05               	incf	acende_subindo@estado,f,c
+  1196  007FFE  0012               	return	
+  1197  008000                     __end_of_acende_subindo:
+  1198                           	opt stack 0
+  1199                           tblptru	equ	0xFF8
+  1200                           tblptrh	equ	0xFF7
+  1201                           tblptrl	equ	0xFF6
+  1202                           tablat	equ	0xFF5
+  1203                           postinc0	equ	0xFEE
+  1204                           wreg	equ	0xFE8
+  1205                           postdec1	equ	0xFE5
+  1206                           fsr1l	equ	0xFE1
+  1207                           status	equ	0xFD8
+  1208                           
+  1209 ;; *************** function _acende_descendo *****************
+  1210 ;; Defined at:
+  1211 ;;		line 160 in file "main.c"
+  1212 ;; Parameters:    Size  Location     Type
+  1213 ;;		None
+  1214 ;; Auto vars:     Size  Location     Type
+  1215 ;;		None
+  1216 ;; Return value:  Size  Location     Type
+  1217 ;;                  1    wreg      void 
+  1218 ;; Registers used:
+  1219 ;;		wreg, status,2, status,0
+  1220 ;; Tracked objects:
+  1221 ;;		On entry : 0/0
+  1222 ;;		On exit  : 0/0
+  1223 ;;		Unchanged: 0/0
+  1224 ;; Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5
+  1225 ;;      Params:         0       0       0       0       0       0       0
+  1226 ;;      Locals:         0       0       0       0       0       0       0
+  1227 ;;      Temps:          0       0       0       0       0       0       0
+  1228 ;;      Totals:         0       0       0       0       0       0       0
+  1229 ;;Total ram usage:        0 bytes
+  1230 ;; Hardware stack levels used:    1
+  1231 ;; This function calls:
+  1232 ;;		Nothing
+  1233 ;; This function is called by:
+  1234 ;;		_loop
+  1235 ;; This function uses a non-reentrant model
+  1236 ;;
+  1237                           
+  1238                           	psect	text9
+  1239  007EE2                     __ptext9:
+  1240                           	opt stack 0
+  1241  007EE2                     _acende_descendo:
+  1242                           	opt stack 29
+  1243                           
+  1244                           ;main.c: 162: static uint8_t contador = 1;
+  1245                           ;main.c: 163: static uint8_t estado = 0;
+  1246                           ;main.c: 165: if (estado == 30)
+  1247                           
+  1248                           ;incstack = 0
+  1249  007EE2  0E1E               	movlw	30
+  1250  007EE4  1806               	xorwf	acende_descendo@estado,w,c
+  1251  007EE6  B4D8               	btfsc	status,2,c
+  1252  007EE8  D022               	goto	l102
+  1253  007EEA  D040               	goto	l101
+  1254  007EEC                     l105:
+  1255                           
+  1256                           ;main.c: 175: LATD = contador;
+  1257  007EEC  C00F  FF8C         	movff	acende_descendo@contador,3980	;volatile
+  1258                           
+  1259                           ;main.c: 176: contador = 2;
+  1260  007EF0  0E02               	movlw	2
+  1261  007EF2  D01B               	goto	L18
+  1262  007EF4                     l106:
+  1263                           
+  1264                           ;main.c: 180: LATD = contador;
+  1265  007EF4  C00F  FF8C         	movff	acende_descendo@contador,3980	;volatile
+  1266                           
+  1267                           ;main.c: 181: contador = 4;
+  1268  007EF8  0E04               	movlw	4
+  1269  007EFA  D017               	goto	L18
+  1270  007EFC                     l107:
+  1271                           
+  1272                           ;main.c: 185: LATD = contador;
+  1273  007EFC  C00F  FF8C         	movff	acende_descendo@contador,3980	;volatile
+  1274                           
+  1275                           ;main.c: 186: contador = 8;
+  1276  007F00  0E08               	movlw	8
+  1277  007F02  D013               	goto	L18
+  1278  007F04                     l108:
+  1279                           
+  1280                           ;main.c: 190: LATD = contador;
+  1281  007F04  C00F  FF8C         	movff	acende_descendo@contador,3980	;volatile
+  1282                           
+  1283                           ;main.c: 191: contador = 16;
+  1284  007F08  0E10               	movlw	16
+  1285  007F0A  D00F               	goto	L18
+  1286  007F0C                     l109:
+  1287                           
+  1288                           ;main.c: 195: LATD = contador;
+  1289  007F0C  C00F  FF8C         	movff	acende_descendo@contador,3980	;volatile
+  1290                           
+  1291                           ;main.c: 196: contador = 32;
+  1292  007F10  0E20               	movlw	32
+  1293  007F12  D00B               	goto	L18
+  1294  007F14                     l110:
+  1295                           
+  1296                           ;main.c: 200: LATD = contador;
+  1297  007F14  C00F  FF8C         	movff	acende_descendo@contador,3980	;volatile
+  1298                           
+  1299                           ;main.c: 201: contador = 64;
+  1300  007F18  0E40               	movlw	64
+  1301  007F1A  D007               	goto	L18
+  1302  007F1C                     l111:
+  1303                           
+  1304                           ;main.c: 205: LATD = contador;
+  1305  007F1C  C00F  FF8C         	movff	acende_descendo@contador,3980	;volatile
+  1306                           
+  1307                           ;main.c: 206: contador = 128;
+  1308  007F20  0E80               	movlw	128
+  1309  007F22  D003               	goto	L18
+  1310  007F24                     l112:
+  1311                           
+  1312                           ;main.c: 210: LATD = contador;
+  1313  007F24  C00F  FF8C         	movff	acende_descendo@contador,3980	;volatile
+  1314                           
+  1315                           ;main.c: 211: contador = 1;
+  1316  007F28  0E01               	movlw	1
+  1317  007F2A                     L18:
+  1318  007F2A  6E0F               	movwf	acende_descendo@contador,c
+  1319                           
+  1320                           ;main.c: 214: }
+  1321                           
+  1322                           ;main.c: 212: break;
+  1323  007F2C  D01C               	goto	l104
+  1324  007F2E                     l102:
+  1325  007F2E  500F               	movf	acende_descendo@contador,w,c
+  1326                           
+  1327                           ; Switch size 1, requested type "space"
+  1328                           ; Number of cases is 9, Range of values is 0 to 128
+  1329                           ; switch strategies available:
+  1330                           ; Name         Instructions Cycles
+  1331                           ; simple_byte           28    15 (average)
+  1332                           ;	Chosen strategy is simple_byte
+  1333  007F30  0A00               	xorlw	0	; case 0
+  1334  007F32  B4D8               	btfsc	status,2,c
+  1335  007F34  D7F7               	goto	l112
+  1336  007F36  0A01               	xorlw	1	; case 1
+  1337  007F38  B4D8               	btfsc	status,2,c
+  1338  007F3A  D7D8               	goto	l105
+  1339  007F3C  0A03               	xorlw	3	; case 2
+  1340  007F3E  B4D8               	btfsc	status,2,c
+  1341  007F40  D7D9               	goto	l106
+  1342  007F42  0A06               	xorlw	6	; case 4
+  1343  007F44  B4D8               	btfsc	status,2,c
+  1344  007F46  D7DA               	goto	l107
+  1345  007F48  0A0C               	xorlw	12	; case 8
+  1346  007F4A  B4D8               	btfsc	status,2,c
+  1347  007F4C  D7DB               	goto	l108
+  1348  007F4E  0A18               	xorlw	24	; case 16
+  1349  007F50  B4D8               	btfsc	status,2,c
+  1350  007F52  D7DC               	goto	l109
+  1351  007F54  0A30               	xorlw	48	; case 32
+  1352  007F56  B4D8               	btfsc	status,2,c
+  1353  007F58  D7DD               	goto	l110
+  1354  007F5A  0A60               	xorlw	96	; case 64
+  1355  007F5C  B4D8               	btfsc	status,2,c
+  1356  007F5E  D7DE               	goto	l111
+  1357  007F60  0AC0               	xorlw	192	; case 128
+  1358  007F62  B4D8               	btfsc	status,2,c
+  1359  007F64  D7DF               	goto	l112
+  1360  007F66                     l104:
+  1361                           
+  1362                           ;main.c: 215: estado = 0;
+  1363  007F66  0E00               	movlw	0
+  1364  007F68  6E06               	movwf	acende_descendo@estado,c
+  1365                           
+  1366                           ;main.c: 216: }
+  1367  007F6A  0012               	return	
+  1368  007F6C                     l101:
+  1369                           
+  1370                           ;main.c: 217: else
+  1371                           ;main.c: 218: {
+  1372                           ;main.c: 219: estado++;
+  1373  007F6C  2A06               	incf	acende_descendo@estado,f,c
+  1374  007F6E  0012               	return	
+  1375  007F70                     __end_of_acende_descendo:
+  1376                           	opt stack 0
+  1377  0000                     tblptru	equ	0xFF8
+  1378                           tblptrh	equ	0xFF7
+  1379                           tblptrl	equ	0xFF6
+  1380                           tablat	equ	0xFF5
+  1381                           postinc0	equ	0xFEE
+  1382                           wreg	equ	0xFE8
+  1383                           postdec1	equ	0xFE5
+  1384                           fsr1l	equ	0xFE1
+  1385                           status	equ	0xFD8
+  1386                           tblptru	equ	0xFF8
+  1387                           tblptrh	equ	0xFF7
+  1388                           tblptrl	equ	0xFF6
+  1389                           tablat	equ	0xFF5
+  1390                           postinc0	equ	0xFEE
+  1391                           wreg	equ	0xFE8
+  1392                           postdec1	equ	0xFE5
+  1393                           fsr1l	equ	0xFE1
+  1394                           status	equ	0xFD8
+  1395                           
+  1396                           	psect	rparam
+  1397  0000                     tblptru	equ	0xFF8
+  1398                           tblptrh	equ	0xFF7
+  1399                           tblptrl	equ	0xFF6
+  1400                           tablat	equ	0xFF5
+  1401                           postinc0	equ	0xFEE
+  1402                           wreg	equ	0xFE8
+  1403                           postdec1	equ	0xFE5
+  1404                           fsr1l	equ	0xFE1
+  1405                           status	equ	0xFD8
+
+
+Data Sizes:
+    Strings     0
+    Constant    0
+    Data        4
+    BSS         13
+    Persistent  0
+    Stack       0
+
+Auto Spaces:
+    Space          Size  Autos    Used
+    COMRAM          127      3      20
+    BANK0           128      0       0
+    BANK1           256      0       0
+    BANK2           256      0       0
+    BANK3           256      0       0
+    BANK4           256      0       0
+    BANK5           256      0       0
+
+Pointer List with Targets:
+
+    None.
+
+Critical Paths under _main in COMRAM
+
+    _loop->_tecla
+
+Critical Paths under _main in BANK0
+
+    None.
+
+Critical Paths under _main in BANK1
+
+    None.
+
+Critical Paths under _main in BANK2
+
+    None.
+
+Critical Paths under _main in BANK3
+
+    None.
+
+Critical Paths under _main in BANK4
+
+    None.
+
+Critical Paths under _main in BANK5
+
+    None.
+
+Call Graph Tables:
+
+ ---------------------------------------------------------------------------------
+ (Depth) Function   	        Calls       Base Space   Used Autos Params    Refs
+ ---------------------------------------------------------------------------------
+ (0) _main                                                 0     0      0     159
+                               _loop
+                              _setup
+ ---------------------------------------------------------------------------------
+ (1) _setup                                                0     0      0       0
+ ---------------------------------------------------------------------------------
+ (1) _loop                                                 0     0      0     159
+                    _acende_descendo
+                     _acende_subindo
+          _acende_subindo_e_descendo
+                        _apagar_leds
+                          _atraso_ms
+                              _maq_1
+                              _tecla
+ ---------------------------------------------------------------------------------
+ (2) _tecla                                                3     3      0      60
+                                              0 COMRAM     3     3      0
+ ---------------------------------------------------------------------------------
+ (2) _maq_1                                                0     0      0       0
+ ---------------------------------------------------------------------------------
+ (2) _atraso_ms                                            2     0      2      99
+                                              0 COMRAM     2     0      2
+ ---------------------------------------------------------------------------------
+ (2) _apagar_leds                                          0     0      0       0
+ ---------------------------------------------------------------------------------
+ (2) _acende_subindo_e_descendo                            0     0      0       0
+ ---------------------------------------------------------------------------------
+ (2) _acende_subindo                                       0     0      0       0
+ ---------------------------------------------------------------------------------
+ (2) _acende_descendo                                      0     0      0       0
+ ---------------------------------------------------------------------------------
+ Estimated maximum stack depth 2
+ ---------------------------------------------------------------------------------
+
+ Call Graph Graphs:
+
+ _main (ROOT)
+   _loop
+     _acende_descendo
+     _acende_subindo
+     _acende_subindo_e_descendo
+     _apagar_leds
+     _atraso_ms
+     _maq_1
+     _tecla
+   _setup
+
+ Address spaces:
+Name               Size   Autos  Total    Cost      Usage
+BIGRAM             5FF      0       0      17        0.0%
+EEDATA             100      0       0       0        0.0%
+BITBANK5           100      0       0      16        0.0%
+BANK5              100      0       0      14        0.0%
+BITBANK4           100      0       0      12        0.0%
+BANK4              100      0       0      13        0.0%
+BITBANK3           100      0       0      10        0.0%
+BANK3              100      0       0      11        0.0%
+BITBANK2           100      0       0       8        0.0%
+BANK2              100      0       0       9        0.0%
+BITBANK1           100      0       0       6        0.0%
+BANK1              100      0       0       7        0.0%
+BITBANK0            80      0       0       4        0.0%
+BANK0               80      0       0       5        0.0%
+BITCOMRAM           7F      0       0       0        0.0%
+COMRAM              7F      3      14       1       15.7%
+BITSFR               0      0       0     200        0.0%
+SFR                  0      0       0     200        0.0%
+STACK                0      0       0       2        0.0%
+NULL                 0      0       0       0        0.0%
+ABS                  0      0      14      15        0.0%
+DATA                 0      0      14       3        0.0%
+CODE                 0      0       0       0        0.0%
+
+
+Microchip Technology PIC18 Macro Assembler V1.45 build -152302408 
+Symbol Table                                                                                   Wed Sep 28 20:08:31 2022
+
+                                   l55 7D40                                     l56 7D32  
+                                   l64 7DC0                                     l73 7D2C  
+                                   l65 7DA8                                     l49 7D18  
+                                   l90 7E26                                     l82 7DF4  
+                                   l66 7DDA                                     l67 7DAE  
+                                   l68 7DB4                                     l85 7E34  
+                                   l69 7DBA                                     l86 7E02  
+                                   l87 7E4E                                     l88 7E0E  
+                                   l89 7E1A                                     u90 7E82  
+                          __CFG_BORV$3 000000                           __CFG_CP0$OFF 000000  
+                         __CFG_CP1$OFF 000000                           __CFG_CP2$OFF 000000  
+                         __CFG_CP3$OFF 000000                            __CFG_OSC$HS 000000  
+                                  l101 7F6C                                    l102 7F2E  
+                                  l110 7F14                                    l111 7F1C  
+                                  l104 7F66                                    l112 7F24  
+                                  l105 7EEC                                    l121 7FFC  
+                                  l106 7EF4                                    l122 7FBE  
+                                  l130 7FA6                                    l107 7EFC  
+                                  l131 7FAE                                    l108 7F04  
+                                  l124 7FF6                                    l132 7FB6  
+                                  l109 7F0C                                    l125 7F80  
+                                  l126 7F86                                    l150 7E72  
+                                  l127 7F8E                                    l151 7E8C  
+                                  l128 7F96                                    l129 7F9E  
+                                  l145 7EDE                                    l146 7EB8  
+                                  l155 7E94                                    l147 7E62  
+                                  l148 7ED8                                    l156 7EA6  
+                                  l149 7E6A                                    l158 7EAE  
+                                  l852 7F7A                           __CFG_CPB$OFF 000000  
+                                  u127 7D3A                           __CFG_CPD$OFF 000000  
+                                  wreg 000FE8                           __CFG_LVP$OFF 000000  
+                         __CFG_WDT$OFF 000000                                   _LATB 000F8A  
+                                 _LATD 000F8C                                   _main 7D14  
+                                 _modo 0008                                   _loop 7D9E  
+                                 fsr1l 000FE1                                   start 0000  
+                        __CFG_IESO$OFF 000000                          __CFG_MCLRE$ON 000000  
+                         ___param_bank 000000                        _acende_descendo 7EE2  
+                                ?_main 0012                                  ?_loop 0012  
+                                _PORTB 000F81                                  _TRISB 000F93  
+                                _TRISD 000F95                          __CFG_PWRT$OFF 000000  
+                        __CFG_WRT0$OFF 000000                          __CFG_WRT1$OFF 000000  
+                        __CFG_WRT2$OFF 000000                          __CFG_WRT3$OFF 000000  
+                       __CFG_EBTR0$OFF 000000                         __CFG_FCMEN$OFF 000000  
+                       __CFG_EBTR1$OFF 000000                         __CFG_EBTR2$OFF 000000  
+                       __CFG_EBTR3$OFF 000000                          __CFG_WRTB$OFF 000000  
+                        __CFG_WRTC$OFF 000000                          __CFG_WRTD$OFF 000000  
+                       __CFG_EBTRB$OFF 000000                                  _maq_1 7D1E  
+                                _saida 000B                                  _tecla 7DE8  
+                                _setup 7D4A                                  tablat 000FF5  
+                                status 000FD8     __size_of_acende_subindo_e_descendo 008A  
+                 __size_of_apagar_leds 0006                         __CFG_PBADEN$ON 000000  
+                      __initialization 7D68                           __end_of_main 7D1E  
+              acende_descendo@contador 000F                           __end_of_loop 7DE8  
+                               ??_main 0015                                 ??_loop 0015  
+                        __activetblptr 000002                                 ?_maq_1 0012  
+                               _ADCON1 000FC1                                 ?_tecla 0012  
+                               ?_setup 0012      __end_of_acende_subindo_e_descendo 7EE2  
+                       __CFG_XINST$OFF 000000                __end_of_acende_descendo 7F70  
+                       __CFG_STVREN$ON 000000                                 _estado 000C  
+                               clear_0 7D8E                           __pdataCOMRAM 000E  
+                               tblptrh 000FF7                                 tblptrl 000FF6  
+                               tblptru 000FF8                 acende_subindo@contador 000E  
+                           __accesstop 0080                __end_of__initialization 7D94  
+                        ___rparam_used 000001                         __pcstackCOMRAM 0012  
+                        __end_of_maq_1 7D30                          __end_of_tecla 7E58  
+                        __end_of_setup 7D68                                ??_maq_1 0012  
+                              ??_tecla 0012                                ??_setup 0012  
+                   __size_of_atraso_ms 001A                       ?_acende_descendo 0012  
+acende_subindo_e_descendo@primeira_vez 0001                __size_of_acende_subindo 0090  
+                              __Hparam 0000                                __Lparam 0000  
+                    __end_of_atraso_ms 7D4A                                __pcinit 7D68  
+                              __ramtop 0600                                __ptext0 7D14  
+                              __ptext1 7D4A                                __ptext2 7D9E  
+                              __ptext3 7DE8                                __ptext4 7D1E  
+                              __ptext5 7D30                                __ptext6 7D0E  
+                              __ptext7 7E58                                __ptext8 7F70  
+                              __ptext9 7EE2                   end_of_initialization 7D94  
+                        ??_apagar_leds 0012                          __Lmediumconst 0000  
+                              postdec1 000FE5                                postinc0 000FEE  
+           ?_acende_subindo_e_descendo 0012                    __end_of_apagar_leds 7D14  
+                        __pidataCOMRAM 7D0A                         _acende_subindo 7F70  
+                  start_initialization 7D68                   acende_subindo@estado 0005  
+    acende_subindo_e_descendo@contador 0004                       __CFG_LPT1OSC$OFF 000000  
+               __end_of_acende_subindo 8000                            __pbssCOMRAM 0001  
+                          _apagar_leds 7D0E                              _f_direcao 000A  
+                    __CFG_CCP2MX$PORTC 000000               __size_of_acende_descendo 008E  
+                      ?_acende_subindo 0012                              _atraso_ms 7D30  
+                       __size_of_maq_1 0012                         __size_of_tecla 0070  
+                       __size_of_setup 001E                         atraso_ms@tempo 0012  
+                     __CFG_WDTPS$32768 000000                             ?_atraso_ms 0012  
+                            copy_data0 7D7C                  acende_descendo@estado 0006  
+                             __Hrparam 0000                               __Lrparam 0000  
+          ??_acende_subindo_e_descendo 0012                     __CFG_BOREN$SBORDIS 000000  
+     acende_subindo_e_descendo@sentido 0002                              tecla@dado 0013  
+                             _f_on_off 0009                      ??_acende_descendo 0012  
+                             _contador 000D                          __size_of_main 000A  
+                        __size_of_loop 004A                            ??_atraso_ms 0014  
+            _acende_subindo_e_descendo 7E58                     _estado_de_operacao 0007  
+      acende_subindo_e_descendo@estado 0003                               tecla@d_d 0014  
+                             tecla@d_o 0012                               tecla@m_d 0011  
+                             tecla@m_o 0010                           ?_apagar_leds 0012  
+                     ??_acende_subindo 0012  

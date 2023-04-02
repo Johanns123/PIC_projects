@@ -1,0 +1,332 @@
+[p GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F4520 ]
+[d frameptr 4065 ]
+"12 C:\Users\aluno\MPLABXProjects\P_GA.X\ADC.c
+[v _AD_init AD_init `(v  1 e 1 0 ]
+"19
+[v _start_AD_conversion start_AD_conversion `(v  1 e 1 0 ]
+[v i2_start_AD_conversion start_AD_conversion `(v  1 e 1 0 ]
+"24
+[v _select_channel select_channel `(v  1 e 1 0 ]
+"32
+[v _ADC_maq ADC_maq `(v  1 e 1 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"86 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+"14 C:\Users\aluno\MPLABXProjects\P_GA.X\Displays.c
+[v _mux_display mux_display `(v  1 e 1 0 ]
+"48
+[v _cont1_crescente cont1_crescente `(v  1 e 1 0 ]
+"119
+[v _cont1_decrescente cont1_decrescente `(v  1 e 1 0 ]
+"190
+[v _cont2_crescente cont2_crescente `(v  1 e 1 0 ]
+"262
+[v _cont2_decrescente cont2_decrescente `(v  1 e 1 0 ]
+"13 C:\Users\aluno\MPLABXProjects\P_GA.X\Interrupts.c
+[v _f_interrupt_high f_interrupt_high `IIH(v  1 e 1 0 ]
+"45
+[v _disable_interrupts disable_interrupts `(v  1 e 1 0 ]
+"51
+[v _enable_interrupts enable_interrupts `(v  1 e 1 0 ]
+"58
+[v _interrupt_init interrupt_init `(v  1 e 1 0 ]
+"13 C:\Users\aluno\MPLABXProjects\P_GA.X\IOs.c
+[v _setup setup `(v  1 e 1 0 ]
+"30
+[v _setup_io setup_io `(v  1 e 1 0 ]
+"27 C:\Users\aluno\MPLABXProjects\P_GA.X\P1_GA.c
+[v _main main `(i  1 e 2 0 ]
+"40
+[v _f_timers f_timers `(v  1 e 1 0 ]
+"85
+[v _Read_AD Read_AD `(v  1 e 1 0 ]
+"111
+[v _loop loop `(v  1 e 1 0 ]
+"117
+[v _contador_displays_01 contador_displays_01 `(v  1 e 1 0 ]
+"131
+[v _contador_displays_02 contador_displays_02 `(v  1 e 1 0 ]
+"144
+[v _f_int0 f_int0 `(v  1 e 1 0 ]
+"163
+[v _f_int1 f_int1 `(v  1 e 1 0 ]
+"180
+[v _f_int2 f_int2 `(v  1 e 1 0 ]
+"198
+[v _read_keyb read_keyb `(v  1 e 1 0 ]
+"280
+[v _LED_State LED_State `(v  1 e 1 0 ]
+"40 C:\Users\aluno\MPLABXProjects\P_GA.X/ADC.h
+[v _AD_data AD_data `[2]uc  1 e 2 0 ]
+"41 C:\Users\aluno\MPLABXProjects\P_GA.X/Displays.h
+[v _display1 display1 `uc  1 e 1 0 ]
+[v _display2 display2 `uc  1 e 1 0 ]
+[v _display3 display3 `uc  1 e 1 0 ]
+[v _display4 display4 `uc  1 e 1 0 ]
+"42
+[v _conv7seg conv7seg `[17]uc  1 e 17 0 ]
+"35 C:\Users\aluno\MPLABXProjects\P_GA.X/IOs.h
+[v _temporizador1 temporizador1 `us  1 e 2 0 ]
+[v _temporizador2 temporizador2 `us  1 e 2 0 ]
+"272 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18f4520.h
+[v _PORTB PORTB `VEuc  1 e 1 @3969 ]
+"978
+[v _LATA LATA `VEuc  1 e 1 @3977 ]
+"1090
+[v _LATB LATB `VEuc  1 e 1 @3978 ]
+"1314
+[v _LATD LATD `VEuc  1 e 1 @3980 ]
+"1478
+[v _TRISA TRISA `VEuc  1 e 1 @3986 ]
+"1700
+[v _TRISB TRISB `VEuc  1 e 1 @3987 ]
+"2144
+[v _TRISD TRISD `VEuc  1 e 1 @3989 ]
+"4620
+[v _ADCON2 ADCON2 `VEuc  1 e 1 @4032 ]
+"4691
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @4033 ]
+"4776
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @4034 ]
+"4909
+[v _ADRESH ADRESH `VEuc  1 e 1 @4036 ]
+"6169
+[v _T0CON T0CON `VEuc  1 e 1 @4053 ]
+"6252
+[v _TMR0 TMR0 `VEus  1 e 2 @4054 ]
+"6531
+[v _INTCON3 INTCON3 `VEuc  1 e 1 @4080 ]
+"6623
+[v _INTCON2 INTCON2 `VEuc  1 e 1 @4081 ]
+"6693
+[v _INTCON INTCON `VEuc  1 e 1 @4082 ]
+"7059
+[v _ADIE ADIE `VEb  1 e 0 @31982 ]
+"7062
+[v _ADIF ADIF `VEb  1 e 0 @31990 ]
+"7416
+[v _GIE GIE `VEb  1 e 0 @32663 ]
+"7428
+[v _GO GO `VEb  1 e 0 @32273 ]
+"7551
+[v _IPEN IPEN `VEb  1 e 0 @32391 ]
+"7611
+[v _LATA2 LATA2 `VEb  1 e 0 @31818 ]
+"7614
+[v _LATA3 LATA3 `VEb  1 e 0 @31819 ]
+"7617
+[v _LATA4 LATA4 `VEb  1 e 0 @31820 ]
+"7620
+[v _LATA5 LATA5 `VEb  1 e 0 @31821 ]
+"7629
+[v _LATB0 LATB0 `VEb  1 e 0 @31824 ]
+"7632
+[v _LATB1 LATB1 `VEb  1 e 0 @31825 ]
+"7635
+[v _LATB2 LATB2 `VEb  1 e 0 @31826 ]
+"7647
+[v _LATB6 LATB6 `VEb  1 e 0 @31830 ]
+"7650
+[v _LATB7 LATB7 `VEb  1 e 0 @31831 ]
+"7992
+[v _PEIE PEIE `VEb  1 e 0 @32662 ]
+"8499
+[v _TMR0IE TMR0IE `VEb  1 e 0 @32661 ]
+"8502
+[v _TMR0IF TMR0IF `VEb  1 e 0 @32658 ]
+"12 C:\Users\aluno\MPLABXProjects\P_GA.X\Displays.c
+[v _estado_sequencia01 estado_sequencia01 `uc  1 e 1 0 ]
+[v _estado_sequencia02 estado_sequencia02 `uc  1 e 1 0 ]
+"15 C:\Users\aluno\MPLABXProjects\P_GA.X\P1_GA.c
+[v _sequencia_1 sequencia_1 `uc  1 e 1 0 ]
+[v _sequencia_2 sequencia_2 `uc  1 e 1 0 ]
+[v _pausa_ou_continua pausa_ou_continua `uc  1 e 1 0 ]
+"27
+[v _main main `(i  1 e 2 0 ]
+{
+"31
+} 0
+"13 C:\Users\aluno\MPLABXProjects\P_GA.X\IOs.c
+[v _setup setup `(v  1 e 1 0 ]
+{
+"27
+} 0
+"19 C:\Users\aluno\MPLABXProjects\P_GA.X\ADC.c
+[v _start_AD_conversion start_AD_conversion `(v  1 e 1 0 ]
+{
+"22
+} 0
+"30 C:\Users\aluno\MPLABXProjects\P_GA.X\IOs.c
+[v _setup_io setup_io `(v  1 e 1 0 ]
+{
+"37
+} 0
+"58 C:\Users\aluno\MPLABXProjects\P_GA.X\Interrupts.c
+[v _interrupt_init interrupt_init `(v  1 e 1 0 ]
+{
+"70
+} 0
+"51
+[v _enable_interrupts enable_interrupts `(v  1 e 1 0 ]
+{
+"56
+} 0
+"45
+[v _disable_interrupts disable_interrupts `(v  1 e 1 0 ]
+{
+"49
+} 0
+"12 C:\Users\aluno\MPLABXProjects\P_GA.X\ADC.c
+[v _AD_init AD_init `(v  1 e 1 0 ]
+{
+"17
+} 0
+"111 C:\Users\aluno\MPLABXProjects\P_GA.X\P1_GA.c
+[v _loop loop `(v  1 e 1 0 ]
+{
+"113
+} 0
+"13 C:\Users\aluno\MPLABXProjects\P_GA.X\Interrupts.c
+[v _f_interrupt_high f_interrupt_high `IIH(v  1 e 1 0 ]
+{
+"43
+} 0
+"40 C:\Users\aluno\MPLABXProjects\P_GA.X\P1_GA.c
+[v _f_timers f_timers `(v  1 e 1 0 ]
+{
+"41
+[v f_timers@counter0 counter0 `us  1 s 2 counter0 ]
+[v f_timers@counter1 counter1 `us  1 s 2 counter1 ]
+[v f_timers@counter2 counter2 `us  1 s 2 counter2 ]
+[v f_timers@counter3 counter3 `us  1 s 2 counter3 ]
+"83
+} 0
+"198
+[v _read_keyb read_keyb `(v  1 e 1 0 ]
+{
+"200
+[v read_keyb@dado dado `uc  1 a 1 5 ]
+[v read_keyb@dado_RB5 dado_RB5 `uc  1 a 1 4 ]
+[v read_keyb@dado_RB4 dado_RB4 `uc  1 a 1 3 ]
+[v read_keyb@dado_RB3 dado_RB3 `uc  1 a 1 2 ]
+"202
+[v read_keyb@m_dado_RB3 m_dado_RB3 `uc  1 s 1 m_dado_RB3 ]
+[v read_keyb@m_dado_RB4 m_dado_RB4 `uc  1 s 1 m_dado_RB4 ]
+[v read_keyb@m_dado_RB5 m_dado_RB5 `uc  1 s 1 m_dado_RB5 ]
+"255
+} 0
+"180
+[v _f_int2 f_int2 `(v  1 e 1 0 ]
+{
+"182
+[v f_int2@sentido2 sentido2 `uc  1 s 1 sentido2 ]
+"195
+} 0
+"163
+[v _f_int1 f_int1 `(v  1 e 1 0 ]
+{
+"165
+[v f_int1@sentido1 sentido1 `uc  1 s 1 sentido1 ]
+"178
+} 0
+"144
+[v _f_int0 f_int0 `(v  1 e 1 0 ]
+{
+"146
+[v f_int0@estado estado `uc  1 s 1 estado ]
+"161
+} 0
+"14 C:\Users\aluno\MPLABXProjects\P_GA.X\Displays.c
+[v _mux_display mux_display `(v  1 e 1 0 ]
+{
+"15
+[v mux_display@estado estado `uc  1 s 1 estado ]
+"46
+} 0
+"131 C:\Users\aluno\MPLABXProjects\P_GA.X\P1_GA.c
+[v _contador_displays_02 contador_displays_02 `(v  1 e 1 0 ]
+{
+"142
+} 0
+"262 C:\Users\aluno\MPLABXProjects\P_GA.X\Displays.c
+[v _cont2_decrescente cont2_decrescente `(v  1 e 1 0 ]
+{
+"332
+} 0
+"190
+[v _cont2_crescente cont2_crescente `(v  1 e 1 0 ]
+{
+"260
+} 0
+"117 C:\Users\aluno\MPLABXProjects\P_GA.X\P1_GA.c
+[v _contador_displays_01 contador_displays_01 `(v  1 e 1 0 ]
+{
+"128
+} 0
+"119 C:\Users\aluno\MPLABXProjects\P_GA.X\Displays.c
+[v _cont1_decrescente cont1_decrescente `(v  1 e 1 0 ]
+{
+"188
+} 0
+"48
+[v _cont1_crescente cont1_crescente `(v  1 e 1 0 ]
+{
+"117
+} 0
+"85 C:\Users\aluno\MPLABXProjects\P_GA.X\P1_GA.c
+[v _Read_AD Read_AD `(v  1 e 1 0 ]
+{
+"87
+[v Read_AD@Valor_AD0 Valor_AD0 `uc  1 s 1 Valor_AD0 ]
+"109
+} 0
+"280
+[v _LED_State LED_State `(v  1 e 1 0 ]
+{
+"331
+} 0
+"32 C:\Users\aluno\MPLABXProjects\P_GA.X\ADC.c
+[v _ADC_maq ADC_maq `(v  1 e 1 0 ]
+{
+"34
+[v ADC_maq@estado estado `uc  1 s 1 estado ]
+"53
+} 0
+"19
+[v i2_start_AD_conversion start_AD_conversion `(v  1 e 1 0 ]
+{
+"22
+} 0
+"24
+[v _select_channel select_channel `(v  1 e 1 0 ]
+{
+[v select_channel@channel channel `uc  1 a 1 wreg ]
+[v select_channel@channel channel `uc  1 a 1 wreg ]
+"29
+[v select_channel@channel channel `uc  1 a 1 0 ]
+"30
+} 0

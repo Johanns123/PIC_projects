@@ -1,0 +1,189 @@
+[p LITE_MODE AUTOSTATIC LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F4520 ]
+[d frameptr 4065 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"54 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+"20 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 3 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 3 0 ]
+"11 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 3 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 3 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"62 C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula06.X\main.c
+[v _f_interrupt_high f_interrupt_high `IIH(v  1 e 1 0 ]
+"92
+[v _main main `(i  1 e 2 0 ]
+"108
+[v _f_timers f_timers `(v  1 e 1 0 ]
+"136
+[v _setup setup `(v  1 e 1 0 ]
+"145
+[v _disable_interrupts disable_interrupts `(v  1 e 1 0 ]
+"152
+[v _enable_interrupts enable_interrupts `(v  1 e 1 0 ]
+"158
+[v _setup_io setup_io `(v  1 e 1 0 ]
+"169
+[v _interrupt_init interrupt_init `(v  1 e 1 0 ]
+"183
+[v _loop loop `(v  1 e 1 0 ]
+"195
+[v _mux_display mux_display `(v  1 e 1 0 ]
+"240
+[v _contador_displays contador_displays `(v  1 e 1 0 ]
+"281
+[v _f_int0 f_int0 `(v  1 e 1 0 ]
+"285
+[v _f_int1 f_int1 `(v  1 e 1 0 ]
+"289
+[v _f_int2 f_int2 `(v  1 e 1 0 ]
+"975 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18f4520.h
+[v _LATA LATA `VEuc  1 e 1 @3977 ]
+"1087
+[v _LATB LATB `VEuc  1 e 1 @3978 ]
+"1311
+[v _LATD LATD `VEuc  1 e 1 @3980 ]
+"1475
+[v _TRISA TRISA `VEuc  1 e 1 @3986 ]
+"1697
+[v _TRISB TRISB `VEuc  1 e 1 @3987 ]
+"2141
+[v _TRISD TRISD `VEuc  1 e 1 @3989 ]
+"4688
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @4033 ]
+"6166
+[v _T0CON T0CON `VEuc  1 e 1 @4053 ]
+"6249
+[v _TMR0 TMR0 `VEus  1 e 2 @4054 ]
+"6528
+[v _INTCON3 INTCON3 `VEuc  1 e 1 @4080 ]
+"6620
+[v _INTCON2 INTCON2 `VEuc  1 e 1 @4081 ]
+"6690
+[v _INTCON INTCON `VEuc  1 e 1 @4082 ]
+"7275
+[v _GIE GIE `VEb  1 e 0 @32663 ]
+"7323
+[v _INT0IE INT0IE `VEb  1 e 0 @32660 ]
+"7325
+[v _INT0IF INT0IF `VEb  1 e 0 @32657 ]
+"7333
+[v _INT1IE INT1IE `VEb  1 e 0 @32643 ]
+"7335
+[v _INT1IF INT1IF `VEb  1 e 0 @32640 ]
+"7347
+[v _INT2IE INT2IE `VEb  1 e 0 @32644 ]
+"7349
+[v _INT2IF INT2IF `VEb  1 e 0 @32641 ]
+"7365
+[v _IPEN IPEN `VEb  1 e 0 @32391 ]
+"7405
+[v _LATA2 LATA2 `VEb  1 e 0 @31818 ]
+"7407
+[v _LATA3 LATA3 `VEb  1 e 0 @31819 ]
+"7409
+[v _LATA4 LATA4 `VEb  1 e 0 @31820 ]
+"7411
+[v _LATA5 LATA5 `VEb  1 e 0 @31821 ]
+"7659
+[v _PEIE PEIE `VEb  1 e 0 @32662 ]
+"7997
+[v _TMR0IE TMR0IE `VEb  1 e 0 @32661 ]
+"7999
+[v _TMR0IF TMR0IF `VEb  1 e 0 @32658 ]
+"22 C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula06.X\main.c
+[v _dezena_disp_par01 dezena_disp_par01 `uc  1 e 1 0 ]
+[v _dezena_disp_par02 dezena_disp_par02 `uc  1 e 1 0 ]
+[v _unidade_disp_par01 unidade_disp_par01 `uc  1 e 1 0 ]
+[v _unidade_disp_par02 unidade_disp_par02 `uc  1 e 1 0 ]
+"24
+[v _conv7seg conv7seg `[17]uc  1 e 17 0 ]
+"92
+[v _main main `(i  1 e 2 0 ]
+{
+"96
+} 0
+"136
+[v _setup setup `(v  1 e 1 0 ]
+{
+"143
+} 0
+"158
+[v _setup_io setup_io `(v  1 e 1 0 ]
+{
+"167
+} 0
+"169
+[v _interrupt_init interrupt_init `(v  1 e 1 0 ]
+{
+"181
+} 0
+"152
+[v _enable_interrupts enable_interrupts `(v  1 e 1 0 ]
+{
+"156
+} 0
+"145
+[v _disable_interrupts disable_interrupts `(v  1 e 1 0 ]
+{
+"150
+} 0
+"183
+[v _loop loop `(v  1 e 1 0 ]
+{
+"192
+} 0
+"62
+[v _f_interrupt_high f_interrupt_high `IIH(v  1 e 1 0 ]
+{
+"90
+} 0
+"108
+[v _f_timers f_timers `(v  1 e 1 0 ]
+{
+"110
+[v f_timers@counter0 counter0 `ui  1 s 2 counter0 ]
+[v f_timers@counter1 counter1 `ui  1 s 2 counter1 ]
+"134
+} 0
+"195
+[v _mux_display mux_display `(v  1 e 1 0 ]
+{
+"197
+[v mux_display@estado estado `uc  1 s 1 estado ]
+"237
+} 0
+"240
+[v _contador_displays contador_displays `(v  1 e 1 0 ]
+{
+"279
+} 0
+"289
+[v _f_int2 f_int2 `(v  1 e 1 0 ]
+{
+"292
+} 0
+"285
+[v _f_int1 f_int1 `(v  1 e 1 0 ]
+{
+"287
+} 0
+"281
+[v _f_int0 f_int0 `(v  1 e 1 0 ]
+{
+"283
+} 0

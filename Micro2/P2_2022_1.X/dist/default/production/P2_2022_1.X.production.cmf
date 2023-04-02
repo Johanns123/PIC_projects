@@ -1,0 +1,1812 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$/tmp/xcXdKJcji.o
+idloc IDLOC 5 200000 200000 8 1 1
+init CODE 0 E E 4 1 2
+reset_vec CODE 0 0 0 4 1 2
+config CONFIG 4 300000 300000 E 1 1
+$dist/default/production/P2_2022_1.X.production.o
+cinit CODE 0 2266 2266 72 1 2
+idloc IDLOC 5 200000 200000 8 1 1
+intcode_body CODE 0 1B40 1B40 132 1 2
+text0 CODE 0 2B04 2B04 10 1 2
+text1 CODE 0 2690 2690 44 1 2
+text2 CODE 0 2B8C 2B8C 4 1 2
+text3 CODE 0 29BC 29BC 26 1 2
+text4 CODE 0 22D8 22D8 68 1 2
+text5 CODE 0 2AB8 2AB8 1A 1 2
+text6 CODE 0 2B60 2B60 A 1 2
+text7 CODE 0 2B7C 2B7C 8 1 2
+text8 CODE 0 2B44 2B44 E 1 2
+text9 CODE 0 2906 2906 34 1 2
+text10 CODE 0 275A 275A 40 1 2
+text11 CODE 0 246C 246C 54 1 2
+text12 CODE 0 24C0 24C0 52 1 2
+text13 CODE 0 62A 62A 32E 1 2
+text14 CODE 0 C82 C82 282 1 2
+text15 CODE 0 2108 2108 B0 1 2
+text16 CODE 0 2600 2600 48 1 2
+text17 CODE 0 1D42 1D42 CC 1 2
+text18 CODE 0 2B94 2B94 2 1 2
+text19 CODE 0 2718 2718 42 1 2
+text20 CODE 0 1494 1494 166 1 2
+text21 CODE 0 1182 1182 18A 1 2
+text22 CODE 0 175E 175E 14E 1 2
+text23 CODE 0 2648 2648 48 1 2
+text24 CODE 0 293A 293A 2E 1 2
+text25 CODE 0 2994 2994 28 1 2
+text26 CODE 0 281A 281A 3E 1 2
+text27 CODE 0 29E2 29E2 26 1 2
+text28 CODE 0 2A08 2A08 26 1 2
+text29 CODE 0 2B6A 2B6A A 1 2
+text30 CODE 0 2340 2340 64 1 2
+text31 CODE 0 2056 2056 B2 1 2
+text32 CODE 0 1ED8 1ED8 C6 1 2
+text34 CODE 0 1C72 1C72 D0 1 2
+text35 CODE 0 18AC 18AC 14A 1 2
+text36 CODE 0 2B14 2B14 10 1 2
+text37 CODE 0 2B24 2B24 10 1 2
+text38 CODE 0 2B34 2B34 10 1 2
+text39 CODE 0 2AEC 2AEC 18 1 2
+text40 CODE 0 2A98 2A98 20 1 2
+text41 CODE 0 2858 2858 3C 1 2
+text42 CODE 0 2564 2564 4E 1 2
+text43 CODE 0 25B2 25B2 4E 1 2
+text44 CODE 0 958 958 32A 1 2
+text45 CODE 0 F04 F04 27E 1 2
+text46 CODE 0 21B8 21B8 AE 1 2
+text47 CODE 0 26D4 26D4 44 1 2
+text48 CODE 0 1E0E 1E0E CA 1 2
+text49 CODE 0 2B96 2B96 2 1 2
+text50 CODE 0 279A 279A 40 1 2
+text51 CODE 0 15FA 15FA 164 1 2
+text52 CODE 0 130C 130C 188 1 2
+text53 CODE 0 19F6 19F6 14A 1 2
+text54 CODE 0 28CE 28CE 38 1 2
+text55 CODE 0 2B98 2B98 2 1 2
+text56 CODE 0 2A2E 2A2E 26 1 2
+text57 CODE 0 2894 2894 3A 1 2
+text58 CODE 0 2A54 2A54 22 1 2
+text59 CODE 0 2A76 2A76 22 1 2
+text60 CODE 0 2B84 2B84 8 1 2
+text61 CODE 0 2AD2 2AD2 1A 1 2
+text62 CODE 0 1F9E 1F9E B8 1 2
+text63 CODE 0 23A4 23A4 64 1 2
+text64 CODE 0 2968 2968 2C 1 2
+text65 CODE 0 2512 2512 52 1 2
+text66 CODE 0 2408 2408 64 1 2
+text67 CODE 0 2B90 2B90 4 1 2
+text68 CODE 0 2B52 2B52 E 1 2
+cstackCOMRAM COMRAM 1 1 1 77 1 1
+cstackBANK0 BANK0 1 80 80 61 1 1
+cstackBANK1 BANK1 1 17A 17A 17 1 1
+temp COMRAM 1 7F 7F 1 1 1
+bssBANK0 BANK0 1 E1 E1 D 1 1
+bssBANK1 BANK1 1 13F 13F 3B 1 1
+intcode CODE 0 8 8 6 1 2
+smallconst SMALLCONST 0 600 600 2A 1 2
+idataBANK0 CODE 0 2B74 2B74 8 1 1
+idataBANK1 CODE 0 27DA 27DA 3F 1 1
+dataBANK0 BANK0 1 EE EE 8 1 1
+dataBANK1 BANK1 1 100 100 3F 1 1
+bssCOMRAM COMRAM 1 78 78 7 1 1
+config CONFIG 4 300000 300000 E 1 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM F6-FF 1
+RAM 191-5FF 1
+SFR F80-FFF 1
+BANK0 F6-FF 1
+BANK1 191-1FF 1
+BANK2 200-2FF 1
+BANK3 300-3FF 1
+BANK4 400-4FF 1
+BANK5 500-5FF 1
+CONST 4-7 1
+CONST 12-5FF 1
+CONST 2819-2819 1
+CONST 2B9A-7FFF 1
+SMALLCONST 2819-2819 1
+SMALLCONST 2B9A-7FFF 1
+CODE 4-7 1
+CODE 12-5FF 1
+CODE 2819-2819 1
+CODE 2B9A-7FFF 1
+BIGRAM F6-FF 1
+BIGRAM 191-5FF 1
+BIGSFR F80-FFF 1
+EEDATA F00000-F000FF 1
+MEDIUMCONST 2819-2819 1
+MEDIUMCONST 2B9A-7FFF 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production/P2_2022_1.X.production.o
+8 intcode CODE >8551:/tmp/xcXFBPHIP.s
+8 intcode CODE >40:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+2B52 text68 CODE >24:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/ADC.c
+2B54 text68 CODE >29:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/ADC.c
+2B5E text68 CODE >30:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/ADC.c
+2B90 text67 CODE >19:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/ADC.c
+2B90 text67 CODE >21:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/ADC.c
+2B92 text67 CODE >22:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/ADC.c
+2408 text66 CODE >32:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/ADC.c
+2408 text66 CODE >36:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/ADC.c
+240C text66 CODE >38:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/ADC.c
+240C text66 CODE >39:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/ADC.c
+2414 text66 CODE >40:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/ADC.c
+241A text66 CODE >41:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/ADC.c
+241E text66 CODE >42:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/ADC.c
+2422 text66 CODE >43:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/ADC.c
+2426 text66 CODE >45:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/ADC.c
+2426 text66 CODE >46:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/ADC.c
+242E text66 CODE >47:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/ADC.c
+2434 text66 CODE >48:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/ADC.c
+2438 text66 CODE >49:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/ADC.c
+243C text66 CODE >50:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/ADC.c
+2440 text66 CODE >51:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/ADC.c
+244A text66 CODE >51:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/ADC.c
+2458 text66 CODE >51:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/ADC.c
+2460 text66 CODE >51:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/ADC.c
+246A text66 CODE >52:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/ADC.c
+2512 text65 CODE >64:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/main.c
+2512 text65 CODE >66:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/main.c
+252E text65 CODE >67:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/main.c
+254E text65 CODE >68:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/main.c
+2562 text65 CODE >69:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/main.c
+2968 text64 CODE >36:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/main.c
+2968 text64 CODE >38:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/main.c
+296C text64 CODE >39:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/main.c
+297A text64 CODE >40:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/main.c
+2992 text64 CODE >41:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/main.c
+23A4 text63 CODE >308:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+23A4 text63 CODE >311:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+23C4 text63 CODE >313:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+23C8 text63 CODE >314:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+23CE text63 CODE >318:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+23D0 text63 CODE >320:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+23F0 text63 CODE >322:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+23F8 text63 CODE >323:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+23FC text63 CODE >324:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+2406 text63 CODE >326:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+1F9E text62 CODE >14:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Display.c
+1F9E text62 CODE >19:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Display.c
+1FA2 text62 CODE >21:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Display.c
+1FA2 text62 CODE >22:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Display.c
+1FA4 text62 CODE >23:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Display.c
+1FA6 text62 CODE >24:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Display.c
+1FB8 text62 CODE >25:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Display.c
+1FBC text62 CODE >26:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Display.c
+1FC0 text62 CODE >28:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Display.c
+1FC0 text62 CODE >29:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Display.c
+1FC2 text62 CODE >30:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Display.c
+1FC4 text62 CODE >31:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Display.c
+1FD6 text62 CODE >32:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Display.c
+1FDA text62 CODE >33:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Display.c
+1FDE text62 CODE >35:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Display.c
+1FDE text62 CODE >36:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Display.c
+1FE0 text62 CODE >37:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Display.c
+1FE2 text62 CODE >38:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Display.c
+1FF4 text62 CODE >39:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Display.c
+1FF8 text62 CODE >40:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Display.c
+1FFC text62 CODE >42:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Display.c
+1FFC text62 CODE >43:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Display.c
+1FFE text62 CODE >44:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Display.c
+2000 text62 CODE >45:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Display.c
+2012 text62 CODE >46:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Display.c
+2016 text62 CODE >47:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Display.c
+201A text62 CODE >48:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Display.c
+2024 text62 CODE >48:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Display.c
+2032 text62 CODE >48:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Display.c
+203A text62 CODE >48:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Display.c
+2042 text62 CODE >48:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Display.c
+204A text62 CODE >48:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Display.c
+2054 text62 CODE >49:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Display.c
+2AD2 text61 CODE >267:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+2AD2 text61 CODE >269:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+2ADA text61 CODE >270:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+2AE0 text61 CODE >271:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+2AEA text61 CODE >272:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+2B84 text60 CODE >29:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/lcd.c
+2B86 text60 CODE >31:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/lcd.c
+2B8A text60 CODE >32:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/lcd.c
+2A76 text59 CODE >34:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/lcd.c
+2A78 text59 CODE >36:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/lcd.c
+2A7A text59 CODE >37:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/lcd.c
+2A80 text59 CODE >38:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/lcd.c
+2A82 text59 CODE >39:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/lcd.c
+2A8A text59 CODE >40:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/lcd.c
+2A8C text59 CODE >41:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/lcd.c
+2A94 text59 CODE >42:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/lcd.c
+2A96 text59 CODE >43:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/lcd.c
+2A54 text58 CODE >45:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/lcd.c
+2A56 text58 CODE >47:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/lcd.c
+2A58 text58 CODE >48:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/lcd.c
+2A5E text58 CODE >49:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/lcd.c
+2A60 text58 CODE >50:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/lcd.c
+2A68 text58 CODE >51:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/lcd.c
+2A6A text58 CODE >52:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/lcd.c
+2A72 text58 CODE >53:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/lcd.c
+2A74 text58 CODE >54:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/lcd.c
+2894 text57 CODE >76:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/lcd.c
+2894 text57 CODE >78:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/lcd.c
+2898 text57 CODE >80:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/lcd.c
+289C text57 CODE >82:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/lcd.c
+28AE text57 CODE >83:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/lcd.c
+28B0 text57 CODE >80:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/lcd.c
+28CC text57 CODE >85:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/lcd.c
+2A2E text56 CODE >15:/opt/microchip/xc8/v2.40/pic/sources/c99/common/Umul16.c
+2A2E text56 CODE >37:/opt/microchip/xc8/v2.40/pic/sources/c99/common/Umul16.c
+2A3A text56 CODE >38:/opt/microchip/xc8/v2.40/pic/sources/c99/common/Umul16.c
+2A42 text56 CODE >39:/opt/microchip/xc8/v2.40/pic/sources/c99/common/Umul16.c
+2A4A text56 CODE >52:/opt/microchip/xc8/v2.40/pic/sources/c99/common/Umul16.c
+2A52 text56 CODE >53:/opt/microchip/xc8/v2.40/pic/sources/c99/common/Umul16.c
+2B98 text55 CODE >5:/opt/microchip/xc8/v2.40/pic/sources/c99/common/isdigit.c
+2B98 text55 CODE >7:/opt/microchip/xc8/v2.40/pic/sources/c99/common/isdigit.c
+2B98 text55 CODE >8:/opt/microchip/xc8/v2.40/pic/sources/c99/common/isdigit.c
+28CE text54 CODE >5:/opt/microchip/xc8/v2.40/pic/sources/c99/common/isspace.c
+28CE text54 CODE >7:/opt/microchip/xc8/v2.40/pic/sources/c99/common/isspace.c
+2904 text54 CODE >8:/opt/microchip/xc8/v2.40/pic/sources/c99/common/isspace.c
+19F6 text53 CODE >4:/opt/microchip/xc8/v2.40/pic/sources/c99/common/atoi.c
+19F6 text53 CODE >6:/opt/microchip/xc8/v2.40/pic/sources/c99/common/atoi.c
+1A06 text53 CODE >7:/opt/microchip/xc8/v2.40/pic/sources/c99/common/atoi.c
+1A5E text53 CODE >9:/opt/microchip/xc8/v2.40/pic/sources/c99/common/atoi.c
+1A66 text53 CODE >10:/opt/microchip/xc8/v2.40/pic/sources/c99/common/atoi.c
+1A6A text53 CODE >11:/opt/microchip/xc8/v2.40/pic/sources/c99/common/atoi.c
+1A82 text53 CODE >11:/opt/microchip/xc8/v2.40/pic/sources/c99/common/atoi.c
+1A90 text53 CODE >11:/opt/microchip/xc8/v2.40/pic/sources/c99/common/atoi.c
+1A98 text53 CODE >11:/opt/microchip/xc8/v2.40/pic/sources/c99/common/atoi.c
+1AA2 text53 CODE >14:/opt/microchip/xc8/v2.40/pic/sources/c99/common/atoi.c
+1AD8 text53 CODE >13:/opt/microchip/xc8/v2.40/pic/sources/c99/common/atoi.c
+1B08 text53 CODE >15:/opt/microchip/xc8/v2.40/pic/sources/c99/common/atoi.c
+1B3E text53 CODE >16:/opt/microchip/xc8/v2.40/pic/sources/c99/common/atoi.c
+130C text52 CODE >9:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aodiv.c
+130C text52 CODE >15:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aodiv.c
+1310 text52 CODE >16:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aodiv.c
+131E text52 CODE >17:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aodiv.c
+133E text52 CODE >18:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aodiv.c
+1342 text52 CODE >20:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aodiv.c
+1350 text52 CODE >21:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aodiv.c
+1370 text52 CODE >22:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aodiv.c
+1374 text52 CODE >24:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aodiv.c
+1380 text52 CODE >25:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aodiv.c
+139E text52 CODE >26:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aodiv.c
+13A2 text52 CODE >27:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aodiv.c
+13A6 text52 CODE >28:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aodiv.c
+13B8 text52 CODE >29:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aodiv.c
+13BA text52 CODE >27:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aodiv.c
+13C8 text52 CODE >32:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aodiv.c
+13DA text52 CODE >33:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aodiv.c
+1408 text52 CODE >34:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aodiv.c
+1428 text52 CODE >35:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aodiv.c
+142A text52 CODE >37:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aodiv.c
+143C text52 CODE >38:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aodiv.c
+1442 text52 CODE >40:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aodiv.c
+1452 text52 CODE >41:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aodiv.c
+1472 text52 CODE >42:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aodiv.c
+1492 text52 CODE >43:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aodiv.c
+15FA text51 CODE >9:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aomod.c
+15FA text51 CODE >14:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aomod.c
+15FE text51 CODE >15:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aomod.c
+160C text51 CODE >16:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aomod.c
+162C text51 CODE >17:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aomod.c
+1630 text51 CODE >19:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aomod.c
+163E text51 CODE >20:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aomod.c
+165E text51 CODE >21:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aomod.c
+167C text51 CODE >22:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aomod.c
+1680 text51 CODE >23:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aomod.c
+1684 text51 CODE >24:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aomod.c
+1696 text51 CODE >25:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aomod.c
+1698 text51 CODE >23:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aomod.c
+16A6 text51 CODE >28:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aomod.c
+16D4 text51 CODE >29:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aomod.c
+16F4 text51 CODE >30:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aomod.c
+1706 text51 CODE >31:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aomod.c
+170C text51 CODE >33:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aomod.c
+171C text51 CODE >34:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aomod.c
+173C text51 CODE >35:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aomod.c
+175C text51 CODE >36:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aomod.c
+279A text50 CODE >1:/opt/microchip/xc8/v2.40/pic/sources/c99/common/abs.c
+279A text50 CODE >3:/opt/microchip/xc8/v2.40/pic/sources/c99/common/abs.c
+27D8 text50 CODE >4:/opt/microchip/xc8/v2.40/pic/sources/c99/common/abs.c
+2B96 text49 CODE >7:/opt/microchip/xc8/v2.40/pic/sources/c99/common/putch.c
+2B96 text49 CODE >9:/opt/microchip/xc8/v2.40/pic/sources/c99/common/putch.c
+1E0E text48 CODE >8:/opt/microchip/xc8/v2.40/pic/sources/c99/common/nf_fputc.c
+1E0E text48 CODE >12:/opt/microchip/xc8/v2.40/pic/sources/c99/common/nf_fputc.c
+1E32 text48 CODE >13:/opt/microchip/xc8/v2.40/pic/sources/c99/common/nf_fputc.c
+1E38 text48 CODE >14:/opt/microchip/xc8/v2.40/pic/sources/c99/common/nf_fputc.c
+1E3C text48 CODE >15:/opt/microchip/xc8/v2.40/pic/sources/c99/common/nf_fputc.c
+1E90 text48 CODE >18:/opt/microchip/xc8/v2.40/pic/sources/c99/common/nf_fputc.c
+1EC4 text48 CODE >20:/opt/microchip/xc8/v2.40/pic/sources/c99/common/nf_fputc.c
+1ED6 text48 CODE >24:/opt/microchip/xc8/v2.40/pic/sources/c99/common/nf_fputc.c
+26D4 text47 CODE >8:/opt/microchip/xc8/v2.40/pic/sources/c99/common/nf_fputs.c
+26D4 text47 CODE >13:/opt/microchip/xc8/v2.40/pic/sources/c99/common/nf_fputs.c
+26DC text47 CODE >14:/opt/microchip/xc8/v2.40/pic/sources/c99/common/nf_fputs.c
+26E0 text47 CODE >15:/opt/microchip/xc8/v2.40/pic/sources/c99/common/nf_fputs.c
+26F2 text47 CODE >16:/opt/microchip/xc8/v2.40/pic/sources/c99/common/nf_fputs.c
+26F6 text47 CODE >14:/opt/microchip/xc8/v2.40/pic/sources/c99/common/nf_fputs.c
+2716 text47 CODE >19:/opt/microchip/xc8/v2.40/pic/sources/c99/common/nf_fputs.c
+21B8 text46 CODE >133:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+21B8 text46 CODE >139:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+21C8 text46 CODE >140:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+21DC text46 CODE >145:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+21FE text46 CODE >146:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+2206 text46 CODE >147:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+220A text46 CODE >148:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+221E text46 CODE >149:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+2222 text46 CODE >147:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+2240 text46 CODE >154:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+2250 text46 CODE >156:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+2264 text46 CODE >164:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+F04 text45 CODE >443:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+F04 text45 CODE >450:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+F24 text45 CODE >451:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+F38 text45 CODE >452:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+F48 text45 CODE >453:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+F68 text45 CODE >462:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+F98 text45 CODE >463:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+FA0 text45 CODE >464:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+FB0 text45 CODE >469:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+FB6 text45 CODE >470:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+FDE text45 CODE >471:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+FDE text45 CODE >480:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+FE6 text45 CODE >481:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+FEC text45 CODE >482:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+FF0 text45 CODE >487:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+FF6 text45 CODE >488:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+1022 text45 CODE >488:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+1026 text45 CODE >488:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+102A text45 CODE >488:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+102E text45 CODE >488:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+1032 text45 CODE >488:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+1036 text45 CODE >488:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+103A text45 CODE >488:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+103E text45 CODE >488:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+1078 text45 CODE >489:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+107E text45 CODE >490:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+1084 text45 CODE >491:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+10A4 text45 CODE >491:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+10A8 text45 CODE >491:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+10AC text45 CODE >491:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+10B0 text45 CODE >491:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+10B4 text45 CODE >491:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+10B8 text45 CODE >491:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+10BC text45 CODE >491:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+10C0 text45 CODE >491:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+10E8 text45 CODE >482:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+113A text45 CODE >495:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+114A text45 CODE >496:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+1150 text45 CODE >497:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+1160 text45 CODE >501:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+1180 text45 CODE >502:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+958 text44 CODE >1007:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+958 text44 CODE >1019:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+97C text44 CODE >1020:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+98A text44 CODE >1022:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+998 text44 CODE >1023:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+99C text44 CODE >1074:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+9C0 text44 CODE >1075:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+9CE text44 CODE >1076:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+9F6 text44 CODE >1077:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+A04 text44 CODE >1078:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+A06 text44 CODE >1079:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+A12 text44 CODE >1082:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+A2E text44 CODE >1083:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+A32 text44 CODE >1084:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+A40 text44 CODE >1083:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+A78 text44 CODE >1091:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+A9C text44 CODE >1092:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+AA6 text44 CODE >1093:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+AB4 text44 CODE >1094:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+AD8 text44 CODE >1095:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+AE6 text44 CODE >1096:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+B0E text44 CODE >1097:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+B12 text44 CODE >1098:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+B2E text44 CODE >1099:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+B32 text44 CODE >1100:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+B40 text44 CODE >1099:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+B78 text44 CODE >1117:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+B88 text44 CODE >1187:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+BC0 text44 CODE >1230:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+BFA text44 CODE >1232:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+C16 text44 CODE >1233:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+C46 text44 CODE >1509:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+C58 text44 CODE >1514:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+C80 text44 CODE >1517:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+25B2 text43 CODE >1520:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+25B2 text43 CODE >1525:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+25BA text43 CODE >1529:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+25BE text43 CODE >1533:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+25DA text43 CODE >1529:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+25F6 text43 CODE >1538:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+25FE text43 CODE >1543:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+2564 text42 CODE >9:/opt/microchip/xc8/v2.40/pic/sources/c99/common/nf_sprintf.c
+2564 text42 CODE >15:/opt/microchip/xc8/v2.40/pic/sources/c99/common/nf_sprintf.c
+256C text42 CODE >16:/opt/microchip/xc8/v2.40/pic/sources/c99/common/nf_sprintf.c
+2574 text42 CODE >17:/opt/microchip/xc8/v2.40/pic/sources/c99/common/nf_sprintf.c
+257C text42 CODE >18:/opt/microchip/xc8/v2.40/pic/sources/c99/common/nf_sprintf.c
+2584 text42 CODE >19:/opt/microchip/xc8/v2.40/pic/sources/c99/common/nf_sprintf.c
+25A0 text42 CODE >20:/opt/microchip/xc8/v2.40/pic/sources/c99/common/nf_sprintf.c
+25B0 text42 CODE >23:/opt/microchip/xc8/v2.40/pic/sources/c99/common/nf_sprintf.c
+2858 text41 CODE >329:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+2858 text41 CODE >331:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+285E text41 CODE >332:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+2886 text41 CODE >333:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+2892 text41 CODE >334:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+2A98 text40 CODE >274:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+2A98 text40 CODE >276:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+2A9E text40 CODE >277:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+2AA2 text40 CODE >278:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+2AAA text40 CODE >279:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+2AB2 text40 CODE >280:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+2AB6 text40 CODE >281:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+2AEC text39 CODE >283:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+2AEC text39 CODE >285:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+2AF0 text39 CODE >286:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+2AF6 text39 CODE >287:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+2B02 text39 CODE >288:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+2B34 text38 CODE >290:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+2B34 text38 CODE >292:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+2B3E text38 CODE >293:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+2B42 text38 CODE >294:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+2B24 text37 CODE >296:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+2B24 text37 CODE >298:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+2B2E text37 CODE >299:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+2B32 text37 CODE >300:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+2B14 text36 CODE >302:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+2B14 text36 CODE >304:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+2B1E text36 CODE >305:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+2B22 text36 CODE >306:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+18AC text35 CODE >164:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+18AC text35 CODE >170:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+18B0 text35 CODE >172:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+18BE text35 CODE >174:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+18C2 text35 CODE >175:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+18C6 text35 CODE >178:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+18CA text35 CODE >181:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+18D8 text35 CODE >183:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+18DC text35 CODE >184:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+18E0 text35 CODE >187:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+18E4 text35 CODE >190:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+18F2 text35 CODE >192:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+18F6 text35 CODE >193:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+18FA text35 CODE >196:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+18FE text35 CODE >200:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+190C text35 CODE >202:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+1910 text35 CODE >203:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+1914 text35 CODE >206:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+1918 text35 CODE >209:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+1926 text35 CODE >211:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+192A text35 CODE >212:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+192E text35 CODE >216:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+1932 text35 CODE >219:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+1940 text35 CODE >221:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+1944 text35 CODE >222:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+1948 text35 CODE >226:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+194C text35 CODE >229:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+1960 text35 CODE >231:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+1964 text35 CODE >234:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+1978 text35 CODE >236:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+197C text35 CODE >239:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+1990 text35 CODE >241:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+1994 text35 CODE >244:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+19A8 text35 CODE >246:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+19AC text35 CODE >249:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+19C0 text35 CODE >251:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+19C4 text35 CODE >254:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+19D8 text35 CODE >256:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+19DC text35 CODE >259:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+19E0 text35 CODE >260:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+19E4 text35 CODE >261:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+19E8 text35 CODE >262:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+19EC text35 CODE >263:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+19F0 text35 CODE >264:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+19F4 text35 CODE >265:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+1C72 text34 CODE >108:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+1C72 text34 CODE >111:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+1C74 text34 CODE >113:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+1C78 text34 CODE >115:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+1C90 text34 CODE >117:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+1C94 text34 CODE >118:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+1C98 text34 CODE >122:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+1C9C text34 CODE >123:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+1CA6 text34 CODE >127:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+1CBC text34 CODE >129:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+1CC0 text34 CODE >130:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+1CC4 text34 CODE >134:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+1CC8 text34 CODE >135:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+1CCC text34 CODE >136:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+1CD6 text34 CODE >139:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+1CEC text34 CODE >141:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+1CF0 text34 CODE >142:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+1CF4 text34 CODE >146:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+1D04 text34 CODE >147:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+1D08 text34 CODE >148:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+1D12 text34 CODE >151:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+1D28 text34 CODE >153:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+1D2C text34 CODE >154:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+1D30 text34 CODE >158:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+1D36 text34 CODE >159:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+1D40 text34 CODE >162:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+1B40 intcode_body CODE >40:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+1B6A intcode_body CODE >42:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+1B86 intcode_body CODE >43:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+1B8E intcode_body CODE >45:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+1B92 intcode_body CODE >48:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+1B94 intcode_body CODE >51:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+1BB0 intcode_body CODE >52:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+1BB2 intcode_body CODE >53:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+1BB2 intcode_body CODE >55:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+1BCE intcode_body CODE >56:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+1BD0 intcode_body CODE >57:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+1BD0 intcode_body CODE >59:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+1BEC intcode_body CODE >60:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+1BEE intcode_body CODE >61:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+1BEE intcode_body CODE >63:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+1C18 intcode_body CODE >64:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+1C1A intcode_body CODE >65:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+1C1A intcode_body CODE >67:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+1C44 intcode_body CODE >70:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+1C46 intcode_body CODE >80:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+1ED8 text32 CODE >7:/opt/microchip/xc8/v2.40/pic/sources/c99/common/awdiv.c
+1ED8 text32 CODE >13:/opt/microchip/xc8/v2.40/pic/sources/c99/common/awdiv.c
+1EDE text32 CODE >14:/opt/microchip/xc8/v2.40/pic/sources/c99/common/awdiv.c
+1EEC text32 CODE >15:/opt/microchip/xc8/v2.40/pic/sources/c99/common/awdiv.c
+1EF4 text32 CODE >16:/opt/microchip/xc8/v2.40/pic/sources/c99/common/awdiv.c
+1EF8 text32 CODE >18:/opt/microchip/xc8/v2.40/pic/sources/c99/common/awdiv.c
+1F06 text32 CODE >19:/opt/microchip/xc8/v2.40/pic/sources/c99/common/awdiv.c
+1F0E text32 CODE >20:/opt/microchip/xc8/v2.40/pic/sources/c99/common/awdiv.c
+1F12 text32 CODE >22:/opt/microchip/xc8/v2.40/pic/sources/c99/common/awdiv.c
+1F1A text32 CODE >23:/opt/microchip/xc8/v2.40/pic/sources/c99/common/awdiv.c
+1F2C text32 CODE >24:/opt/microchip/xc8/v2.40/pic/sources/c99/common/awdiv.c
+1F30 text32 CODE >25:/opt/microchip/xc8/v2.40/pic/sources/c99/common/awdiv.c
+1F34 text32 CODE >26:/opt/microchip/xc8/v2.40/pic/sources/c99/common/awdiv.c
+1F3A text32 CODE >27:/opt/microchip/xc8/v2.40/pic/sources/c99/common/awdiv.c
+1F3C text32 CODE >25:/opt/microchip/xc8/v2.40/pic/sources/c99/common/awdiv.c
+1F4A text32 CODE >30:/opt/microchip/xc8/v2.40/pic/sources/c99/common/awdiv.c
+1F50 text32 CODE >31:/opt/microchip/xc8/v2.40/pic/sources/c99/common/awdiv.c
+1F66 text32 CODE >32:/opt/microchip/xc8/v2.40/pic/sources/c99/common/awdiv.c
+1F6E text32 CODE >33:/opt/microchip/xc8/v2.40/pic/sources/c99/common/awdiv.c
+1F70 text32 CODE >35:/opt/microchip/xc8/v2.40/pic/sources/c99/common/awdiv.c
+1F76 text32 CODE >36:/opt/microchip/xc8/v2.40/pic/sources/c99/common/awdiv.c
+1F7C text32 CODE >38:/opt/microchip/xc8/v2.40/pic/sources/c99/common/awdiv.c
+1F8C text32 CODE >39:/opt/microchip/xc8/v2.40/pic/sources/c99/common/awdiv.c
+1F94 text32 CODE >40:/opt/microchip/xc8/v2.40/pic/sources/c99/common/awdiv.c
+1F9C text32 CODE >41:/opt/microchip/xc8/v2.40/pic/sources/c99/common/awdiv.c
+2056 text31 CODE >7:/opt/microchip/xc8/v2.40/pic/sources/c99/common/awmod.c
+2056 text31 CODE >12:/opt/microchip/xc8/v2.40/pic/sources/c99/common/awmod.c
+205C text31 CODE >13:/opt/microchip/xc8/v2.40/pic/sources/c99/common/awmod.c
+206A text31 CODE >14:/opt/microchip/xc8/v2.40/pic/sources/c99/common/awmod.c
+2072 text31 CODE >15:/opt/microchip/xc8/v2.40/pic/sources/c99/common/awmod.c
+2076 text31 CODE >17:/opt/microchip/xc8/v2.40/pic/sources/c99/common/awmod.c
+2084 text31 CODE >18:/opt/microchip/xc8/v2.40/pic/sources/c99/common/awmod.c
+208C text31 CODE >19:/opt/microchip/xc8/v2.40/pic/sources/c99/common/awmod.c
+209E text31 CODE >20:/opt/microchip/xc8/v2.40/pic/sources/c99/common/awmod.c
+20A2 text31 CODE >21:/opt/microchip/xc8/v2.40/pic/sources/c99/common/awmod.c
+20A6 text31 CODE >22:/opt/microchip/xc8/v2.40/pic/sources/c99/common/awmod.c
+20AC text31 CODE >23:/opt/microchip/xc8/v2.40/pic/sources/c99/common/awmod.c
+20AE text31 CODE >21:/opt/microchip/xc8/v2.40/pic/sources/c99/common/awmod.c
+20BC text31 CODE >26:/opt/microchip/xc8/v2.40/pic/sources/c99/common/awmod.c
+20D2 text31 CODE >27:/opt/microchip/xc8/v2.40/pic/sources/c99/common/awmod.c
+20DA text31 CODE >28:/opt/microchip/xc8/v2.40/pic/sources/c99/common/awmod.c
+20E0 text31 CODE >29:/opt/microchip/xc8/v2.40/pic/sources/c99/common/awmod.c
+20E6 text31 CODE >31:/opt/microchip/xc8/v2.40/pic/sources/c99/common/awmod.c
+20F6 text31 CODE >32:/opt/microchip/xc8/v2.40/pic/sources/c99/common/awmod.c
+20FE text31 CODE >33:/opt/microchip/xc8/v2.40/pic/sources/c99/common/awmod.c
+2106 text31 CODE >34:/opt/microchip/xc8/v2.40/pic/sources/c99/common/awmod.c
+2340 text30 CODE >71:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/main.c
+2340 text30 CODE >73:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/main.c
+235A text30 CODE >74:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/main.c
+2372 text30 CODE >75:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/main.c
+238A text30 CODE >76:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/main.c
+23A2 text30 CODE >77:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/main.c
+2B6A text29 CODE >29:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/lcd.c
+2B6E text29 CODE >31:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/lcd.c
+2B72 text29 CODE >32:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/lcd.c
+2A08 text28 CODE >34:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/lcd.c
+2A0C text28 CODE >36:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/lcd.c
+2A0E text28 CODE >37:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/lcd.c
+2A16 text28 CODE >38:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/lcd.c
+2A18 text28 CODE >39:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/lcd.c
+2A20 text28 CODE >40:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/lcd.c
+2A22 text28 CODE >41:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/lcd.c
+2A2A text28 CODE >42:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/lcd.c
+2A2C text28 CODE >43:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/lcd.c
+29E2 text27 CODE >45:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/lcd.c
+29E6 text27 CODE >47:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/lcd.c
+29E8 text27 CODE >48:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/lcd.c
+29F0 text27 CODE >49:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/lcd.c
+29F2 text27 CODE >50:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/lcd.c
+29FA text27 CODE >51:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/lcd.c
+29FC text27 CODE >52:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/lcd.c
+2A04 text27 CODE >53:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/lcd.c
+2A06 text27 CODE >54:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/lcd.c
+281A text26 CODE >76:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/lcd.c
+281A text26 CODE >78:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/lcd.c
+2820 text26 CODE >80:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/lcd.c
+2824 text26 CODE >82:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/lcd.c
+2836 text26 CODE >83:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/lcd.c
+283A text26 CODE >80:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/lcd.c
+2856 text26 CODE >85:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/lcd.c
+2994 text25 CODE >15:/opt/microchip/xc8/v2.40/pic/sources/c99/common/Umul16.c
+2994 text25 CODE >37:/opt/microchip/xc8/v2.40/pic/sources/c99/common/Umul16.c
+29A2 text25 CODE >38:/opt/microchip/xc8/v2.40/pic/sources/c99/common/Umul16.c
+29AA text25 CODE >39:/opt/microchip/xc8/v2.40/pic/sources/c99/common/Umul16.c
+29B2 text25 CODE >52:/opt/microchip/xc8/v2.40/pic/sources/c99/common/Umul16.c
+29BA text25 CODE >53:/opt/microchip/xc8/v2.40/pic/sources/c99/common/Umul16.c
+293A text24 CODE >5:/opt/microchip/xc8/v2.40/pic/sources/c99/common/isdigit.c
+293A text24 CODE >7:/opt/microchip/xc8/v2.40/pic/sources/c99/common/isdigit.c
+2966 text24 CODE >8:/opt/microchip/xc8/v2.40/pic/sources/c99/common/isdigit.c
+2648 text23 CODE >5:/opt/microchip/xc8/v2.40/pic/sources/c99/common/isspace.c
+2648 text23 CODE >7:/opt/microchip/xc8/v2.40/pic/sources/c99/common/isspace.c
+268E text23 CODE >8:/opt/microchip/xc8/v2.40/pic/sources/c99/common/isspace.c
+175E text22 CODE >4:/opt/microchip/xc8/v2.40/pic/sources/c99/common/atoi.c
+175E text22 CODE >6:/opt/microchip/xc8/v2.40/pic/sources/c99/common/atoi.c
+1770 text22 CODE >7:/opt/microchip/xc8/v2.40/pic/sources/c99/common/atoi.c
+17C8 text22 CODE >9:/opt/microchip/xc8/v2.40/pic/sources/c99/common/atoi.c
+17D0 text22 CODE >10:/opt/microchip/xc8/v2.40/pic/sources/c99/common/atoi.c
+17D4 text22 CODE >11:/opt/microchip/xc8/v2.40/pic/sources/c99/common/atoi.c
+17EC text22 CODE >11:/opt/microchip/xc8/v2.40/pic/sources/c99/common/atoi.c
+17FA text22 CODE >11:/opt/microchip/xc8/v2.40/pic/sources/c99/common/atoi.c
+1802 text22 CODE >11:/opt/microchip/xc8/v2.40/pic/sources/c99/common/atoi.c
+180C text22 CODE >14:/opt/microchip/xc8/v2.40/pic/sources/c99/common/atoi.c
+1844 text22 CODE >13:/opt/microchip/xc8/v2.40/pic/sources/c99/common/atoi.c
+1874 text22 CODE >15:/opt/microchip/xc8/v2.40/pic/sources/c99/common/atoi.c
+18AA text22 CODE >16:/opt/microchip/xc8/v2.40/pic/sources/c99/common/atoi.c
+1182 text21 CODE >9:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aodiv.c
+1182 text21 CODE >15:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aodiv.c
+1188 text21 CODE >16:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aodiv.c
+1196 text21 CODE >17:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aodiv.c
+11B6 text21 CODE >18:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aodiv.c
+11BA text21 CODE >20:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aodiv.c
+11C8 text21 CODE >21:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aodiv.c
+11E8 text21 CODE >22:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aodiv.c
+11EC text21 CODE >24:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aodiv.c
+11F8 text21 CODE >25:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aodiv.c
+1216 text21 CODE >26:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aodiv.c
+121A text21 CODE >27:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aodiv.c
+121E text21 CODE >28:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aodiv.c
+1230 text21 CODE >29:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aodiv.c
+1232 text21 CODE >27:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aodiv.c
+1240 text21 CODE >32:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aodiv.c
+1252 text21 CODE >33:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aodiv.c
+1280 text21 CODE >34:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aodiv.c
+12A0 text21 CODE >35:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aodiv.c
+12A2 text21 CODE >37:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aodiv.c
+12B4 text21 CODE >38:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aodiv.c
+12BA text21 CODE >40:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aodiv.c
+12CA text21 CODE >41:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aodiv.c
+12EA text21 CODE >42:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aodiv.c
+130A text21 CODE >43:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aodiv.c
+1494 text20 CODE >9:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aomod.c
+1494 text20 CODE >14:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aomod.c
+149A text20 CODE >15:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aomod.c
+14A8 text20 CODE >16:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aomod.c
+14C8 text20 CODE >17:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aomod.c
+14CC text20 CODE >19:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aomod.c
+14DA text20 CODE >20:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aomod.c
+14FA text20 CODE >21:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aomod.c
+1518 text20 CODE >22:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aomod.c
+151C text20 CODE >23:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aomod.c
+1520 text20 CODE >24:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aomod.c
+1532 text20 CODE >25:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aomod.c
+1534 text20 CODE >23:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aomod.c
+1542 text20 CODE >28:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aomod.c
+1570 text20 CODE >29:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aomod.c
+1590 text20 CODE >30:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aomod.c
+15A2 text20 CODE >31:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aomod.c
+15A8 text20 CODE >33:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aomod.c
+15B8 text20 CODE >34:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aomod.c
+15D8 text20 CODE >35:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aomod.c
+15F8 text20 CODE >36:/opt/microchip/xc8/v2.40/pic/sources/c99/common/aomod.c
+2718 text19 CODE >1:/opt/microchip/xc8/v2.40/pic/sources/c99/common/abs.c
+2718 text19 CODE >3:/opt/microchip/xc8/v2.40/pic/sources/c99/common/abs.c
+2758 text19 CODE >4:/opt/microchip/xc8/v2.40/pic/sources/c99/common/abs.c
+2B94 text18 CODE >7:/opt/microchip/xc8/v2.40/pic/sources/c99/common/putch.c
+2B94 text18 CODE >9:/opt/microchip/xc8/v2.40/pic/sources/c99/common/putch.c
+1D42 text17 CODE >8:/opt/microchip/xc8/v2.40/pic/sources/c99/common/nf_fputc.c
+1D42 text17 CODE >12:/opt/microchip/xc8/v2.40/pic/sources/c99/common/nf_fputc.c
+1D68 text17 CODE >13:/opt/microchip/xc8/v2.40/pic/sources/c99/common/nf_fputc.c
+1D6E text17 CODE >14:/opt/microchip/xc8/v2.40/pic/sources/c99/common/nf_fputc.c
+1D72 text17 CODE >15:/opt/microchip/xc8/v2.40/pic/sources/c99/common/nf_fputc.c
+1DC6 text17 CODE >18:/opt/microchip/xc8/v2.40/pic/sources/c99/common/nf_fputc.c
+1DFA text17 CODE >20:/opt/microchip/xc8/v2.40/pic/sources/c99/common/nf_fputc.c
+1E0C text17 CODE >24:/opt/microchip/xc8/v2.40/pic/sources/c99/common/nf_fputc.c
+2600 text16 CODE >8:/opt/microchip/xc8/v2.40/pic/sources/c99/common/nf_fputs.c
+2600 text16 CODE >13:/opt/microchip/xc8/v2.40/pic/sources/c99/common/nf_fputs.c
+260A text16 CODE >14:/opt/microchip/xc8/v2.40/pic/sources/c99/common/nf_fputs.c
+260E text16 CODE >15:/opt/microchip/xc8/v2.40/pic/sources/c99/common/nf_fputs.c
+2620 text16 CODE >16:/opt/microchip/xc8/v2.40/pic/sources/c99/common/nf_fputs.c
+2626 text16 CODE >14:/opt/microchip/xc8/v2.40/pic/sources/c99/common/nf_fputs.c
+2646 text16 CODE >19:/opt/microchip/xc8/v2.40/pic/sources/c99/common/nf_fputs.c
+2108 text15 CODE >133:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+2108 text15 CODE >139:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+2118 text15 CODE >140:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+212C text15 CODE >145:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+2150 text15 CODE >146:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+2158 text15 CODE >147:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+215C text15 CODE >148:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+2170 text15 CODE >149:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+2176 text15 CODE >147:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+2194 text15 CODE >154:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+21A2 text15 CODE >156:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+21B6 text15 CODE >164:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+C82 text14 CODE >443:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+C82 text14 CODE >450:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+CA2 text14 CODE >451:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+CB8 text14 CODE >452:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+CC8 text14 CODE >453:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+CE8 text14 CODE >462:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+D16 text14 CODE >463:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+D1E text14 CODE >464:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+D2E text14 CODE >469:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+D34 text14 CODE >470:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+D5C text14 CODE >471:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+D5C text14 CODE >480:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+D64 text14 CODE >481:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+D6A text14 CODE >482:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+D6E text14 CODE >487:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+D74 text14 CODE >488:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+DA0 text14 CODE >488:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+DA4 text14 CODE >488:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+DA8 text14 CODE >488:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+DAC text14 CODE >488:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+DB0 text14 CODE >488:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+DB4 text14 CODE >488:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+DB8 text14 CODE >488:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+DBC text14 CODE >488:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+DF8 text14 CODE >489:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+DFE text14 CODE >490:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+E04 text14 CODE >491:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+E24 text14 CODE >491:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+E28 text14 CODE >491:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+E2C text14 CODE >491:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+E30 text14 CODE >491:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+E34 text14 CODE >491:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+E38 text14 CODE >491:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+E3C text14 CODE >491:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+E40 text14 CODE >491:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+E68 text14 CODE >482:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+EBC text14 CODE >495:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+ECC text14 CODE >496:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+ED2 text14 CODE >497:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+EE2 text14 CODE >501:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+F02 text14 CODE >502:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+62A text13 CODE >1007:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+62A text13 CODE >1019:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+64E text13 CODE >1020:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+65C text13 CODE >1022:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+66A text13 CODE >1023:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+66E text13 CODE >1074:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+692 text13 CODE >1075:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+6A0 text13 CODE >1076:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+6C8 text13 CODE >1077:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+6D6 text13 CODE >1078:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+6D8 text13 CODE >1079:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+6E4 text13 CODE >1082:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+700 text13 CODE >1083:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+704 text13 CODE >1084:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+712 text13 CODE >1083:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+74C text13 CODE >1091:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+770 text13 CODE >1092:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+778 text13 CODE >1093:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+786 text13 CODE >1094:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+7AA text13 CODE >1095:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+7B8 text13 CODE >1096:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+7E0 text13 CODE >1097:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+7E4 text13 CODE >1098:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+800 text13 CODE >1099:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+804 text13 CODE >1100:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+812 text13 CODE >1099:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+84C text13 CODE >1117:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+85C text13 CODE >1187:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+894 text13 CODE >1230:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+8CE text13 CODE >1232:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+8EA text13 CODE >1233:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+91A text13 CODE >1509:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+92C text13 CODE >1514:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+956 text13 CODE >1517:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+24C0 text12 CODE >1520:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+24C0 text12 CODE >1525:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+24C8 text12 CODE >1529:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+24CC text12 CODE >1533:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+24EA text12 CODE >1529:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+2506 text12 CODE >1538:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+2510 text12 CODE >1543:/opt/microchip/xc8/v2.40/pic/sources/c99/common/doprnt.c
+246C text11 CODE >9:/opt/microchip/xc8/v2.40/pic/sources/c99/common/nf_sprintf.c
+246C text11 CODE >15:/opt/microchip/xc8/v2.40/pic/sources/c99/common/nf_sprintf.c
+2476 text11 CODE >16:/opt/microchip/xc8/v2.40/pic/sources/c99/common/nf_sprintf.c
+247E text11 CODE >17:/opt/microchip/xc8/v2.40/pic/sources/c99/common/nf_sprintf.c
+2486 text11 CODE >18:/opt/microchip/xc8/v2.40/pic/sources/c99/common/nf_sprintf.c
+248E text11 CODE >19:/opt/microchip/xc8/v2.40/pic/sources/c99/common/nf_sprintf.c
+24AC text11 CODE >20:/opt/microchip/xc8/v2.40/pic/sources/c99/common/nf_sprintf.c
+24BE text11 CODE >23:/opt/microchip/xc8/v2.40/pic/sources/c99/common/nf_sprintf.c
+275A text10 CODE >336:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+275A text10 CODE >339:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+275E text10 CODE >340:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+2764 text10 CODE >341:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+2786 text10 CODE >342:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+2794 text10 CODE >343:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+2798 text10 CODE >344:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+2906 text9 CODE >43:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/main.c
+2906 text9 CODE >45:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/main.c
+2918 text9 CODE >46:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/main.c
+291C text9 CODE >48:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/main.c
+292E text9 CODE >50:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/main.c
+2932 text9 CODE >51:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/main.c
+2938 text9 CODE >53:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/main.c
+2B44 text8 CODE >12:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/ADC.c
+2B44 text8 CODE >14:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/ADC.c
+2B48 text8 CODE >15:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/ADC.c
+2B4C text8 CODE >16:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/ADC.c
+2B50 text8 CODE >17:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/ADC.c
+2B7C text7 CODE >82:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+2B7C text7 CODE >83:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+2B7E text7 CODE >84:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+2B80 text7 CODE >85:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+2B82 text7 CODE >86:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+2B60 text6 CODE >88:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+2B60 text6 CODE >89:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+2B62 text6 CODE >90:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+2B64 text6 CODE >91:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+2B66 text6 CODE >92:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+2B68 text6 CODE >93:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+2AB8 text5 CODE >95:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+2AB8 text5 CODE >97:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+2ABC text5 CODE >98:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+2AC0 text5 CODE >99:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+2AC4 text5 CODE >100:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+2AC8 text5 CODE >106:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+2AD0 text5 CODE >107:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/Interrupt.c
+22D8 text4 CODE >56:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/lcd.c
+22D8 text4 CODE >58:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/lcd.c
+22DA text4 CODE >59:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/lcd.c
+22DC text4 CODE >60:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/lcd.c
+22EE text4 CODE >61:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/lcd.c
+22F0 text4 CODE >63:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/lcd.c
+22F6 text4 CODE >64:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/lcd.c
+2306 text4 CODE >65:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/lcd.c
+230C text4 CODE >66:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/lcd.c
+2314 text4 CODE >67:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/lcd.c
+231A text4 CODE >68:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/lcd.c
+2320 text4 CODE >69:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/lcd.c
+2326 text4 CODE >70:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/lcd.c
+232C text4 CODE >71:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/lcd.c
+2332 text4 CODE >72:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/lcd.c
+2338 text4 CODE >73:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/lcd.c
+233E text4 CODE >74:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/lcd.c
+29BC text3 CODE >38:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/IO.c
+29BC text3 CODE >40:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/IO.c
+29C0 text3 CODE >41:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/IO.c
+29C4 text3 CODE >42:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/IO.c
+29C8 text3 CODE >43:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/IO.c
+29CC text3 CODE >44:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/IO.c
+29D0 text3 CODE >45:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/IO.c
+29D4 text3 CODE >46:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/IO.c
+29D8 text3 CODE >47:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/IO.c
+29DC text3 CODE >48:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/IO.c
+29E0 text3 CODE >49:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/IO.c
+2B8C text2 CODE >19:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/ADC.c
+2B8C text2 CODE >21:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/ADC.c
+2B8E text2 CODE >22:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/ADC.c
+2690 text1 CODE >14:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/IO.c
+2690 text1 CODE >16:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/IO.c
+2694 text1 CODE >17:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/IO.c
+2698 text1 CODE >18:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/IO.c
+269C text1 CODE >19:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/IO.c
+26A0 text1 CODE >20:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/IO.c
+26A2 text1 CODE >24:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/IO.c
+26A4 text1 CODE >25:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/IO.c
+26A8 text1 CODE >26:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/IO.c
+26AC text1 CODE >27:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/IO.c
+26B4 text1 CODE >28:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/IO.c
+26B8 text1 CODE >29:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/IO.c
+26BE text1 CODE >30:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/IO.c
+26C2 text1 CODE >31:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/IO.c
+26C6 text1 CODE >32:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/IO.c
+26CA text1 CODE >33:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/IO.c
+26CE text1 CODE >34:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/IO.c
+26D2 text1 CODE >35:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/IO.c
+2B04 text0 CODE >28:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/main.c
+2B04 text0 CODE >31:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/main.c
+2B08 text0 CODE >32:/media/johanns123/JohannsPen/Micro2/P2_2022_1.X/main.c
+2266 cinit CODE >2183:/tmp/xcXFBPHIP.s
+2266 cinit CODE >2185:/tmp/xcXFBPHIP.s
+2266 cinit CODE >2188:/tmp/xcXFBPHIP.s
+2266 cinit CODE >2394:/tmp/xcXFBPHIP.s
+2268 cinit CODE >2395:/tmp/xcXFBPHIP.s
+226A cinit CODE >2396:/tmp/xcXFBPHIP.s
+226C cinit CODE >2397:/tmp/xcXFBPHIP.s
+226E cinit CODE >2398:/tmp/xcXFBPHIP.s
+2270 cinit CODE >2399:/tmp/xcXFBPHIP.s
+2272 cinit CODE >2400:/tmp/xcXFBPHIP.s
+2276 cinit CODE >2401:/tmp/xcXFBPHIP.s
+227A cinit CODE >2402:/tmp/xcXFBPHIP.s
+227A cinit CODE >2403:/tmp/xcXFBPHIP.s
+227C cinit CODE >2404:/tmp/xcXFBPHIP.s
+2280 cinit CODE >2405:/tmp/xcXFBPHIP.s
+2282 cinit CODE >2406:/tmp/xcXFBPHIP.s
+2284 cinit CODE >2407:/tmp/xcXFBPHIP.s
+2286 cinit CODE >2411:/tmp/xcXFBPHIP.s
+2288 cinit CODE >2412:/tmp/xcXFBPHIP.s
+228A cinit CODE >2413:/tmp/xcXFBPHIP.s
+228C cinit CODE >2414:/tmp/xcXFBPHIP.s
+228E cinit CODE >2415:/tmp/xcXFBPHIP.s
+2290 cinit CODE >2416:/tmp/xcXFBPHIP.s
+2292 cinit CODE >2417:/tmp/xcXFBPHIP.s
+2296 cinit CODE >2418:/tmp/xcXFBPHIP.s
+229A cinit CODE >2419:/tmp/xcXFBPHIP.s
+229A cinit CODE >2420:/tmp/xcXFBPHIP.s
+229C cinit CODE >2421:/tmp/xcXFBPHIP.s
+22A0 cinit CODE >2422:/tmp/xcXFBPHIP.s
+22A2 cinit CODE >2423:/tmp/xcXFBPHIP.s
+22A4 cinit CODE >2424:/tmp/xcXFBPHIP.s
+22A6 cinit CODE >2428:/tmp/xcXFBPHIP.s
+22AA cinit CODE >2429:/tmp/xcXFBPHIP.s
+22AC cinit CODE >2430:/tmp/xcXFBPHIP.s
+22AC cinit CODE >2431:/tmp/xcXFBPHIP.s
+22AE cinit CODE >2432:/tmp/xcXFBPHIP.s
+22B0 cinit CODE >2433:/tmp/xcXFBPHIP.s
+22B2 cinit CODE >2436:/tmp/xcXFBPHIP.s
+22B6 cinit CODE >2437:/tmp/xcXFBPHIP.s
+22B8 cinit CODE >2438:/tmp/xcXFBPHIP.s
+22B8 cinit CODE >2439:/tmp/xcXFBPHIP.s
+22BA cinit CODE >2440:/tmp/xcXFBPHIP.s
+22BC cinit CODE >2441:/tmp/xcXFBPHIP.s
+22BE cinit CODE >2444:/tmp/xcXFBPHIP.s
+22C2 cinit CODE >2445:/tmp/xcXFBPHIP.s
+22C4 cinit CODE >2446:/tmp/xcXFBPHIP.s
+22C4 cinit CODE >2447:/tmp/xcXFBPHIP.s
+22C6 cinit CODE >2448:/tmp/xcXFBPHIP.s
+22C8 cinit CODE >2449:/tmp/xcXFBPHIP.s
+22CA cinit CODE >2455:/tmp/xcXFBPHIP.s
+22CA cinit CODE >2457:/tmp/xcXFBPHIP.s
+22CC cinit CODE >2458:/tmp/xcXFBPHIP.s
+22CE cinit CODE >2460:/tmp/xcXFBPHIP.s
+22D0 cinit CODE >2461:/tmp/xcXFBPHIP.s
+22D2 cinit CODE >2462:/tmp/xcXFBPHIP.s
+22D4 cinit CODE >2463:/tmp/xcXFBPHIP.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+i2_abs 279A 0 CODE 0 text50 dist/default/production/P2_2022_1.X.production.o
+i2_pad 21B8 0 CODE 0 text46 dist/default/production/P2_2022_1.X.production.o
+___awdiv@counter 8E 0 BANK0 1 cstackBANK0 dist/default/production/P2_2022_1.X.production.o
+read_keyb@m_dado_RB0 F3 0 BANK0 1 dataBANK0 dist/default/production/P2_2022_1.X.production.o
+read_keyb@m_dado_RB1 F2 0 BANK0 1 dataBANK0 dist/default/production/P2_2022_1.X.production.o
+read_keyb@m_dado_RB2 F1 0 BANK0 1 dataBANK0 dist/default/production/P2_2022_1.X.production.o
+read_keyb@m_dado_RB3 F0 0 BANK0 1 dataBANK0 dist/default/production/P2_2022_1.X.production.o
+read_keyb@m_dado_RB4 EF 0 BANK0 1 dataBANK0 dist/default/production/P2_2022_1.X.production.o
+read_keyb@m_dado_RB5 EE 0 BANK0 1 dataBANK0 dist/default/production/P2_2022_1.X.production.o
+__LdataBANK0 0 0 ABS 0 dataBANK0 dist/default/production/P2_2022_1.X.production.o
+__LdataBANK1 0 0 ABS 0 dataBANK1 dist/default/production/P2_2022_1.X.production.o
+__Lmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production/P2_2022_1.X.production.o
+_aciona_read_AD 14D 0 BANK1 1 bssBANK1 dist/default/production/P2_2022_1.X.production.o
+__Hspace_0 2B9A 0 ABS 0 - dist/default/production/P2_2022_1.X.production.o
+__Hspace_1 191 0 ABS 0 - dist/default/production/P2_2022_1.X.production.o
+__Hspace_2 0 0 ABS 0 - dist/default/production/P2_2022_1.X.production.o
+__Hspace_4 60000E 0 ABS 0 - dist/default/production/P2_2022_1.X.production.o
+__HidataBANK0 0 0 ABS 0 idataBANK0 dist/default/production/P2_2022_1.X.production.o
+__HidataBANK1 0 0 ABS 0 idataBANK1 dist/default/production/P2_2022_1.X.production.o
+select_channel@channel 1 0 COMRAM 1 cstackCOMRAM dist/default/production/P2_2022_1.X.production.o
+i2dtoa@fp 1C 0 COMRAM 1 cstackCOMRAM dist/default/production/P2_2022_1.X.production.o
+__Hibigdata 0 0 CODE 0 ibigdata dist/default/production/P2_2022_1.X.production.o
+i2___aomod@counter 11 0 COMRAM 1 cstackCOMRAM dist/default/production/P2_2022_1.X.production.o
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst /tmp/xcXdKJcji.o
+_f_interrupt_high 8 0 CODE 0 intcode dist/default/production/P2_2022_1.X.production.o
+__Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production/P2_2022_1.X.production.o
+i2___aodiv@quotient 13 0 COMRAM 1 cstackCOMRAM dist/default/production/P2_2022_1.X.production.o
+_GO 7E11 0 ABS 0 - dist/default/production/P2_2022_1.X.production.o
+?_abs 9C 0 BANK0 1 cstackBANK0 dist/default/production/P2_2022_1.X.production.o
+?_vfprintf DB 0 BANK0 1 cstackBANK0 dist/default/production/P2_2022_1.X.production.o
+i2___aomod@dividend 1 0 COMRAM 1 cstackCOMRAM dist/default/production/P2_2022_1.X.production.o
+__Lsmallconst 600 0 SMALLCONST 0 smallconst dist/default/production/P2_2022_1.X.production.o
+_ADIE 7CEE 0 ABS 0 - dist/default/production/P2_2022_1.X.production.o
+_ADIF 7CF6 0 ABS 0 - dist/default/production/P2_2022_1.X.production.o
+_IPEN 7E87 0 ABS 0 - dist/default/production/P2_2022_1.X.production.o
+_LATA F89 0 ABS 0 - dist/default/production/P2_2022_1.X.production.o
+_LATB F8A 0 ABS 0 - dist/default/production/P2_2022_1.X.production.o
+_LATC F8B 0 ABS 0 - dist/default/production/P2_2022_1.X.production.o
+_LATD F8C 0 ABS 0 - dist/default/production/P2_2022_1.X.production.o
+_PEIE 7F96 0 ABS 0 - dist/default/production/P2_2022_1.X.production.o
+_TMR0 FD6 0 ABS 0 - dist/default/production/P2_2022_1.X.production.o
+___sp 0 0 STACK 2 stack /tmp/xcXdKJcji.o
+_atoi 175E 0 CODE 0 text22 dist/default/production/P2_2022_1.X.production.o
+_dbuf 150 0 BANK1 1 bssBANK1 dist/default/production/P2_2022_1.X.production.o
+_dtoa C82 0 CODE 0 text14 dist/default/production/P2_2022_1.X.production.o
+_loop 2906 0 CODE 0 text9 dist/default/production/P2_2022_1.X.production.o
+_main 2B04 0 CODE 0 text0 dist/default/production/P2_2022_1.X.production.o
+_prec E3 0 BANK0 1 bssBANK0 dist/default/production/P2_2022_1.X.production.o
+abs@a 9C 0 BANK0 1 cstackBANK0 dist/default/production/P2_2022_1.X.production.o
+i2atoi@neg C 0 COMRAM 1 cstackCOMRAM dist/default/production/P2_2022_1.X.production.o
+btemp 7F 0 COMRAM 1 temp dist/default/production/P2_2022_1.X.production.o
+pad@i A1 0 BANK0 1 cstackBANK0 dist/default/production/P2_2022_1.X.production.o
+pad@p 9E 0 BANK0 1 cstackBANK0 dist/default/production/P2_2022_1.X.production.o
+pad@w A3 0 BANK0 1 cstackBANK0 dist/default/production/P2_2022_1.X.production.o
+start E 0 CODE 0 init /tmp/xcXdKJcji.o
+i2sprintf@ap 64 0 COMRAM 1 cstackCOMRAM dist/default/production/P2_2022_1.X.production.o
+___aomod@counter 9A 0 BANK0 1 cstackBANK0 dist/default/production/P2_2022_1.X.production.o
+f_timers@counter1 13B 0 BANK1 1 dataBANK1 dist/default/production/P2_2022_1.X.production.o
+f_timers@counter2 139 0 BANK1 1 dataBANK1 dist/default/production/P2_2022_1.X.production.o
+f_timers@counter3 137 0 BANK1 1 dataBANK1 dist/default/production/P2_2022_1.X.production.o
+f_timers@counter4 135 0 BANK1 1 dataBANK1 dist/default/production/P2_2022_1.X.production.o
+_temporizacao 13D 0 BANK1 1 dataBANK1 dist/default/production/P2_2022_1.X.production.o
+i2_atoi 19F6 0 CODE 0 text53 dist/default/production/P2_2022_1.X.production.o
+i2_dtoa F04 0 CODE 0 text45 dist/default/production/P2_2022_1.X.production.o
+i2abs@a 13 0 COMRAM 1 cstackCOMRAM dist/default/production/P2_2022_1.X.production.o
+__HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production/P2_2022_1.X.production.o
+i2pad@i 18 0 COMRAM 1 cstackCOMRAM dist/default/production/P2_2022_1.X.production.o
+i2pad@p 15 0 COMRAM 1 cstackCOMRAM dist/default/production/P2_2022_1.X.production.o
+i2pad@w 1A 0 COMRAM 1 cstackCOMRAM dist/default/production/P2_2022_1.X.production.o
+pad@fp 9A 0 BANK0 1 cstackBANK0 dist/default/production/P2_2022_1.X.production.o
+?___wmul 8A 0 BANK0 1 cstackBANK0 dist/default/production/P2_2022_1.X.production.o
+read_keyb@dado 77 0 COMRAM 1 cstackCOMRAM dist/default/production/P2_2022_1.X.production.o
+_memoria_minuto E7 0 BANK0 1 bssBANK0 dist/default/production/P2_2022_1.X.production.o
+__LidataBANK0 0 0 ABS 0 idataBANK0 dist/default/production/P2_2022_1.X.production.o
+__LidataBANK1 0 0 ABS 0 idataBANK1 dist/default/production/P2_2022_1.X.production.o
+__Hpowerup E 0 CODE 0 powerup dist/default/production/P2_2022_1.X.production.o
+_display1 ED 0 BANK0 1 bssBANK0 dist/default/production/P2_2022_1.X.production.o
+_display2 EC 0 BANK0 1 bssBANK0 dist/default/production/P2_2022_1.X.production.o
+_display3 EB 0 BANK0 1 bssBANK0 dist/default/production/P2_2022_1.X.production.o
+_display4 EA 0 BANK0 1 bssBANK0 dist/default/production/P2_2022_1.X.production.o
+__end_of_vfpfcnvrt 958 0 CODE 0 text13 dist/default/production/P2_2022_1.X.production.o
+___awmod@sign 8F 0 BANK0 1 cstackBANK0 dist/default/production/P2_2022_1.X.production.o
+ttemp5 80 0 COMRAM 1 temp dist/default/production/P2_2022_1.X.production.o
+ttemp6 83 0 COMRAM 1 temp dist/default/production/P2_2022_1.X.production.o
+ttemp7 87 0 COMRAM 1 temp dist/default/production/P2_2022_1.X.production.o
+__end_of_clock_regressive 2408 0 CODE 0 text63 dist/default/production/P2_2022_1.X.production.o
+__accesstop 80 0 ABS 0 - /tmp/xcXdKJcji.o
+intlevel0 0 0 CODE 0 text /tmp/xcXdKJcji.o
+intlevel1 0 0 CODE 0 text /tmp/xcXdKJcji.o
+intlevel2 0 0 CODE 0 text /tmp/xcXdKJcji.o
+intlevel3 0 0 CODE 0 text /tmp/xcXdKJcji.o
+__LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production/P2_2022_1.X.production.o
+__LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production/P2_2022_1.X.production.o
+wtemp8 80 0 COMRAM 1 temp dist/default/production/P2_2022_1.X.production.o
+_select_channel 2B52 0 CODE 0 text68 dist/default/production/P2_2022_1.X.production.o
+_estado_sequencia01 E9 0 BANK0 1 bssBANK0 dist/default/production/P2_2022_1.X.production.o
+_estado_sequencia02 14F 0 BANK1 1 bssBANK1 dist/default/production/P2_2022_1.X.production.o
+i2sprintf@fmt 5C 0 COMRAM 1 cstackCOMRAM dist/default/production/P2_2022_1.X.production.o
+__Hifardata 0 0 CODE 0 ifardata dist/default/production/P2_2022_1.X.production.o
+___awdiv@sign 8F 0 BANK0 1 cstackBANK0 dist/default/production/P2_2022_1.X.production.o
+__Hclrtext 0 0 ABS 0 clrtext dist/default/production/P2_2022_1.X.production.o
+_vfpfcnvrt 62A 0 CODE 0 text13 dist/default/production/P2_2022_1.X.production.o
+dtoa@fp A5 0 BANK0 1 cstackBANK0 dist/default/production/P2_2022_1.X.production.o
+___wmul@multiplicand 8C 0 BANK0 1 cstackBANK0 dist/default/production/P2_2022_1.X.production.o
+i2___aomod@sign 12 0 COMRAM 1 cstackCOMRAM dist/default/production/P2_2022_1.X.production.o
+_ADCON0 FC2 0 ABS 0 - dist/default/production/P2_2022_1.X.production.o
+_ADCON1 FC1 0 ABS 0 - dist/default/production/P2_2022_1.X.production.o
+_ADCON2 FC0 0 ABS 0 - dist/default/production/P2_2022_1.X.production.o
+i2lcd_wr@val 1 0 COMRAM 1 cstackCOMRAM dist/default/production/P2_2022_1.X.production.o
+i2___wmul@multiplier 1 0 COMRAM 1 cstackCOMRAM dist/default/production/P2_2022_1.X.production.o
+__end_of_lcd_cmd 2A2E 0 CODE 0 text28 dist/default/production/P2_2022_1.X.production.o
+__end_of_lcd_dat 2A08 0 CODE 0 text27 dist/default/production/P2_2022_1.X.production.o
+__end_of_lcd_str 2858 0 CODE 0 text26 dist/default/production/P2_2022_1.X.production.o
+___awdiv@dividend 8A 0 BANK0 1 cstackBANK0 dist/default/production/P2_2022_1.X.production.o
+___inthi_sp 0 0 STACK 2 stack /tmp/xcXdKJcji.o
+___intlo_sp 0 0 STACK 2 stack /tmp/xcXdKJcji.o
+f_pwm@duty 1 0 COMRAM 1 cstackCOMRAM dist/default/production/P2_2022_1.X.production.o
+__end_of_f_interrupt_high 1C72 0 CODE 0 intcode_body dist/default/production/P2_2022_1.X.production.o
+_CCPR1L FBE 0 ABS 0 - dist/default/production/P2_2022_1.X.production.o
+i2lcd_str@str 3 0 COMRAM 1 cstackCOMRAM dist/default/production/P2_2022_1.X.production.o
+__Hintcode_body 0 0 ABS 0 intcode_body dist/default/production/P2_2022_1.X.production.o
+__end_of___wmul 29BC 0 CODE 0 text25 dist/default/production/P2_2022_1.X.production.o
+__Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production/P2_2022_1.X.production.o
+__Hmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production/P2_2022_1.X.production.o
+i2___aodiv@sign 12 0 COMRAM 1 cstackCOMRAM dist/default/production/P2_2022_1.X.production.o
+__Hintcodelo E 0 CODE 0 intcodelo dist/default/production/P2_2022_1.X.production.o
+___awdiv@divisor 8C 0 BANK0 1 cstackBANK0 dist/default/production/P2_2022_1.X.production.o
+__end_of___aodiv 130C 0 CODE 0 text21 dist/default/production/P2_2022_1.X.production.o
+__end_of___aomod 15FA 0 CODE 0 text20 dist/default/production/P2_2022_1.X.production.o
+__end_of___awdiv 1F9E 0 CODE 0 text32 dist/default/production/P2_2022_1.X.production.o
+__end_of___awmod 2108 0 CODE 0 text31 dist/default/production/P2_2022_1.X.production.o
+i2vfprintf@fmt 54 0 COMRAM 1 cstackCOMRAM dist/default/production/P2_2022_1.X.production.o
+i2_vfprintf 25B2 0 CODE 0 text43 dist/default/production/P2_2022_1.X.production.o
+___aodiv@quotient 9C 0 BANK0 1 cstackBANK0 dist/default/production/P2_2022_1.X.production.o
+_INT0IE 7F94 0 ABS 0 - dist/default/production/P2_2022_1.X.production.o
+_INT0IF 7F91 0 ABS 0 - dist/default/production/P2_2022_1.X.production.o
+_INT1IE 7F83 0 ABS 0 - dist/default/production/P2_2022_1.X.production.o
+_INT1IF 7F80 0 ABS 0 - dist/default/production/P2_2022_1.X.production.o
+_INT2IE 7F84 0 ABS 0 - dist/default/production/P2_2022_1.X.production.o
+_INT2IF 7F81 0 ABS 0 - dist/default/production/P2_2022_1.X.production.o
+_INTCON FF2 0 ABS 0 - dist/default/production/P2_2022_1.X.production.o
+__end_of_select_channel 2B60 0 CODE 0 text68 dist/default/production/P2_2022_1.X.production.o
+show_line2@old_latd E6 0 BANK0 1 bssBANK0 dist/default/production/P2_2022_1.X.production.o
+i2___aomod@divisor 9 0 COMRAM 1 cstackCOMRAM dist/default/production/P2_2022_1.X.production.o
+?i2___aodiv 1 0 COMRAM 1 cstackCOMRAM dist/default/production/P2_2022_1.X.production.o
+?i2___aomod 1 0 COMRAM 1 cstackCOMRAM dist/default/production/P2_2022_1.X.production.o
+___aomod@dividend 8A 0 BANK0 1 cstackBANK0 dist/default/production/P2_2022_1.X.production.o
+i2vfpfcnvrt@ap 43 0 COMRAM 1 cstackCOMRAM dist/default/production/P2_2022_1.X.production.o
+i2vfpfcnvrt@cp 50 0 COMRAM 1 cstackCOMRAM dist/default/production/P2_2022_1.X.production.o
+i2vfpfcnvrt@fp 3F 0 COMRAM 1 cstackCOMRAM dist/default/production/P2_2022_1.X.production.o
+__end_of_f_int0 2AEC 0 CODE 0 text61 dist/default/production/P2_2022_1.X.production.o
+__end_of_f_int1 2AB8 0 CODE 0 text40 dist/default/production/P2_2022_1.X.production.o
+__end_of_f_int2 2B04 0 CODE 0 text39 dist/default/production/P2_2022_1.X.production.o
+__end_of_f_int3 2B44 0 CODE 0 text38 dist/default/production/P2_2022_1.X.production.o
+__end_of_f_int4 2B34 0 CODE 0 text37 dist/default/production/P2_2022_1.X.production.o
+__end_of_f_int5 2B24 0 CODE 0 text36 dist/default/production/P2_2022_1.X.production.o
+_temporizador1 147 0 BANK1 1 bssBANK1 dist/default/production/P2_2022_1.X.production.o
+_temporizador2 145 0 BANK1 1 bssBANK1 dist/default/production/P2_2022_1.X.production.o
+_unidade_segundo 149 0 BANK1 1 bssBANK1 dist/default/production/P2_2022_1.X.production.o
+i2vfpfcnvrt@fmt 41 0 COMRAM 1 cstackCOMRAM dist/default/production/P2_2022_1.X.production.o
+__Lintcodelo E 0 CODE 0 intcodelo dist/default/production/P2_2022_1.X.production.o
+___aomod@divisor 92 0 BANK0 1 cstackBANK0 dist/default/production/P2_2022_1.X.production.o
+read_keyb@dado_RB0 71 0 COMRAM 1 cstackCOMRAM dist/default/production/P2_2022_1.X.production.o
+read_keyb@dado_RB1 72 0 COMRAM 1 cstackCOMRAM dist/default/production/P2_2022_1.X.production.o
+read_keyb@dado_RB2 73 0 COMRAM 1 cstackCOMRAM dist/default/production/P2_2022_1.X.production.o
+read_keyb@dado_RB3 74 0 COMRAM 1 cstackCOMRAM dist/default/production/P2_2022_1.X.production.o
+read_keyb@dado_RB4 75 0 COMRAM 1 cstackCOMRAM dist/default/production/P2_2022_1.X.production.o
+read_keyb@dado_RB5 76 0 COMRAM 1 cstackCOMRAM dist/default/production/P2_2022_1.X.production.o
+i2_fputc 1E0E 0 CODE 0 text48 dist/default/production/P2_2022_1.X.production.o
+i2_fputs 26D4 0 CODE 0 text47 dist/default/production/P2_2022_1.X.production.o
+start_initialization 2266 0 CODE 0 cinit dist/default/production/P2_2022_1.X.production.o
+i2_putch 2B96 0 CODE 0 text49 dist/default/production/P2_2022_1.X.production.o
+__HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production/P2_2022_1.X.production.o
+i2___wmul 2A2E 0 CODE 0 text56 dist/default/production/P2_2022_1.X.production.o
+i2lcd_cmd@val 2 0 COMRAM 1 cstackCOMRAM dist/default/production/P2_2022_1.X.production.o
+i2atoi@n E 0 COMRAM 1 cstackCOMRAM dist/default/production/P2_2022_1.X.production.o
+i2atoi@s 7 0 COMRAM 1 cstackCOMRAM dist/default/production/P2_2022_1.X.production.o
+__end_of_lcd_wr 2B74 0 CODE 0 text29 dist/default/production/P2_2022_1.X.production.o
+_ADC_maq 2408 0 CODE 0 text66 dist/default/production/P2_2022_1.X.production.o
+___rparam_used 1 0 ABS 0 - dist/default/production/P2_2022_1.X.production.o
+_AD_data 13F 0 BANK1 1 bssBANK1 dist/default/production/P2_2022_1.X.production.o
+_AD_init 2B44 0 CODE 0 text8 dist/default/production/P2_2022_1.X.production.o
+__end_ofi2___wmul 2A54 0 CODE 0 text56 dist/default/production/P2_2022_1.X.production.o
+__pcstackBANK0 80 0 BANK0 1 cstackBANK0 dist/default/production/P2_2022_1.X.production.o
+__pcstackBANK1 17A 0 BANK1 1 cstackBANK1 dist/default/production/P2_2022_1.X.production.o
+i2dtoa@d 1E 0 COMRAM 1 cstackCOMRAM dist/default/production/P2_2022_1.X.production.o
+i2dtoa@i 3D 0 COMRAM 1 cstackCOMRAM dist/default/production/P2_2022_1.X.production.o
+i2dtoa@n 34 0 COMRAM 1 cstackCOMRAM dist/default/production/P2_2022_1.X.production.o
+i2dtoa@p 30 0 COMRAM 1 cstackCOMRAM dist/default/production/P2_2022_1.X.production.o
+i2dtoa@s 3C 0 COMRAM 1 cstackCOMRAM dist/default/production/P2_2022_1.X.production.o
+i2dtoa@w 32 0 COMRAM 1 cstackCOMRAM dist/default/production/P2_2022_1.X.production.o
+i2sprintf@f 66 0 COMRAM 1 cstackCOMRAM dist/default/production/P2_2022_1.X.production.o
+i2sprintf@s 5A 0 COMRAM 1 cstackCOMRAM dist/default/production/P2_2022_1.X.production.o
+_TMR0IE 7F95 0 ABS 0 - dist/default/production/P2_2022_1.X.production.o
+_TMR0IF 7F92 0 ABS 0 - dist/default/production/P2_2022_1.X.production.o
+_TMR2IE 7CE9 0 ABS 0 - dist/default/production/P2_2022_1.X.production.o
+_TMR2IF 7CF1 0 ABS 0 - dist/default/production/P2_2022_1.X.production.o
+i2isdigit@c 1 0 COMRAM 1 cstackCOMRAM dist/default/production/P2_2022_1.X.production.o
+_unidade_minuto 14B 0 BANK1 1 bssBANK1 dist/default/production/P2_2022_1.X.production.o
+_dtoa$953 B7 0 BANK0 1 cstackBANK0 dist/default/production/P2_2022_1.X.production.o
+isa$xinst 0 0 ABS 0 - /tmp/xcXdKJcji.o
+_mostra_segundo 78 0 COMRAM 1 bssCOMRAM dist/default/production/P2_2022_1.X.production.o
+__end_ofi2_vfprintf 2600 0 CODE 0 text43 dist/default/production/P2_2022_1.X.production.o
+fputc@fp 8C 0 BANK0 1 cstackBANK0 dist/default/production/P2_2022_1.X.production.o
+fputs@fp 95 0 BANK0 1 cstackBANK0 dist/default/production/P2_2022_1.X.production.o
+i2vfprintf@ap 56 0 COMRAM 1 cstackCOMRAM dist/default/production/P2_2022_1.X.production.o
+i2vfprintf@fp 52 0 COMRAM 1 cstackCOMRAM dist/default/production/P2_2022_1.X.production.o
+__Hbank0 0 0 ABS 0 bank0 dist/default/production/P2_2022_1.X.production.o
+__Hbank1 0 0 ABS 0 bank1 dist/default/production/P2_2022_1.X.production.o
+__Hbank2 0 0 ABS 0 bank2 dist/default/production/P2_2022_1.X.production.o
+__Hbank3 0 0 ABS 0 bank3 dist/default/production/P2_2022_1.X.production.o
+__Hbank4 0 0 ABS 0 bank4 dist/default/production/P2_2022_1.X.production.o
+__Hbank5 0 0 ABS 0 bank5 dist/default/production/P2_2022_1.X.production.o
+__Hcinit 0 0 ABS 0 cinit dist/default/production/P2_2022_1.X.production.o
+__Hconst 0 0 CONST 0 const dist/default/production/P2_2022_1.X.production.o
+__Hidata 0 0 CODE 0 idata dist/default/production/P2_2022_1.X.production.o
+__Hidloc 200008 0 IDLOC 5 idloc dist/default/production/P2_2022_1.X.production.o
+__Hnvbit 0 0 COMRAM 1 nvbit dist/default/production/P2_2022_1.X.production.o
+__Hparam 0 0 COMRAM 1 rparam dist/default/production/P2_2022_1.X.production.o
+__Hrdata 0 0 COMRAM 1 rdata dist/default/production/P2_2022_1.X.production.o
+__Hstack 0 0 STACK 2 stack dist/default/production/P2_2022_1.X.production.o
+__Htext0 0 0 ABS 0 text0 dist/default/production/P2_2022_1.X.production.o
+__Htext1 0 0 ABS 0 text1 dist/default/production/P2_2022_1.X.production.o
+__Htext2 0 0 ABS 0 text2 dist/default/production/P2_2022_1.X.production.o
+__Htext3 0 0 ABS 0 text3 dist/default/production/P2_2022_1.X.production.o
+__Htext4 0 0 ABS 0 text4 dist/default/production/P2_2022_1.X.production.o
+__Htext5 0 0 ABS 0 text5 dist/default/production/P2_2022_1.X.production.o
+__Htext6 0 0 ABS 0 text6 dist/default/production/P2_2022_1.X.production.o
+__Htext7 0 0 ABS 0 text7 dist/default/production/P2_2022_1.X.production.o
+__Htext8 0 0 ABS 0 text8 dist/default/production/P2_2022_1.X.production.o
+__Htext9 0 0 ABS 0 text9 dist/default/production/P2_2022_1.X.production.o
+__Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production/P2_2022_1.X.production.o
+__Hbigram 0 0 ABS 0 bigram dist/default/production/P2_2022_1.X.production.o
+__Hbigsfr 0 0 ABS 0 bigsfr dist/default/production/P2_2022_1.X.production.o
+_calcula_minuto_e_segundo 2512 0 CODE 0 text65 dist/default/production/P2_2022_1.X.production.o
+__smallconst 600 0 SMALLCONST 0 smallconst /tmp/xcXdKJcji.o
+lcd_str@i 8E 0 BANK0 1 cstackBANK0 dist/default/production/P2_2022_1.X.production.o
+__end_of_sprintf 24C0 0 CODE 0 text11 dist/default/production/P2_2022_1.X.production.o
+__Hcomram 0 0 ABS 0 comram dist/default/production/P2_2022_1.X.production.o
+__Hconfig 30000E 0 CONFIG 4 config dist/default/production/P2_2022_1.X.production.o
+i2_vfpfcnvrt 958 0 CODE 0 text44 dist/default/production/P2_2022_1.X.production.o
+i2___aodiv@counter 11 0 COMRAM 1 cstackCOMRAM dist/default/production/P2_2022_1.X.production.o
+__Lbank0 0 0 ABS 0 bank0 dist/default/production/P2_2022_1.X.production.o
+__Lbank1 0 0 ABS 0 bank1 dist/default/production/P2_2022_1.X.production.o
+__Lbank2 0 0 ABS 0 bank2 dist/default/production/P2_2022_1.X.production.o
+__Lbank3 0 0 ABS 0 bank3 dist/default/production/P2_2022_1.X.production.o
+__Lbank4 0 0 ABS 0 bank4 dist/default/production/P2_2022_1.X.production.o
+__Lbank5 0 0 ABS 0 bank5 dist/default/production/P2_2022_1.X.production.o
+__end_of_isdigit 2968 0 CODE 0 text24 dist/default/production/P2_2022_1.X.production.o
+__Lcinit 0 0 ABS 0 cinit dist/default/production/P2_2022_1.X.production.o
+__Lconst 0 0 CONST 0 const dist/default/production/P2_2022_1.X.production.o
+__Lidata 0 0 CODE 0 idata dist/default/production/P2_2022_1.X.production.o
+__Lidloc 0 0 IDLOC 5 idloc dist/default/production/P2_2022_1.X.production.o
+i2_lcd_wr 2B84 0 CODE 0 text60 dist/default/production/P2_2022_1.X.production.o
+__Lnvbit 0 0 COMRAM 1 nvbit dist/default/production/P2_2022_1.X.production.o
+__Lparam 0 0 COMRAM 1 rparam dist/default/production/P2_2022_1.X.production.o
+__end_of_isspace 2690 0 CODE 0 text23 dist/default/production/P2_2022_1.X.production.o
+__Lrdata 0 0 COMRAM 1 rdata dist/default/production/P2_2022_1.X.production.o
+__Lstack 0 0 STACK 2 stack dist/default/production/P2_2022_1.X.production.o
+__Ltext0 0 0 ABS 0 text0 dist/default/production/P2_2022_1.X.production.o
+__Ltext1 0 0 ABS 0 text1 dist/default/production/P2_2022_1.X.production.o
+__Ltext2 0 0 ABS 0 text2 dist/default/production/P2_2022_1.X.production.o
+__Ltext3 0 0 ABS 0 text3 dist/default/production/P2_2022_1.X.production.o
+__Ltext4 0 0 ABS 0 text4 dist/default/production/P2_2022_1.X.production.o
+__Ltext5 0 0 ABS 0 text5 dist/default/production/P2_2022_1.X.production.o
+__Ltext6 0 0 ABS 0 text6 dist/default/production/P2_2022_1.X.production.o
+__Ltext7 0 0 ABS 0 text7 dist/default/production/P2_2022_1.X.production.o
+__Ltext8 0 0 ABS 0 text8 dist/default/production/P2_2022_1.X.production.o
+__Ltext9 0 0 ABS 0 text9 dist/default/production/P2_2022_1.X.production.o
+__Hfarbss 0 0 FARRAM 0 farbss dist/default/production/P2_2022_1.X.production.o
+?i2_sprintf 5A 0 COMRAM 1 cstackCOMRAM dist/default/production/P2_2022_1.X.production.o
+i2___wmul@product 5 0 COMRAM 1 cstackCOMRAM dist/default/production/P2_2022_1.X.production.o
+_start_AD_conversion 2B8C 0 CODE 0 text2 dist/default/production/P2_2022_1.X.production.o
+i2pad@buf 13 0 COMRAM 1 cstackCOMRAM dist/default/production/P2_2022_1.X.production.o
+__Lintcode_body 0 0 ABS 0 intcode_body dist/default/production/P2_2022_1.X.production.o
+_PORTEbits F84 0 ABS 0 - dist/default/production/P2_2022_1.X.production.o
+__Habs1 0 0 ABS 0 abs1 dist/default/production/P2_2022_1.X.production.o
+__Hdata 0 0 ABS 0 data dist/default/production/P2_2022_1.X.production.o
+__Hheap 0 0 HEAP 7 heap dist/default/production/P2_2022_1.X.production.o
+__Hinit 12 0 CODE 0 init dist/default/production/P2_2022_1.X.production.o
+__Hrbit 0 0 COMRAM 1 rbit dist/default/production/P2_2022_1.X.production.o
+__Hrbss 0 0 COMRAM 1 rbss dist/default/production/P2_2022_1.X.production.o
+__Htemp 80 0 COMRAM 1 temp dist/default/production/P2_2022_1.X.production.o
+__Htext 0 0 ABS 0 text dist/default/production/P2_2022_1.X.production.o
+__Labs1 0 0 ABS 0 abs1 dist/default/production/P2_2022_1.X.production.o
+__Ldata 0 0 ABS 0 data dist/default/production/P2_2022_1.X.production.o
+__Lheap 0 0 HEAP 7 heap dist/default/production/P2_2022_1.X.production.o
+__Linit E 0 CODE 0 init dist/default/production/P2_2022_1.X.production.o
+__Lrbit 0 0 COMRAM 1 rbit dist/default/production/P2_2022_1.X.production.o
+__Lrbss 0 0 COMRAM 1 rbss dist/default/production/P2_2022_1.X.production.o
+__Ltemp 7F 0 COMRAM 1 temp dist/default/production/P2_2022_1.X.production.o
+__Ltext 0 0 ABS 0 text dist/default/production/P2_2022_1.X.production.o
+i2pad@fp 11 0 COMRAM 1 cstackCOMRAM dist/default/production/P2_2022_1.X.production.o
+___aodiv@counter 9A 0 BANK0 1 cstackBANK0 dist/default/production/P2_2022_1.X.production.o
+_start_counter 7A 0 COMRAM 1 bssCOMRAM dist/default/production/P2_2022_1.X.production.o
+___wmul 2994 0 CODE 0 text25 dist/default/production/P2_2022_1.X.production.o
+__end_ofi2_lcd_wr 2B8C 0 CODE 0 text60 dist/default/production/P2_2022_1.X.production.o
+___aomod@sign 9B 0 BANK0 1 cstackBANK0 dist/default/production/P2_2022_1.X.production.o
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 dist/default/production/P2_2022_1.X.production.o
+__LcstackBANK1 0 0 ABS 0 cstackBANK1 dist/default/production/P2_2022_1.X.production.o
+_mux_display 1F9E 0 CODE 0 text62 dist/default/production/P2_2022_1.X.production.o
+int$flags 7F 0 COMRAM 1 temp dist/default/production/P2_2022_1.X.production.o
+__HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production/P2_2022_1.X.production.o
+isspace@c 8A 0 BANK0 1 cstackBANK0 dist/default/production/P2_2022_1.X.production.o
+__Hintret 0 0 ABS 0 intret dist/default/production/P2_2022_1.X.production.o
+__Hirdata 0 0 CODE 0 irdata dist/default/production/P2_2022_1.X.production.o
+_GIE 7F97 0 ABS 0 - dist/default/production/P2_2022_1.X.production.o
+_PR2 FCB 0 ABS 0 - dist/default/production/P2_2022_1.X.production.o
+_RE0 7C20 0 ABS 0 - dist/default/production/P2_2022_1.X.production.o
+__S0 2B9A 0 ABS 0 - dist/default/production/P2_2022_1.X.production.o
+__S1 191 0 ABS 0 - dist/default/production/P2_2022_1.X.production.o
+__S4 0 0 ABS 0 - dist/default/production/P2_2022_1.X.production.o
+__S5 0 0 ABS 0 - dist/default/production/P2_2022_1.X.production.o
+_abs 2718 0 CODE 0 text19 dist/default/production/P2_2022_1.X.production.o
+_pad 2108 0 CODE 0 text15 dist/default/production/P2_2022_1.X.production.o
+i2vfpfcnvrt@convarg 48 0 COMRAM 1 cstackCOMRAM dist/default/production/P2_2022_1.X.production.o
+i2___aodiv@dividend 1 0 COMRAM 1 cstackCOMRAM dist/default/production/P2_2022_1.X.production.o
+i2vfprintf@cfmt 58 0 COMRAM 1 cstackCOMRAM dist/default/production/P2_2022_1.X.production.o
+__end_of_disable_interrupts 2B84 0 CODE 0 text7 dist/default/production/P2_2022_1.X.production.o
+_buffer 170 0 BANK1 1 bssBANK1 dist/default/production/P2_2022_1.X.production.o
+i2lcd_dat@val 2 0 COMRAM 1 cstackCOMRAM dist/default/production/P2_2022_1.X.production.o
+___aodiv@sign 9B 0 BANK0 1 cstackBANK0 dist/default/production/P2_2022_1.X.production.o
+i2fputc@fp 3 0 COMRAM 1 cstackCOMRAM dist/default/production/P2_2022_1.X.production.o
+i2fputs@fp C 0 COMRAM 1 cstackCOMRAM dist/default/production/P2_2022_1.X.production.o
+__Lbigdata 0 0 BIGRAM 1 bigdata dist/default/production/P2_2022_1.X.production.o
+__Hnvrram 0 0 COMRAM 1 nvrram dist/default/production/P2_2022_1.X.production.o
+sprintf@fmt 17E 0 BANK1 1 cstackBANK1 dist/default/production/P2_2022_1.X.production.o
+_f_int0 2AD2 0 CODE 0 text61 dist/default/production/P2_2022_1.X.production.o
+_f_int1 2A98 0 CODE 0 text40 dist/default/production/P2_2022_1.X.production.o
+_f_int2 2AEC 0 CODE 0 text39 dist/default/production/P2_2022_1.X.production.o
+_f_int3 2B34 0 CODE 0 text38 dist/default/production/P2_2022_1.X.production.o
+_f_int4 2B24 0 CODE 0 text37 dist/default/production/P2_2022_1.X.production.o
+_f_int5 2B14 0 CODE 0 text36 dist/default/production/P2_2022_1.X.production.o
+__end_of_abs 275A 0 CODE 0 text19 dist/default/production/P2_2022_1.X.production.o
+__end_of_pad 21B8 0 CODE 0 text15 dist/default/production/P2_2022_1.X.production.o
+int_func 1B40 0 CODE 0 intcode_body dist/default/production/P2_2022_1.X.production.o
+_lcd_init 22D8 0 CODE 0 text4 dist/default/production/P2_2022_1.X.production.o
+__Lintentry 0 0 ABS 0 intentry dist/default/production/P2_2022_1.X.production.o
+_lcd_cmd 2A08 0 CODE 0 text28 dist/default/production/P2_2022_1.X.production.o
+_lcd_dat 29E2 0 CODE 0 text27 dist/default/production/P2_2022_1.X.production.o
+_lcd_str 281A 0 CODE 0 text26 dist/default/production/P2_2022_1.X.production.o
+__Hramtop 600 0 RAM 0 ramtop dist/default/production/P2_2022_1.X.production.o
+__Hrparam 0 0 COMRAM 1 rparam dist/default/production/P2_2022_1.X.production.o
+__pdataBANK0 EE 0 BANK0 1 dataBANK0 dist/default/production/P2_2022_1.X.production.o
+__pdataBANK1 100 0 BANK1 1 dataBANK1 dist/default/production/P2_2022_1.X.production.o
+_memoria_segundo F4 0 BANK0 1 dataBANK0 dist/default/production/P2_2022_1.X.production.o
+__activetblptr 2 0 ABS 0 - dist/default/production/P2_2022_1.X.production.o
+__Hstruct 0 0 COMRAM 1 struct dist/default/production/P2_2022_1.X.production.o
+__LbssBANK0 0 0 ABS 0 bssBANK0 dist/default/production/P2_2022_1.X.production.o
+__LbssBANK1 0 0 ABS 0 bssBANK1 dist/default/production/P2_2022_1.X.production.o
+__end_of_lcd_init 2340 0 CODE 0 text4 dist/default/production/P2_2022_1.X.production.o
+__Htext10 0 0 ABS 0 text10 dist/default/production/P2_2022_1.X.production.o
+__Htext11 0 0 ABS 0 text11 dist/default/production/P2_2022_1.X.production.o
+__Htext12 0 0 ABS 0 text12 dist/default/production/P2_2022_1.X.production.o
+__Htext13 0 0 ABS 0 text13 dist/default/production/P2_2022_1.X.production.o
+__Htext14 0 0 ABS 0 text14 dist/default/production/P2_2022_1.X.production.o
+__Htext15 0 0 ABS 0 text15 dist/default/production/P2_2022_1.X.production.o
+__Htext16 0 0 ABS 0 text16 dist/default/production/P2_2022_1.X.production.o
+__Htext17 0 0 ABS 0 text17 dist/default/production/P2_2022_1.X.production.o
+__Htext18 0 0 ABS 0 text18 dist/default/production/P2_2022_1.X.production.o
+__Htext19 0 0 ABS 0 text19 dist/default/production/P2_2022_1.X.production.o
+__Htext20 0 0 ABS 0 text20 dist/default/production/P2_2022_1.X.production.o
+__Htext21 0 0 ABS 0 text21 dist/default/production/P2_2022_1.X.production.o
+__Htext22 0 0 ABS 0 text22 dist/default/production/P2_2022_1.X.production.o
+__Htext23 0 0 ABS 0 text23 dist/default/production/P2_2022_1.X.production.o
+__Htext24 0 0 ABS 0 text24 dist/default/production/P2_2022_1.X.production.o
+__Htext25 0 0 ABS 0 text25 dist/default/production/P2_2022_1.X.production.o
+__Htext26 0 0 ABS 0 text26 dist/default/production/P2_2022_1.X.production.o
+__Htext27 0 0 ABS 0 text27 dist/default/production/P2_2022_1.X.production.o
+__Htext28 0 0 ABS 0 text28 dist/default/production/P2_2022_1.X.production.o
+__Htext29 0 0 ABS 0 text29 dist/default/production/P2_2022_1.X.production.o
+__Htext30 0 0 ABS 0 text30 dist/default/production/P2_2022_1.X.production.o
+__Htext31 0 0 ABS 0 text31 dist/default/production/P2_2022_1.X.production.o
+__Htext32 0 0 ABS 0 text32 dist/default/production/P2_2022_1.X.production.o
+__Htext34 0 0 ABS 0 text34 dist/default/production/P2_2022_1.X.production.o
+__Htext35 0 0 ABS 0 text35 dist/default/production/P2_2022_1.X.production.o
+__Htext36 0 0 ABS 0 text36 dist/default/production/P2_2022_1.X.production.o
+__Htext37 0 0 ABS 0 text37 dist/default/production/P2_2022_1.X.production.o
+__Htext38 0 0 ABS 0 text38 dist/default/production/P2_2022_1.X.production.o
+__Htext39 0 0 ABS 0 text39 dist/default/production/P2_2022_1.X.production.o
+__Htext40 0 0 ABS 0 text40 dist/default/production/P2_2022_1.X.production.o
+__Htext41 0 0 ABS 0 text41 dist/default/production/P2_2022_1.X.production.o
+__Htext42 0 0 ABS 0 text42 dist/default/production/P2_2022_1.X.production.o
+__Htext43 0 0 ABS 0 text43 dist/default/production/P2_2022_1.X.production.o
+__Htext44 0 0 ABS 0 text44 dist/default/production/P2_2022_1.X.production.o
+__Htext45 0 0 ABS 0 text45 dist/default/production/P2_2022_1.X.production.o
+__Htext46 0 0 ABS 0 text46 dist/default/production/P2_2022_1.X.production.o
+__Htext47 0 0 ABS 0 text47 dist/default/production/P2_2022_1.X.production.o
+__Htext48 0 0 ABS 0 text48 dist/default/production/P2_2022_1.X.production.o
+__Htext49 0 0 ABS 0 text49 dist/default/production/P2_2022_1.X.production.o
+__Htext50 0 0 ABS 0 text50 dist/default/production/P2_2022_1.X.production.o
+__Htext51 0 0 ABS 0 text51 dist/default/production/P2_2022_1.X.production.o
+__Htext52 0 0 ABS 0 text52 dist/default/production/P2_2022_1.X.production.o
+__Htext53 0 0 ABS 0 text53 dist/default/production/P2_2022_1.X.production.o
+__Htext54 0 0 ABS 0 text54 dist/default/production/P2_2022_1.X.production.o
+__Htext55 0 0 ABS 0 text55 dist/default/production/P2_2022_1.X.production.o
+__Htext56 0 0 ABS 0 text56 dist/default/production/P2_2022_1.X.production.o
+__Htext57 0 0 ABS 0 text57 dist/default/production/P2_2022_1.X.production.o
+__Htext58 0 0 ABS 0 text58 dist/default/production/P2_2022_1.X.production.o
+__Htext59 0 0 ABS 0 text59 dist/default/production/P2_2022_1.X.production.o
+__Htext60 0 0 ABS 0 text60 dist/default/production/P2_2022_1.X.production.o
+__Htext61 0 0 ABS 0 text61 dist/default/production/P2_2022_1.X.production.o
+__Htext62 0 0 ABS 0 text62 dist/default/production/P2_2022_1.X.production.o
+__Htext63 0 0 ABS 0 text63 dist/default/production/P2_2022_1.X.production.o
+__Htext64 0 0 ABS 0 text64 dist/default/production/P2_2022_1.X.production.o
+__Htext65 0 0 ABS 0 text65 dist/default/production/P2_2022_1.X.production.o
+__Htext66 0 0 ABS 0 text66 dist/default/production/P2_2022_1.X.production.o
+__Htext67 0 0 ABS 0 text67 dist/default/production/P2_2022_1.X.production.o
+__Htext68 0 0 ABS 0 text68 dist/default/production/P2_2022_1.X.production.o
+?i2___wmul 1 0 COMRAM 1 cstackCOMRAM dist/default/production/P2_2022_1.X.production.o
+vfpfcnvrt@fmt CA 0 BANK0 1 cstackBANK0 dist/default/production/P2_2022_1.X.production.o
+lcd_str@str 8C 0 BANK0 1 cstackBANK0 dist/default/production/P2_2022_1.X.production.o
+_disable_interrupts 2B7C 0 CODE 0 text7 dist/default/production/P2_2022_1.X.production.o
+i2fputc@c 1 0 COMRAM 1 cstackCOMRAM dist/default/production/P2_2022_1.X.production.o
+i2fputs@c E 0 COMRAM 1 cstackCOMRAM dist/default/production/P2_2022_1.X.production.o
+i2fputs@i F 0 COMRAM 1 cstackCOMRAM dist/default/production/P2_2022_1.X.production.o
+i2fputs@s A 0 COMRAM 1 cstackCOMRAM dist/default/production/P2_2022_1.X.production.o
+_lcd_wr 2B6A 0 CODE 0 text29 dist/default/production/P2_2022_1.X.production.o
+_linha1 111 0 BANK1 1 dataBANK1 dist/default/production/P2_2022_1.X.production.o
+_linha2 100 0 BANK1 1 dataBANK1 dist/default/production/P2_2022_1.X.production.o
+___awmod@counter 8E 0 BANK0 1 cstackBANK0 dist/default/production/P2_2022_1.X.production.o
+_minuto 7C 0 COMRAM 1 bssCOMRAM dist/default/production/P2_2022_1.X.production.o
+pad@buf 9C 0 BANK0 1 cstackBANK0 dist/default/production/P2_2022_1.X.production.o
+__ptext10 275A 0 CODE 0 text10 dist/default/production/P2_2022_1.X.production.o
+__ptext11 246C 0 CODE 0 text11 dist/default/production/P2_2022_1.X.production.o
+__ptext12 24C0 0 CODE 0 text12 dist/default/production/P2_2022_1.X.production.o
+__ptext13 62A 0 CODE 0 text13 dist/default/production/P2_2022_1.X.production.o
+__ptext14 C82 0 CODE 0 text14 dist/default/production/P2_2022_1.X.production.o
+__ptext15 2108 0 CODE 0 text15 dist/default/production/P2_2022_1.X.production.o
+__ptext16 2600 0 CODE 0 text16 dist/default/production/P2_2022_1.X.production.o
+__ptext17 1D42 0 CODE 0 text17 dist/default/production/P2_2022_1.X.production.o
+__ptext18 2B94 0 CODE 0 text18 dist/default/production/P2_2022_1.X.production.o
+__ptext19 2718 0 CODE 0 text19 dist/default/production/P2_2022_1.X.production.o
+__ptext20 1494 0 CODE 0 text20 dist/default/production/P2_2022_1.X.production.o
+__ptext21 1182 0 CODE 0 text21 dist/default/production/P2_2022_1.X.production.o
+__ptext22 175E 0 CODE 0 text22 dist/default/production/P2_2022_1.X.production.o
+__ptext23 2648 0 CODE 0 text23 dist/default/production/P2_2022_1.X.production.o
+__ptext24 293A 0 CODE 0 text24 dist/default/production/P2_2022_1.X.production.o
+__ptext25 2994 0 CODE 0 text25 dist/default/production/P2_2022_1.X.production.o
+__ptext26 281A 0 CODE 0 text26 dist/default/production/P2_2022_1.X.production.o
+__ptext27 29E2 0 CODE 0 text27 dist/default/production/P2_2022_1.X.production.o
+__ptext28 2A08 0 CODE 0 text28 dist/default/production/P2_2022_1.X.production.o
+__ptext29 2B6A 0 CODE 0 text29 dist/default/production/P2_2022_1.X.production.o
+__ptext30 2340 0 CODE 0 text30 dist/default/production/P2_2022_1.X.production.o
+__ptext31 2056 0 CODE 0 text31 dist/default/production/P2_2022_1.X.production.o
+__ptext32 1ED8 0 CODE 0 text32 dist/default/production/P2_2022_1.X.production.o
+__ptext34 1C72 0 CODE 0 text34 dist/default/production/P2_2022_1.X.production.o
+__ptext35 18AC 0 CODE 0 text35 dist/default/production/P2_2022_1.X.production.o
+__ptext36 2B14 0 CODE 0 text36 dist/default/production/P2_2022_1.X.production.o
+__ptext37 2B24 0 CODE 0 text37 dist/default/production/P2_2022_1.X.production.o
+__ptext38 2B34 0 CODE 0 text38 dist/default/production/P2_2022_1.X.production.o
+__ptext39 2AEC 0 CODE 0 text39 dist/default/production/P2_2022_1.X.production.o
+__ptext40 2A98 0 CODE 0 text40 dist/default/production/P2_2022_1.X.production.o
+__ptext41 2858 0 CODE 0 text41 dist/default/production/P2_2022_1.X.production.o
+__ptext42 2564 0 CODE 0 text42 dist/default/production/P2_2022_1.X.production.o
+__ptext43 25B2 0 CODE 0 text43 dist/default/production/P2_2022_1.X.production.o
+__ptext44 958 0 CODE 0 text44 dist/default/production/P2_2022_1.X.production.o
+__ptext45 F04 0 CODE 0 text45 dist/default/production/P2_2022_1.X.production.o
+__ptext46 21B8 0 CODE 0 text46 dist/default/production/P2_2022_1.X.production.o
+__ptext47 26D4 0 CODE 0 text47 dist/default/production/P2_2022_1.X.production.o
+__ptext48 1E0E 0 CODE 0 text48 dist/default/production/P2_2022_1.X.production.o
+__ptext49 2B96 0 CODE 0 text49 dist/default/production/P2_2022_1.X.production.o
+__ptext50 279A 0 CODE 0 text50 dist/default/production/P2_2022_1.X.production.o
+__ptext51 15FA 0 CODE 0 text51 dist/default/production/P2_2022_1.X.production.o
+__ptext52 130C 0 CODE 0 text52 dist/default/production/P2_2022_1.X.production.o
+__ptext53 19F6 0 CODE 0 text53 dist/default/production/P2_2022_1.X.production.o
+__ptext54 28CE 0 CODE 0 text54 dist/default/production/P2_2022_1.X.production.o
+__ptext55 2B98 0 CODE 0 text55 dist/default/production/P2_2022_1.X.production.o
+__ptext56 2A2E 0 CODE 0 text56 dist/default/production/P2_2022_1.X.production.o
+__ptext57 2894 0 CODE 0 text57 dist/default/production/P2_2022_1.X.production.o
+__ptext58 2A54 0 CODE 0 text58 dist/default/production/P2_2022_1.X.production.o
+__ptext59 2A76 0 CODE 0 text59 dist/default/production/P2_2022_1.X.production.o
+__ptext60 2B84 0 CODE 0 text60 dist/default/production/P2_2022_1.X.production.o
+__ptext61 2AD2 0 CODE 0 text61 dist/default/production/P2_2022_1.X.production.o
+__ptext62 1F9E 0 CODE 0 text62 dist/default/production/P2_2022_1.X.production.o
+__ptext63 23A4 0 CODE 0 text63 dist/default/production/P2_2022_1.X.production.o
+__ptext64 2968 0 CODE 0 text64 dist/default/production/P2_2022_1.X.production.o
+__ptext65 2512 0 CODE 0 text65 dist/default/production/P2_2022_1.X.production.o
+__ptext66 2408 0 CODE 0 text66 dist/default/production/P2_2022_1.X.production.o
+__ptext67 2B90 0 CODE 0 text67 dist/default/production/P2_2022_1.X.production.o
+__ptext68 2B52 0 CODE 0 text68 dist/default/production/P2_2022_1.X.production.o
+___aodiv 1182 0 CODE 0 text21 dist/default/production/P2_2022_1.X.production.o
+___aomod 1494 0 CODE 0 text20 dist/default/production/P2_2022_1.X.production.o
+___awdiv 1ED8 0 CODE 0 text32 dist/default/production/P2_2022_1.X.production.o
+___awmod 2056 0 CODE 0 text31 dist/default/production/P2_2022_1.X.production.o
+__pintcode_body 1B40 0 CODE 0 intcode_body dist/default/production/P2_2022_1.X.production.o
+__Lbigbss 0 0 BIGRAM 1 bigbss dist/default/production/P2_2022_1.X.production.o
+__Lbigram 0 0 ABS 0 bigram dist/default/production/P2_2022_1.X.production.o
+__Lbigsfr 0 0 ABS 0 bigsfr dist/default/production/P2_2022_1.X.production.o
+?_atoi 90 0 BANK0 1 cstackBANK0 dist/default/production/P2_2022_1.X.production.o
+__Lcomram 0 0 ABS 0 comram dist/default/production/P2_2022_1.X.production.o
+__Lconfig 0 0 CONFIG 4 config dist/default/production/P2_2022_1.X.production.o
+___wmul@multiplier 8A 0 BANK0 1 cstackBANK0 dist/default/production/P2_2022_1.X.production.o
+__end_ofi2_lcd_cmd 2A98 0 CODE 0 text59 dist/default/production/P2_2022_1.X.production.o
+__end_ofi2_lcd_dat 2A76 0 CODE 0 text58 dist/default/production/P2_2022_1.X.production.o
+__end_ofi2_lcd_str 28CE 0 CODE 0 text57 dist/default/production/P2_2022_1.X.production.o
+__end_of_start_AD_conversion 2B90 0 CODE 0 text2 dist/default/production/P2_2022_1.X.production.o
+__Lfarbss 0 0 FARRAM 0 farbss dist/default/production/P2_2022_1.X.production.o
+__Lfardata 0 0 FARRAM 0 fardata dist/default/production/P2_2022_1.X.production.o
+isa$std 1 0 ABS 0 - /tmp/xcXdKJcji.o
+_dezena_minuto 14C 0 BANK1 1 bssBANK1 dist/default/production/P2_2022_1.X.production.o
+_show_line1 2858 0 CODE 0 text41 dist/default/production/P2_2022_1.X.production.o
+_show_line2 275A 0 CODE 0 text10 dist/default/production/P2_2022_1.X.production.o
+_dezena_segundo 14A 0 BANK1 1 bssBANK1 dist/default/production/P2_2022_1.X.production.o
+stackhi 0 0 ABS 0 - /tmp/xcXdKJcji.o
+stacklo 0 0 ABS 0 - /tmp/xcXdKJcji.o
+?i2_atoi 7 0 COMRAM 1 cstackCOMRAM dist/default/production/P2_2022_1.X.production.o
+_show_display 2340 0 CODE 0 text30 dist/default/production/P2_2022_1.X.production.o
+i2___aodiv@divisor 9 0 COMRAM 1 cstackCOMRAM dist/default/production/P2_2022_1.X.production.o
+__Lintcode 8 0 CODE 0 intcode dist/default/production/P2_2022_1.X.production.o
+_segundo 7B 0 COMRAM 1 bssCOMRAM dist/default/production/P2_2022_1.X.production.o
+__Lintret 0 0 ABS 0 intret dist/default/production/P2_2022_1.X.production.o
+__Lirdata 0 0 CODE 0 irdata dist/default/production/P2_2022_1.X.production.o
+__end_ofi2___aodiv 1494 0 CODE 0 text52 dist/default/production/P2_2022_1.X.production.o
+__end_ofi2___aomod 175E 0 CODE 0 text51 dist/default/production/P2_2022_1.X.production.o
+i2_lcd_cmd 2A76 0 CODE 0 text59 dist/default/production/P2_2022_1.X.production.o
+i2_lcd_dat 2A54 0 CODE 0 text58 dist/default/production/P2_2022_1.X.production.o
+i2_lcd_str 2894 0 CODE 0 text57 dist/default/production/P2_2022_1.X.production.o
+__Lspace_0 0 0 ABS 0 - dist/default/production/P2_2022_1.X.production.o
+__Lspace_1 0 0 ABS 0 - dist/default/production/P2_2022_1.X.production.o
+__Lspace_2 0 0 ABS 0 - dist/default/production/P2_2022_1.X.production.o
+__Lspace_4 0 0 ABS 0 - dist/default/production/P2_2022_1.X.production.o
+__pbssCOMRAM 78 0 COMRAM 1 bssCOMRAM dist/default/production/P2_2022_1.X.production.o
+lcd_cmd@val 8B 0 BANK0 1 cstackBANK0 dist/default/production/P2_2022_1.X.production.o
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 dist/default/production/P2_2022_1.X.production.o
+__HcstackBANK1 0 0 ABS 0 cstackBANK1 dist/default/production/P2_2022_1.X.production.o
+i2___wmul@multiplicand 3 0 COMRAM 1 cstackCOMRAM dist/default/production/P2_2022_1.X.production.o
+___aodiv@divisor 92 0 BANK0 1 cstackBANK0 dist/default/production/P2_2022_1.X.production.o
+vfpfcnvrt@convarg D1 0 BANK0 1 cstackBANK0 dist/default/production/P2_2022_1.X.production.o
+___aodiv@dividend 8A 0 BANK0 1 cstackBANK0 dist/default/production/P2_2022_1.X.production.o
+__LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production/P2_2022_1.X.production.o
+end_of_initialization 22CA 0 CODE 0 cinit dist/default/production/P2_2022_1.X.production.o
+?i2_vfprintf 52 0 COMRAM 1 cstackCOMRAM dist/default/production/P2_2022_1.X.production.o
+__Lnvrram 0 0 COMRAM 1 nvrram dist/default/production/P2_2022_1.X.production.o
+__Hintentry 0 0 ABS 0 intentry dist/default/production/P2_2022_1.X.production.o
+fputc@c 8A 0 BANK0 1 cstackBANK0 dist/default/production/P2_2022_1.X.production.o
+fputs@c 97 0 BANK0 1 cstackBANK0 dist/default/production/P2_2022_1.X.production.o
+fputs@i 98 0 BANK0 1 cstackBANK0 dist/default/production/P2_2022_1.X.production.o
+fputs@s 93 0 BANK0 1 cstackBANK0 dist/default/production/P2_2022_1.X.production.o
+___awdiv@quotient 90 0 BANK0 1 cstackBANK0 dist/default/production/P2_2022_1.X.production.o
+?___aodiv 8A 0 BANK0 1 cstackBANK0 dist/default/production/P2_2022_1.X.production.o
+?___aomod 8A 0 BANK0 1 cstackBANK0 dist/default/production/P2_2022_1.X.production.o
+?___awdiv 8A 0 BANK0 1 cstackBANK0 dist/default/production/P2_2022_1.X.production.o
+?___awmod 8A 0 BANK0 1 cstackBANK0 dist/default/production/P2_2022_1.X.production.o
+vfprintf@fmt DD 0 BANK0 1 cstackBANK0 dist/default/production/P2_2022_1.X.production.o
+i2___aodiv 130C 0 CODE 0 text52 dist/default/production/P2_2022_1.X.production.o
+i2___aomod 15FA 0 CODE 0 text51 dist/default/production/P2_2022_1.X.production.o
+__Hreset_vec 4 0 CODE 0 reset_vec dist/default/production/P2_2022_1.X.production.o
+__HbssBANK0 0 0 ABS 0 bssBANK0 dist/default/production/P2_2022_1.X.production.o
+__HbssBANK1 0 0 ABS 0 bssBANK1 dist/default/production/P2_2022_1.X.production.o
+___awmod@dividend 8A 0 BANK0 1 cstackBANK0 dist/default/production/P2_2022_1.X.production.o
+__end_of_enable_interrupts 2B6A 0 CODE 0 text6 dist/default/production/P2_2022_1.X.production.o
+_setup_io 29BC 0 CODE 0 text3 dist/default/production/P2_2022_1.X.production.o
+__Lramtop 600 0 RAM 0 ramtop dist/default/production/P2_2022_1.X.production.o
+__Lrparam 0 0 COMRAM 1 rparam dist/default/production/P2_2022_1.X.production.o
+__pcinit 2266 0 CODE 0 cinit dist/default/production/P2_2022_1.X.production.o
+vfpfcnvrt@ap CC 0 BANK0 1 cstackBANK0 dist/default/production/P2_2022_1.X.production.o
+vfpfcnvrt@cp D9 0 BANK0 1 cstackBANK0 dist/default/production/P2_2022_1.X.production.o
+vfpfcnvrt@fp C8 0 BANK0 1 cstackBANK0 dist/default/production/P2_2022_1.X.production.o
+__ptext0 2B04 0 CODE 0 text0 dist/default/production/P2_2022_1.X.production.o
+__ptext1 2690 0 CODE 0 text1 dist/default/production/P2_2022_1.X.production.o
+__ptext2 2B8C 0 CODE 0 text2 dist/default/production/P2_2022_1.X.production.o
+__ptext3 29BC 0 CODE 0 text3 dist/default/production/P2_2022_1.X.production.o
+__ptext4 22D8 0 CODE 0 text4 dist/default/production/P2_2022_1.X.production.o
+__ptext5 2AB8 0 CODE 0 text5 dist/default/production/P2_2022_1.X.production.o
+__ptext6 2B60 0 CODE 0 text6 dist/default/production/P2_2022_1.X.production.o
+__ptext7 2B7C 0 CODE 0 text7 dist/default/production/P2_2022_1.X.production.o
+__ptext8 2B44 0 CODE 0 text8 dist/default/production/P2_2022_1.X.production.o
+__ptext9 2906 0 CODE 0 text9 dist/default/production/P2_2022_1.X.production.o
+_active_line2 E8 0 BANK0 1 bssBANK0 dist/default/production/P2_2022_1.X.production.o
+_mostra_minuto 79 0 COMRAM 1 bssCOMRAM dist/default/production/P2_2022_1.X.production.o
+__Lstruct 0 0 COMRAM 1 struct dist/default/production/P2_2022_1.X.production.o
+vfprintf@ap DF 0 BANK0 1 cstackBANK0 dist/default/production/P2_2022_1.X.production.o
+vfprintf@fp DB 0 BANK0 1 cstackBANK0 dist/default/production/P2_2022_1.X.production.o
+vfprintf@cfmt 17A 0 BANK1 1 cstackBANK1 dist/default/production/P2_2022_1.X.production.o
+__Ltext10 0 0 ABS 0 text10 dist/default/production/P2_2022_1.X.production.o
+__Ltext11 0 0 ABS 0 text11 dist/default/production/P2_2022_1.X.production.o
+__Ltext12 0 0 ABS 0 text12 dist/default/production/P2_2022_1.X.production.o
+__Ltext13 0 0 ABS 0 text13 dist/default/production/P2_2022_1.X.production.o
+__Ltext14 0 0 ABS 0 text14 dist/default/production/P2_2022_1.X.production.o
+__Ltext15 0 0 ABS 0 text15 dist/default/production/P2_2022_1.X.production.o
+__Ltext16 0 0 ABS 0 text16 dist/default/production/P2_2022_1.X.production.o
+__Ltext17 0 0 ABS 0 text17 dist/default/production/P2_2022_1.X.production.o
+__Ltext18 0 0 ABS 0 text18 dist/default/production/P2_2022_1.X.production.o
+__Ltext19 0 0 ABS 0 text19 dist/default/production/P2_2022_1.X.production.o
+__Ltext20 0 0 ABS 0 text20 dist/default/production/P2_2022_1.X.production.o
+__Ltext21 0 0 ABS 0 text21 dist/default/production/P2_2022_1.X.production.o
+__Ltext22 0 0 ABS 0 text22 dist/default/production/P2_2022_1.X.production.o
+__Ltext23 0 0 ABS 0 text23 dist/default/production/P2_2022_1.X.production.o
+__Ltext24 0 0 ABS 0 text24 dist/default/production/P2_2022_1.X.production.o
+__Ltext25 0 0 ABS 0 text25 dist/default/production/P2_2022_1.X.production.o
+__Ltext26 0 0 ABS 0 text26 dist/default/production/P2_2022_1.X.production.o
+__Ltext27 0 0 ABS 0 text27 dist/default/production/P2_2022_1.X.production.o
+__Ltext28 0 0 ABS 0 text28 dist/default/production/P2_2022_1.X.production.o
+__Ltext29 0 0 ABS 0 text29 dist/default/production/P2_2022_1.X.production.o
+__Ltext30 0 0 ABS 0 text30 dist/default/production/P2_2022_1.X.production.o
+__Ltext31 0 0 ABS 0 text31 dist/default/production/P2_2022_1.X.production.o
+__Ltext32 0 0 ABS 0 text32 dist/default/production/P2_2022_1.X.production.o
+__Ltext34 0 0 ABS 0 text34 dist/default/production/P2_2022_1.X.production.o
+__Ltext35 0 0 ABS 0 text35 dist/default/production/P2_2022_1.X.production.o
+__Ltext36 0 0 ABS 0 text36 dist/default/production/P2_2022_1.X.production.o
+__Ltext37 0 0 ABS 0 text37 dist/default/production/P2_2022_1.X.production.o
+__Ltext38 0 0 ABS 0 text38 dist/default/production/P2_2022_1.X.production.o
+__Ltext39 0 0 ABS 0 text39 dist/default/production/P2_2022_1.X.production.o
+__Ltext40 0 0 ABS 0 text40 dist/default/production/P2_2022_1.X.production.o
+__Ltext41 0 0 ABS 0 text41 dist/default/production/P2_2022_1.X.production.o
+__Ltext42 0 0 ABS 0 text42 dist/default/production/P2_2022_1.X.production.o
+__Ltext43 0 0 ABS 0 text43 dist/default/production/P2_2022_1.X.production.o
+__Ltext44 0 0 ABS 0 text44 dist/default/production/P2_2022_1.X.production.o
+__Ltext45 0 0 ABS 0 text45 dist/default/production/P2_2022_1.X.production.o
+__Ltext46 0 0 ABS 0 text46 dist/default/production/P2_2022_1.X.production.o
+__Ltext47 0 0 ABS 0 text47 dist/default/production/P2_2022_1.X.production.o
+__Ltext48 0 0 ABS 0 text48 dist/default/production/P2_2022_1.X.production.o
+__Ltext49 0 0 ABS 0 text49 dist/default/production/P2_2022_1.X.production.o
+__Ltext50 0 0 ABS 0 text50 dist/default/production/P2_2022_1.X.production.o
+__Ltext51 0 0 ABS 0 text51 dist/default/production/P2_2022_1.X.production.o
+__Ltext52 0 0 ABS 0 text52 dist/default/production/P2_2022_1.X.production.o
+__Ltext53 0 0 ABS 0 text53 dist/default/production/P2_2022_1.X.production.o
+__Ltext54 0 0 ABS 0 text54 dist/default/production/P2_2022_1.X.production.o
+__Ltext55 0 0 ABS 0 text55 dist/default/production/P2_2022_1.X.production.o
+__Ltext56 0 0 ABS 0 text56 dist/default/production/P2_2022_1.X.production.o
+__Ltext57 0 0 ABS 0 text57 dist/default/production/P2_2022_1.X.production.o
+__Ltext58 0 0 ABS 0 text58 dist/default/production/P2_2022_1.X.production.o
+__Ltext59 0 0 ABS 0 text59 dist/default/production/P2_2022_1.X.production.o
+__Ltext60 0 0 ABS 0 text60 dist/default/production/P2_2022_1.X.production.o
+__Ltext61 0 0 ABS 0 text61 dist/default/production/P2_2022_1.X.production.o
+__Ltext62 0 0 ABS 0 text62 dist/default/production/P2_2022_1.X.production.o
+__Ltext63 0 0 ABS 0 text63 dist/default/production/P2_2022_1.X.production.o
+__Ltext64 0 0 ABS 0 text64 dist/default/production/P2_2022_1.X.production.o
+__Ltext65 0 0 ABS 0 text65 dist/default/production/P2_2022_1.X.production.o
+__Ltext66 0 0 ABS 0 text66 dist/default/production/P2_2022_1.X.production.o
+__Ltext67 0 0 ABS 0 text67 dist/default/production/P2_2022_1.X.production.o
+__Ltext68 0 0 ABS 0 text68 dist/default/production/P2_2022_1.X.production.o
+__ramtop 600 0 RAM 0 ramtop /tmp/xcXdKJcji.o
+_sprintf 246C 0 CODE 0 text11 dist/default/production/P2_2022_1.X.production.o
+__end_of_setup_io 29E2 0 CODE 0 text3 dist/default/production/P2_2022_1.X.production.o
+_vfprintf 24C0 0 CODE 0 text12 dist/default/production/P2_2022_1.X.production.o
+__Lpowerup E 0 CODE 0 powerup dist/default/production/P2_2022_1.X.production.o
+__end_of_show_line1 2894 0 CODE 0 text41 dist/default/production/P2_2022_1.X.production.o
+__end_of_show_line2 279A 0 CODE 0 text10 dist/default/production/P2_2022_1.X.production.o
+__Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production/P2_2022_1.X.production.o
+sprintf@ap 184 0 BANK1 1 cstackBANK1 dist/default/production/P2_2022_1.X.production.o
+_interrupt_init 2AB8 0 CODE 0 text5 dist/default/production/P2_2022_1.X.production.o
+_isdigit 293A 0 CODE 0 text24 dist/default/production/P2_2022_1.X.production.o
+_isspace 2648 0 CODE 0 text23 dist/default/production/P2_2022_1.X.production.o
+__psmallconst 600 0 SMALLCONST 0 smallconst dist/default/production/P2_2022_1.X.production.o
+__end_ofi2_atoi 1B40 0 CODE 0 text53 dist/default/production/P2_2022_1.X.production.o
+__end_ofi2_dtoa 1182 0 CODE 0 text45 dist/default/production/P2_2022_1.X.production.o
+__Lreset_vec 0 0 CODE 0 reset_vec dist/default/production/P2_2022_1.X.production.o
+ADC_maq@estado 7E 0 COMRAM 1 bssCOMRAM dist/default/production/P2_2022_1.X.production.o
+__end_of_vfprintf 2512 0 CODE 0 text12 dist/default/production/P2_2022_1.X.production.o
+___heap_hi 0 0 ABS 0 - /tmp/xcXdKJcji.o
+___heap_lo 0 0 ABS 0 - /tmp/xcXdKJcji.o
+__end_ofi2_vfpfcnvrt C82 0 CODE 0 text44 dist/default/production/P2_2022_1.X.production.o
+__end_of_calcula_minuto_e_segundo 2564 0 CODE 0 text65 dist/default/production/P2_2022_1.X.production.o
+___param_bank 0 0 ABS 0 - dist/default/production/P2_2022_1.X.production.o
+__Hbigdata 0 0 BIGRAM 1 bigdata dist/default/production/P2_2022_1.X.production.o
+__end_of__initialization 22CA 0 CODE 0 cinit dist/default/production/P2_2022_1.X.production.o
+__end_of_show_display 23A4 0 CODE 0 text30 dist/default/production/P2_2022_1.X.production.o
+___awmod@divisor 8C 0 BANK0 1 cstackBANK0 dist/default/production/P2_2022_1.X.production.o
+_INTCON2 FF1 0 ABS 0 - dist/default/production/P2_2022_1.X.production.o
+_INTCON3 FF0 0 ABS 0 - dist/default/production/P2_2022_1.X.production.o
+__end_of_read_keyb 19F6 0 CODE 0 text35 dist/default/production/P2_2022_1.X.production.o
+i2_dtoa$953 2E 0 COMRAM 1 cstackCOMRAM dist/default/production/P2_2022_1.X.production.o
+__Libigdata 0 0 CODE 0 ibigdata dist/default/production/P2_2022_1.X.production.o
+__pidataBANK0 2B74 0 CODE 0 idataBANK0 dist/default/production/P2_2022_1.X.production.o
+__pidataBANK1 27DA 0 CODE 0 idataBANK1 dist/default/production/P2_2022_1.X.production.o
+__Lclrtext 0 0 ABS 0 clrtext dist/default/production/P2_2022_1.X.production.o
+_isspace$1002 8E 0 BANK0 1 cstackBANK0 dist/default/production/P2_2022_1.X.production.o
+_enable_time_config F5 0 BANK0 1 dataBANK0 dist/default/production/P2_2022_1.X.production.o
+__end_ofi2_sprintf 25B2 0 CODE 0 text42 dist/default/production/P2_2022_1.X.production.o
+__end_of_mux_display 2056 0 CODE 0 text62 dist/default/production/P2_2022_1.X.production.o
+__pcstackCOMRAM 1 0 COMRAM 1 cstackCOMRAM dist/default/production/P2_2022_1.X.production.o
+i2lcd_str@i 5 0 COMRAM 1 cstackCOMRAM dist/default/production/P2_2022_1.X.production.o
+__end_ofi2_isdigit 2B9A 0 CODE 0 text55 dist/default/production/P2_2022_1.X.production.o
+__end_ofi2_isspace 2906 0 CODE 0 text54 dist/default/production/P2_2022_1.X.production.o
+_read_keyb 18AC 0 CODE 0 text35 dist/default/production/P2_2022_1.X.production.o
+sprintf@f 186 0 BANK1 1 cstackBANK1 dist/default/production/P2_2022_1.X.production.o
+sprintf@s 17C 0 BANK1 1 cstackBANK1 dist/default/production/P2_2022_1.X.production.o
+lcd_dat@val 8B 0 BANK0 1 cstackBANK0 dist/default/production/P2_2022_1.X.production.o
+__end_of_atoi 18AC 0 CODE 0 text22 dist/default/production/P2_2022_1.X.production.o
+__end_of_dtoa F04 0 CODE 0 text14 dist/default/production/P2_2022_1.X.production.o
+__end_of_loop 293A 0 CODE 0 text9 dist/default/production/P2_2022_1.X.production.o
+__end_of_main 2B14 0 CODE 0 text0 dist/default/production/P2_2022_1.X.production.o
+__pintcode 8 0 CODE 0 intcode dist/default/production/P2_2022_1.X.production.o
+isdigit@c 8A 0 BANK0 1 cstackBANK0 dist/default/production/P2_2022_1.X.production.o
+_ADRES FC3 0 ABS 0 - dist/default/production/P2_2022_1.X.production.o
+mux_display@estado 7D 0 COMRAM 1 bssCOMRAM dist/default/production/P2_2022_1.X.production.o
+__end_of_f_pwm 2994 0 CODE 0 text64 dist/default/production/P2_2022_1.X.production.o
+__end_of_fputc 1E0E 0 CODE 0 text17 dist/default/production/P2_2022_1.X.production.o
+__end_of_fputs 2648 0 CODE 0 text16 dist/default/production/P2_2022_1.X.production.o
+_LATA2 7C4A 0 ABS 0 - dist/default/production/P2_2022_1.X.production.o
+_LATA3 7C4B 0 ABS 0 - dist/default/production/P2_2022_1.X.production.o
+_LATA4 7C4C 0 ABS 0 - dist/default/production/P2_2022_1.X.production.o
+_LATA5 7C4D 0 ABS 0 - dist/default/production/P2_2022_1.X.production.o
+?_sprintf 17C 0 BANK1 1 cstackBANK1 dist/default/production/P2_2022_1.X.production.o
+_PORTB F81 0 ABS 0 - dist/default/production/P2_2022_1.X.production.o
+_PORTD F83 0 ABS 0 - dist/default/production/P2_2022_1.X.production.o
+_T0CON FD5 0 ABS 0 - dist/default/production/P2_2022_1.X.production.o
+_T2CON FCA 0 ABS 0 - dist/default/production/P2_2022_1.X.production.o
+_TRISA F92 0 ABS 0 - dist/default/production/P2_2022_1.X.production.o
+_TRISB F93 0 ABS 0 - dist/default/production/P2_2022_1.X.production.o
+_TRISC F94 0 ABS 0 - dist/default/production/P2_2022_1.X.production.o
+_TRISD F95 0 ABS 0 - dist/default/production/P2_2022_1.X.production.o
+_TRISE F96 0 ABS 0 - dist/default/production/P2_2022_1.X.production.o
+__end_of_putch 2B96 0 CODE 0 text18 dist/default/production/P2_2022_1.X.production.o
+__end_of_setup 26D4 0 CODE 0 text1 dist/default/production/P2_2022_1.X.production.o
+__end_of_interrupt_init 2AD2 0 CODE 0 text5 dist/default/production/P2_2022_1.X.production.o
+__HRAM 0 0 ABS 0 - dist/default/production/P2_2022_1.X.production.o
+__Hbss 0 0 RAM 1 bss dist/default/production/P2_2022_1.X.production.o
+__Hram 0 0 ABS 0 ram dist/default/production/P2_2022_1.X.production.o
+__Hsfr 0 0 ABS 0 sfr dist/default/production/P2_2022_1.X.production.o
+__LRAM 1 0 ABS 0 - dist/default/production/P2_2022_1.X.production.o
+__Lbss 0 0 RAM 1 bss dist/default/production/P2_2022_1.X.production.o
+__Lram 0 0 ABS 0 ram dist/default/production/P2_2022_1.X.production.o
+__Lsfr 0 0 ABS 0 sfr dist/default/production/P2_2022_1.X.production.o
+atoi@neg 95 0 BANK0 1 cstackBANK0 dist/default/production/P2_2022_1.X.production.o
+i2_sprintf 2564 0 CODE 0 text42 dist/default/production/P2_2022_1.X.production.o
+_f_pwm 2968 0 CODE 0 text64 dist/default/production/P2_2022_1.X.production.o
+_flags E5 0 BANK0 1 bssBANK0 dist/default/production/P2_2022_1.X.production.o
+_fputc 1D42 0 CODE 0 text17 dist/default/production/P2_2022_1.X.production.o
+_fputs 2600 0 CODE 0 text16 dist/default/production/P2_2022_1.X.production.o
+_putch 2B94 0 CODE 0 text18 dist/default/production/P2_2022_1.X.production.o
+_setup 2690 0 CODE 0 text1 dist/default/production/P2_2022_1.X.production.o
+__end_ofi2_start_AD_conversion 2B94 0 CODE 0 text67 dist/default/production/P2_2022_1.X.production.o
+?i2_abs 13 0 COMRAM 1 cstackCOMRAM dist/default/production/P2_2022_1.X.production.o
+_width E1 0 BANK0 1 bssBANK0 dist/default/production/P2_2022_1.X.production.o
+lcd_wr@val 8A 0 BANK0 1 cstackBANK0 dist/default/production/P2_2022_1.X.production.o
+?_isdigit 8A 0 BANK0 1 cstackBANK0 dist/default/production/P2_2022_1.X.production.o
+_aciona_imprime_tempratura 14E 0 BANK1 1 bssBANK1 dist/default/production/P2_2022_1.X.production.o
+_CCP1CON FBD 0 ABS 0 - dist/default/production/P2_2022_1.X.production.o
+?_isspace 8A 0 BANK0 1 cstackBANK0 dist/default/production/P2_2022_1.X.production.o
+i2_isdigit 2B98 0 CODE 0 text55 dist/default/production/P2_2022_1.X.production.o
+__HdataBANK0 0 0 ABS 0 dataBANK0 dist/default/production/P2_2022_1.X.production.o
+__HdataBANK1 0 0 ABS 0 dataBANK1 dist/default/production/P2_2022_1.X.production.o
+i2isspace@c 1 0 COMRAM 1 cstackCOMRAM dist/default/production/P2_2022_1.X.production.o
+i2_isspace 28CE 0 CODE 0 text54 dist/default/production/P2_2022_1.X.production.o
+_clock_regressive 23A4 0 CODE 0 text63 dist/default/production/P2_2022_1.X.production.o
+_enable_interrupts 2B60 0 CODE 0 text6 dist/default/production/P2_2022_1.X.production.o
+atoi@n 97 0 BANK0 1 cstackBANK0 dist/default/production/P2_2022_1.X.production.o
+atoi@s 90 0 BANK0 1 cstackBANK0 dist/default/production/P2_2022_1.X.production.o
+_conv7seg 122 0 BANK1 1 dataBANK1 dist/default/production/P2_2022_1.X.production.o
+__end_ofi2_fputc 1ED8 0 CODE 0 text48 dist/default/production/P2_2022_1.X.production.o
+__end_ofi2_fputs 2718 0 CODE 0 text47 dist/default/production/P2_2022_1.X.production.o
+__end_ofi2_putch 2B98 0 CODE 0 text49 dist/default/production/P2_2022_1.X.production.o
+__initialization 2266 0 CODE 0 cinit dist/default/production/P2_2022_1.X.production.o
+_f_timers 1C72 0 CODE 0 text34 dist/default/production/P2_2022_1.X.production.o
+__pbssBANK0 E1 0 BANK0 1 bssBANK0 dist/default/production/P2_2022_1.X.production.o
+__pbssBANK1 13F 0 BANK1 1 bssBANK1 dist/default/production/P2_2022_1.X.production.o
+__Hfardata 0 0 FARRAM 0 fardata dist/default/production/P2_2022_1.X.production.o
+___wmul@product 8E 0 BANK0 1 cstackBANK0 dist/default/production/P2_2022_1.X.production.o
+__Hsmallconst 62A 0 SMALLCONST 0 smallconst dist/default/production/P2_2022_1.X.production.o
+dtoa@d A7 0 BANK0 1 cstackBANK0 dist/default/production/P2_2022_1.X.production.o
+dtoa@i C6 0 BANK0 1 cstackBANK0 dist/default/production/P2_2022_1.X.production.o
+dtoa@n BD 0 BANK0 1 cstackBANK0 dist/default/production/P2_2022_1.X.production.o
+dtoa@p B9 0 BANK0 1 cstackBANK0 dist/default/production/P2_2022_1.X.production.o
+dtoa@s C5 0 BANK0 1 cstackBANK0 dist/default/production/P2_2022_1.X.production.o
+dtoa@w BB 0 BANK0 1 cstackBANK0 dist/default/production/P2_2022_1.X.production.o
+__end_of_ADC_maq 246C 0 CODE 0 text66 dist/default/production/P2_2022_1.X.production.o
+__Lifardata 0 0 CODE 0 ifardata dist/default/production/P2_2022_1.X.production.o
+i2_start_AD_conversion 2B90 0 CODE 0 text67 dist/default/production/P2_2022_1.X.production.o
+__end_of_AD_init 2B52 0 CODE 0 text8 dist/default/production/P2_2022_1.X.production.o
+__end_of_f_timers 1D42 0 CODE 0 text34 dist/default/production/P2_2022_1.X.production.o
+__Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production/P2_2022_1.X.production.o
+__Hintcode E 0 CODE 0 intcode dist/default/production/P2_2022_1.X.production.o
+__end_ofi2_abs 27DA 0 CODE 0 text50 dist/default/production/P2_2022_1.X.production.o
+__end_ofi2_pad 2266 0 CODE 0 text46 dist/default/production/P2_2022_1.X.production.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+text13 0 62A 62A 21EF 1
+text26 0 281A 281A 380 1
+cstackCOMRAM 1 1 1 7F 1
+cstackBANK0 1 80 80 76 1
+reset_vec 0 0 0 4 1
+intcode 0 8 8 A 1
+smallconst 0 600 600 2A 1
+dataBANK1 1 100 100 91 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES

@@ -1,0 +1,724 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$dist/default/production\Aula08.X.production.o
+intcodelo CODE 0 18 18 E 1 2
+cinit CODE 0 4CC 4CC 3A 1 2
+idloc IDLOC 5 200000 200000 8 1 1
+intcode_body CODE 0 26E 26E B2 1 2
+text0 CODE 0 636 636 10 1 2
+text1 CODE 0 3A0 3A0 68 1 2
+text2 CODE 0 408 408 66 1 2
+text3 CODE 0 5D0 5D0 22 1 2
+text4 CODE 0 646 646 8 1 2
+text5 CODE 0 57A 57A 2C 1 2
+text6 CODE 0 656 656 2 1 2
+text9 CODE 0 320 320 80 1 2
+text10 CODE 0 5A6 5A6 2A 1 2
+text11 CODE 0 2A 2A 188 1 2
+text12 CODE 0 46E 46E 5E 1 2
+text13 CODE 0 5F2 5F2 22 1 2
+text14 CODE 0 506 506 3A 1 2
+text15 CODE 0 614 614 22 1 2
+text16 CODE 0 64E 64E 8 1 2
+text17 CODE 0 1B2 1B2 BC 1 2
+text18 CODE 0 658 658 2 1 2
+text19 CODE 0 65A 65A 2 1 2
+text20 CODE 0 65C 65C 2 1 2
+idataCOMRAM CODE 0 540 540 39 1 1
+cstackCOMRAM COMRAM 1 3A 3A 11 1 1
+temp COMRAM 1 58 58 1 1 1
+intcode CODE 0 8 8 6 1 2
+dataCOMRAM COMRAM 1 1 1 39 1 1
+bssCOMRAM COMRAM 1 4B 4B D 1 1
+config CONFIG 4 300000 300000 E 1 1
+$C:\Users\ALUNO~1.LAP\AppData\Local\Temp\xcAsa1s.o
+idloc IDLOC 5 200000 200000 8 1 1
+init CODE 0 26 26 4 1 2
+reset_vec CODE 0 0 0 4 1 2
+config CONFIG 4 300000 300000 E 1 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 80-5FF 1
+SFR F80-FFF 1
+BANK0 80-FF 1
+BANK1 100-1FF 1
+BANK2 200-2FF 1
+BANK3 300-3FF 1
+BANK4 400-4FF 1
+BANK5 500-5FF 1
+CONST 4-7 1
+CONST E-17 1
+CONST 579-579 1
+CONST 65E-7FFF 1
+SMALLCONST 65E-7FFF 1
+CODE 4-7 1
+CODE E-17 1
+CODE 579-579 1
+CODE 65E-7FFF 1
+BIGRAM 59-5FF 1
+BIGSFR F80-FFF 1
+COMRAM 59-7F 1
+EEDATA F00000-F000FF 1
+MEDIUMCONST 65E-7FFF 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\Aula08.X.production.o
+18 intcodelo CODE >2121:C:\Users\ALUNO~1.LAP\AppData\Local\Temp\xcAsa1s.s
+18 intcodelo CODE >84:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+1E intcodelo CODE >87:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+8 intcode CODE >2179:C:\Users\ALUNO~1.LAP\AppData\Local\Temp\xcAsa1s.s
+8 intcode CODE >58:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+65C text20 CODE >311:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+65C text20 CODE >314:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+65A text19 CODE >316:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+65A text19 CODE >319:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+658 text18 CODE >322:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+658 text18 CODE >324:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+1B2 text17 CODE >118:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+1B2 text17 CODE >124:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+1B6 text17 CODE >126:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+1B6 text17 CODE >127:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+1B8 text17 CODE >128:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+1C8 text17 CODE >129:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+1CA text17 CODE >130:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+1CE text17 CODE >131:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+1D2 text17 CODE >133:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+1D2 text17 CODE >134:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+1D4 text17 CODE >135:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+1E4 text17 CODE >136:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+1E6 text17 CODE >137:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+1EA text17 CODE >138:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+1EE text17 CODE >140:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+1EE text17 CODE >141:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+1F0 text17 CODE >142:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+200 text17 CODE >143:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+202 text17 CODE >144:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+206 text17 CODE >145:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+20A text17 CODE >147:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+20A text17 CODE >148:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+20C text17 CODE >149:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+21C text17 CODE >150:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+21E text17 CODE >151:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+222 text17 CODE >152:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+226 text17 CODE >154:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+226 text17 CODE >155:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+228 text17 CODE >156:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+22A text17 CODE >157:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+22C text17 CODE >158:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+232 text17 CODE >162:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+23C text17 CODE >162:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+24A text17 CODE >162:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+252 text17 CODE >162:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+25A text17 CODE >162:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+262 text17 CODE >162:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+26C text17 CODE >164:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+64E text16 CODE >29:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\lcd.c
+650 text16 CODE >31:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\lcd.c
+654 text16 CODE >32:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\lcd.c
+614 text15 CODE >45:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\lcd.c
+616 text15 CODE >47:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\lcd.c
+618 text15 CODE >48:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\lcd.c
+61E text15 CODE >49:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\lcd.c
+620 text15 CODE >50:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\lcd.c
+628 text15 CODE >51:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\lcd.c
+62A text15 CODE >52:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\lcd.c
+632 text15 CODE >53:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\lcd.c
+634 text15 CODE >54:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\lcd.c
+506 text14 CODE >76:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\lcd.c
+506 text14 CODE >78:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\lcd.c
+50A text14 CODE >80:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\lcd.c
+50E text14 CODE >82:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\lcd.c
+520 text14 CODE >83:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\lcd.c
+522 text14 CODE >80:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\lcd.c
+53E text14 CODE >85:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\lcd.c
+5F2 text13 CODE >34:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\lcd.c
+5F4 text13 CODE >36:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\lcd.c
+5F6 text13 CODE >37:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\lcd.c
+5FC text13 CODE >38:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\lcd.c
+5FE text13 CODE >39:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\lcd.c
+606 text13 CODE >40:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\lcd.c
+608 text13 CODE >41:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\lcd.c
+610 text13 CODE >42:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\lcd.c
+612 text13 CODE >43:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\lcd.c
+46E text12 CODE >270:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+46E text12 CODE >274:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+474 text12 CODE >275:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+490 text12 CODE >276:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+4A0 text12 CODE >277:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+4AC text12 CODE >278:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+4B0 text12 CODE >281:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+4CA text12 CODE >283:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+2A text11 CODE >216:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+2A text11 CODE >218:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+2E text11 CODE >220:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+32 text11 CODE >221:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+36 text11 CODE >223:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+3A text11 CODE >225:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+3E text11 CODE >226:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+68 text11 CODE >227:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+6C text11 CODE >229:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+7E text11 CODE >230:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+90 text11 CODE >231:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+A2 text11 CODE >232:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+B4 text11 CODE >234:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+B8 text11 CODE >235:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+E2 text11 CODE >236:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+E6 text11 CODE >238:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+F8 text11 CODE >239:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+10A text11 CODE >240:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+11C text11 CODE >241:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+12E text11 CODE >243:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+132 text11 CODE >244:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+15C text11 CODE >245:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+160 text11 CODE >247:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+172 text11 CODE >248:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+184 text11 CODE >249:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+196 text11 CODE >250:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+1A8 text11 CODE >252:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+1AA text11 CODE >253:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+1AE text11 CODE >255:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+1B0 text11 CODE >256:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+5A6 text10 CODE >286:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+5A6 text10 CODE >290:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+5AC text10 CODE >292:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+5CE text10 CODE >294:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+320 text9 CODE >89:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+320 text9 CODE >93:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+336 text9 CODE >94:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+33A text9 CODE >95:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+33E text9 CODE >97:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+346 text9 CODE >98:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+34A text9 CODE >101:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+360 text9 CODE >102:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+364 text9 CODE >103:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+368 text9 CODE >105:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+370 text9 CODE >106:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+374 text9 CODE >109:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+38A text9 CODE >110:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+38E text9 CODE >111:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+392 text9 CODE >113:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+39A text9 CODE >114:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+39E text9 CODE >116:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+26E intcode_body CODE >58:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+280 intcode_body CODE >60:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+29C intcode_body CODE >61:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+2A0 intcode_body CODE >62:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+2A4 intcode_body CODE >63:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+2A6 intcode_body CODE >66:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+2C2 intcode_body CODE >67:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+2C6 intcode_body CODE >68:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+2C8 intcode_body CODE >71:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+2E4 intcode_body CODE >72:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+2E8 intcode_body CODE >73:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+2EA intcode_body CODE >76:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+306 intcode_body CODE >77:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+30A intcode_body CODE >78:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+30C intcode_body CODE >81:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+656 text6 CODE >262:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+656 text6 CODE >267:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+57A text5 CODE >336:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+57A text5 CODE >338:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+57E text5 CODE >339:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+58C text5 CODE >340:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+5A4 text5 CODE >341:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+646 text4 CODE >29:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\lcd.c
+648 text4 CODE >31:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\lcd.c
+64C text4 CODE >32:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\lcd.c
+5D0 text3 CODE >34:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\lcd.c
+5D2 text3 CODE >36:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\lcd.c
+5D4 text3 CODE >37:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\lcd.c
+5DA text3 CODE >38:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\lcd.c
+5DC text3 CODE >39:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\lcd.c
+5E4 text3 CODE >40:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\lcd.c
+5E6 text3 CODE >41:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\lcd.c
+5EE text3 CODE >42:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\lcd.c
+5F0 text3 CODE >43:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\lcd.c
+408 text2 CODE >56:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\lcd.c
+408 text2 CODE >58:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\lcd.c
+40A text2 CODE >59:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\lcd.c
+40C text2 CODE >60:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\lcd.c
+41C text2 CODE >61:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\lcd.c
+41E text2 CODE >63:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\lcd.c
+424 text2 CODE >64:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\lcd.c
+434 text2 CODE >65:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\lcd.c
+43A text2 CODE >66:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\lcd.c
+442 text2 CODE >67:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\lcd.c
+448 text2 CODE >68:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\lcd.c
+44E text2 CODE >69:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\lcd.c
+454 text2 CODE >70:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\lcd.c
+45A text2 CODE >71:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\lcd.c
+460 text2 CODE >72:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\lcd.c
+466 text2 CODE >73:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\lcd.c
+46C text2 CODE >74:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\lcd.c
+3A0 text1 CODE >167:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+3A0 text1 CODE >169:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+3A2 text1 CODE >170:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+3A4 text1 CODE >171:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+3A6 text1 CODE >173:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+3AA text1 CODE >176:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+3AE text1 CODE >177:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+3B2 text1 CODE >178:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+3B6 text1 CODE >179:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+3BA text1 CODE >180:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+3BE text1 CODE >182:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+3C2 text1 CODE >183:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+3C6 text1 CODE >184:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+3CA text1 CODE >187:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+3CE text1 CODE >188:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+3D2 text1 CODE >189:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+3D6 text1 CODE >193:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+3DA text1 CODE >194:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+3DE text1 CODE >196:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+3E2 text1 CODE >197:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+3E4 text1 CODE >198:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+3E8 text1 CODE >200:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+3EC text1 CODE >201:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+3F0 text1 CODE >202:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+3F4 text1 CODE >204:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+3F8 text1 CODE >206:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+404 text1 CODE >209:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+406 text1 CODE >211:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+636 text0 CODE >299:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+636 text0 CODE >301:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+63A text0 CODE >303:C:\Users\Aluno.LapsiE214-HP\Documents\Micro2\Aula08.X\aula_20221116.c
+4CC cinit CODE >903:C:\Users\ALUNO~1.LAP\AppData\Local\Temp\xcAsa1s.s
+4CC cinit CODE >905:C:\Users\ALUNO~1.LAP\AppData\Local\Temp\xcAsa1s.s
+4CC cinit CODE >908:C:\Users\ALUNO~1.LAP\AppData\Local\Temp\xcAsa1s.s
+4CC cinit CODE >1002:C:\Users\ALUNO~1.LAP\AppData\Local\Temp\xcAsa1s.s
+4CE cinit CODE >1003:C:\Users\ALUNO~1.LAP\AppData\Local\Temp\xcAsa1s.s
+4D0 cinit CODE >1004:C:\Users\ALUNO~1.LAP\AppData\Local\Temp\xcAsa1s.s
+4D2 cinit CODE >1005:C:\Users\ALUNO~1.LAP\AppData\Local\Temp\xcAsa1s.s
+4D4 cinit CODE >1006:C:\Users\ALUNO~1.LAP\AppData\Local\Temp\xcAsa1s.s
+4D6 cinit CODE >1007:C:\Users\ALUNO~1.LAP\AppData\Local\Temp\xcAsa1s.s
+4D8 cinit CODE >1008:C:\Users\ALUNO~1.LAP\AppData\Local\Temp\xcAsa1s.s
+4DC cinit CODE >1009:C:\Users\ALUNO~1.LAP\AppData\Local\Temp\xcAsa1s.s
+4E0 cinit CODE >1010:C:\Users\ALUNO~1.LAP\AppData\Local\Temp\xcAsa1s.s
+4E0 cinit CODE >1011:C:\Users\ALUNO~1.LAP\AppData\Local\Temp\xcAsa1s.s
+4E2 cinit CODE >1012:C:\Users\ALUNO~1.LAP\AppData\Local\Temp\xcAsa1s.s
+4E6 cinit CODE >1013:C:\Users\ALUNO~1.LAP\AppData\Local\Temp\xcAsa1s.s
+4E8 cinit CODE >1014:C:\Users\ALUNO~1.LAP\AppData\Local\Temp\xcAsa1s.s
+4EA cinit CODE >1015:C:\Users\ALUNO~1.LAP\AppData\Local\Temp\xcAsa1s.s
+4EC cinit CODE >1019:C:\Users\ALUNO~1.LAP\AppData\Local\Temp\xcAsa1s.s
+4F0 cinit CODE >1020:C:\Users\ALUNO~1.LAP\AppData\Local\Temp\xcAsa1s.s
+4F2 cinit CODE >1021:C:\Users\ALUNO~1.LAP\AppData\Local\Temp\xcAsa1s.s
+4F2 cinit CODE >1022:C:\Users\ALUNO~1.LAP\AppData\Local\Temp\xcAsa1s.s
+4F4 cinit CODE >1023:C:\Users\ALUNO~1.LAP\AppData\Local\Temp\xcAsa1s.s
+4F6 cinit CODE >1024:C:\Users\ALUNO~1.LAP\AppData\Local\Temp\xcAsa1s.s
+4F8 cinit CODE >1030:C:\Users\ALUNO~1.LAP\AppData\Local\Temp\xcAsa1s.s
+4F8 cinit CODE >1032:C:\Users\ALUNO~1.LAP\AppData\Local\Temp\xcAsa1s.s
+4FA cinit CODE >1033:C:\Users\ALUNO~1.LAP\AppData\Local\Temp\xcAsa1s.s
+4FC cinit CODE >1035:C:\Users\ALUNO~1.LAP\AppData\Local\Temp\xcAsa1s.s
+4FE cinit CODE >1036:C:\Users\ALUNO~1.LAP\AppData\Local\Temp\xcAsa1s.s
+500 cinit CODE >1037:C:\Users\ALUNO~1.LAP\AppData\Local\Temp\xcAsa1s.s
+502 cinit CODE >1038:C:\Users\ALUNO~1.LAP\AppData\Local\Temp\xcAsa1s.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__Lmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\Aula08.X.production.o
+__Hspace_0 65E 0 ABS 0 - dist/default/production\Aula08.X.production.o
+__Hspace_1 59 0 ABS 0 - dist/default/production\Aula08.X.production.o
+__Hspace_2 0 0 ABS 0 - dist/default/production\Aula08.X.production.o
+__Hspace_4 60000E 0 ABS 0 - dist/default/production\Aula08.X.production.o
+loop2@ind1 52 0 COMRAM 1 bssCOMRAM dist/default/production\Aula08.X.production.o
+loop3@dado 51 0 COMRAM 1 bssCOMRAM dist/default/production\Aula08.X.production.o
+__Hibigdata 0 0 CODE 0 ibigdata dist/default/production\Aula08.X.production.o
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\ALUNO~1.LAP\AppData\Local\Temp\xcAsa1s.o
+__end_of_ContDisplay7seg 26E 0 CODE 0 text17 dist/default/production\Aula08.X.production.o
+_f_interrupt_high 8 0 CODE 0 intcode dist/default/production\Aula08.X.production.o
+__Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\Aula08.X.production.o
+__Lsmallconst 0 0 SMALLCONST 0 smallconst dist/default/production\Aula08.X.production.o
+_IPEN 7E87 0 ABS 0 - dist/default/production\Aula08.X.production.o
+_LATA F89 0 ABS 0 - dist/default/production\Aula08.X.production.o
+_LATB F8A 0 ABS 0 - dist/default/production\Aula08.X.production.o
+_LATD F8C 0 ABS 0 - dist/default/production\Aula08.X.production.o
+_PEIE 7F96 0 ABS 0 - dist/default/production\Aula08.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\ALUNO~1.LAP\AppData\Local\Temp\xcAsa1s.o
+_led1 56 0 COMRAM 1 bssCOMRAM dist/default/production\Aula08.X.production.o
+_led2 55 0 COMRAM 1 bssCOMRAM dist/default/production\Aula08.X.production.o
+_loop 656 0 CODE 0 text6 dist/default/production\Aula08.X.production.o
+_main 636 0 CODE 0 text0 dist/default/production\Aula08.X.production.o
+_num1 28 0 COMRAM 1 dataCOMRAM dist/default/production\Aula08.X.production.o
+_num2 27 0 COMRAM 1 dataCOMRAM dist/default/production\Aula08.X.production.o
+_num3 26 0 COMRAM 1 dataCOMRAM dist/default/production\Aula08.X.production.o
+_num4 25 0 COMRAM 1 dataCOMRAM dist/default/production\Aula08.X.production.o
+btemp 58 0 COMRAM 1 temp dist/default/production\Aula08.X.production.o
+start 26 0 CODE 0 init C:\Users\ALUNO~1.LAP\AppData\Local\Temp\xcAsa1s.o
+__HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\Aula08.X.production.o
+__Hpowerup 26 0 CODE 0 powerup dist/default/production\Aula08.X.production.o
+ttemp5 59 0 COMRAM 1 temp dist/default/production\Aula08.X.production.o
+ttemp6 5C 0 COMRAM 1 temp dist/default/production\Aula08.X.production.o
+ttemp7 60 0 COMRAM 1 temp dist/default/production\Aula08.X.production.o
+__HdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production\Aula08.X.production.o
+__end_of_f_interrupt_low 26 0 CODE 0 intcodelo dist/default/production\Aula08.X.production.o
+__accesstop 80 0 ABS 0 - C:\Users\ALUNO~1.LAP\AppData\Local\Temp\xcAsa1s.o
+intlevel0 0 0 CODE 0 text C:\Users\ALUNO~1.LAP\AppData\Local\Temp\xcAsa1s.o
+intlevel1 0 0 CODE 0 text C:\Users\ALUNO~1.LAP\AppData\Local\Temp\xcAsa1s.o
+intlevel2 0 0 CODE 0 text C:\Users\ALUNO~1.LAP\AppData\Local\Temp\xcAsa1s.o
+intlevel3 0 0 CODE 0 text C:\Users\ALUNO~1.LAP\AppData\Local\Temp\xcAsa1s.o
+__LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\Aula08.X.production.o
+__end_of_ler_teclado 1B2 0 CODE 0 text11 dist/default/production\Aula08.X.production.o
+_ContDisplay7seg 1B2 0 CODE 0 text17 dist/default/production\Aula08.X.production.o
+__LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\Aula08.X.production.o
+wtemp8 59 0 COMRAM 1 temp dist/default/production\Aula08.X.production.o
+__Hifardata 0 0 CODE 0 ifardata dist/default/production\Aula08.X.production.o
+__Hclrtext 0 0 ABS 0 clrtext dist/default/production\Aula08.X.production.o
+__pidataCOMRAM 540 0 CODE 0 idataCOMRAM dist/default/production\Aula08.X.production.o
+_ADCON0 FC2 0 ABS 0 - dist/default/production\Aula08.X.production.o
+_ADCON1 FC1 0 ABS 0 - dist/default/production\Aula08.X.production.o
+_ADCON2 FC0 0 ABS 0 - dist/default/production\Aula08.X.production.o
+i2lcd_wr@val 3A 0 COMRAM 1 cstackCOMRAM dist/default/production\Aula08.X.production.o
+__end_of_lcd_cmd 5F2 0 CODE 0 text3 dist/default/production\Aula08.X.production.o
+__end_of_lcd_dat 636 0 CODE 0 text15 dist/default/production\Aula08.X.production.o
+__end_of_lcd_str 540 0 CODE 0 text14 dist/default/production\Aula08.X.production.o
+___inthi_sp 0 0 STACK 2 stack C:\Users\ALUNO~1.LAP\AppData\Local\Temp\xcAsa1s.o
+___intlo_sp 0 0 STACK 2 stack C:\Users\ALUNO~1.LAP\AppData\Local\Temp\xcAsa1s.o
+f_pwm@duty 47 0 COMRAM 1 cstackCOMRAM dist/default/production\Aula08.X.production.o
+__LdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production\Aula08.X.production.o
+__end_of_f_interrupt_high 320 0 CODE 0 intcode_body dist/default/production\Aula08.X.production.o
+_CCPR1L FBE 0 ABS 0 - dist/default/production\Aula08.X.production.o
+__Hintcode_body 0 0 ABS 0 intcode_body dist/default/production\Aula08.X.production.o
+__Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\Aula08.X.production.o
+__Hmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\Aula08.X.production.o
+_f_interrupt_low 18 0 CODE 0 intcodelo dist/default/production\Aula08.X.production.o
+__Hintcodelo 26 0 CODE 0 intcodelo dist/default/production\Aula08.X.production.o
+_INT0IE 7F94 0 ABS 0 - dist/default/production\Aula08.X.production.o
+_INT0IF 7F91 0 ABS 0 - dist/default/production\Aula08.X.production.o
+_INT1IE 7F83 0 ABS 0 - dist/default/production\Aula08.X.production.o
+_INT1IF 7F80 0 ABS 0 - dist/default/production\Aula08.X.production.o
+_INT2IE 7F84 0 ABS 0 - dist/default/production\Aula08.X.production.o
+_INT2IF 7F81 0 ABS 0 - dist/default/production\Aula08.X.production.o
+_INTCON FF2 0 ABS 0 - dist/default/production\Aula08.X.production.o
+__end_of_f_int0 65E 0 CODE 0 text20 dist/default/production\Aula08.X.production.o
+__end_of_f_int1 65C 0 CODE 0 text19 dist/default/production\Aula08.X.production.o
+__end_of_f_int2 65A 0 CODE 0 text18 dist/default/production\Aula08.X.production.o
+__LidataCOMRAM 0 0 ABS 0 idataCOMRAM dist/default/production\Aula08.X.production.o
+__Lintcodelo 18 0 CODE 0 intcodelo dist/default/production\Aula08.X.production.o
+start_initialization 4CC 0 CODE 0 cinit dist/default/production\Aula08.X.production.o
+__HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\Aula08.X.production.o
+i2lcd_cmd@val 3B 0 COMRAM 1 cstackCOMRAM dist/default/production\Aula08.X.production.o
+__end_of_lcd_wr 64E 0 CODE 0 text4 dist/default/production\Aula08.X.production.o
+___rparam_used 1 0 ABS 0 - dist/default/production\Aula08.X.production.o
+_TMR0IE 7F95 0 ABS 0 - dist/default/production\Aula08.X.production.o
+_TMR0IF 7F92 0 ABS 0 - dist/default/production\Aula08.X.production.o
+isa$xinst 0 0 ABS 0 - C:\Users\ALUNO~1.LAP\AppData\Local\Temp\xcAsa1s.o
+__Hbank0 0 0 ABS 0 bank0 dist/default/production\Aula08.X.production.o
+__Hbank1 0 0 ABS 0 bank1 dist/default/production\Aula08.X.production.o
+__Hbank2 0 0 ABS 0 bank2 dist/default/production\Aula08.X.production.o
+__Hbank3 0 0 ABS 0 bank3 dist/default/production\Aula08.X.production.o
+__Hbank4 0 0 ABS 0 bank4 dist/default/production\Aula08.X.production.o
+__Hbank5 0 0 ABS 0 bank5 dist/default/production\Aula08.X.production.o
+__Hcinit 0 0 ABS 0 cinit dist/default/production\Aula08.X.production.o
+__Hconst 0 0 CONST 0 const dist/default/production\Aula08.X.production.o
+__Hidata 0 0 CODE 0 idata dist/default/production\Aula08.X.production.o
+__Hidloc 200008 0 IDLOC 5 idloc dist/default/production\Aula08.X.production.o
+__Hnvbit 0 0 COMRAM 1 nvbit dist/default/production\Aula08.X.production.o
+__Hparam 0 0 COMRAM 1 rparam dist/default/production\Aula08.X.production.o
+__Hrdata 0 0 COMRAM 1 rdata dist/default/production\Aula08.X.production.o
+__Hstack 0 0 STACK 2 stack dist/default/production\Aula08.X.production.o
+__Htext0 0 0 ABS 0 text0 dist/default/production\Aula08.X.production.o
+__Htext1 0 0 ABS 0 text1 dist/default/production\Aula08.X.production.o
+__Htext2 0 0 ABS 0 text2 dist/default/production\Aula08.X.production.o
+__Htext3 0 0 ABS 0 text3 dist/default/production\Aula08.X.production.o
+__Htext4 0 0 ABS 0 text4 dist/default/production\Aula08.X.production.o
+__Htext5 0 0 ABS 0 text5 dist/default/production\Aula08.X.production.o
+__Htext6 0 0 ABS 0 text6 dist/default/production\Aula08.X.production.o
+__Htext9 0 0 ABS 0 text9 dist/default/production\Aula08.X.production.o
+__Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\Aula08.X.production.o
+__Hbigram 0 0 ABS 0 bigram dist/default/production\Aula08.X.production.o
+__Hbigsfr 0 0 ABS 0 bigsfr dist/default/production\Aula08.X.production.o
+__smallconst 0 0 SMALLCONST 0 smallconst C:\Users\ALUNO~1.LAP\AppData\Local\Temp\xcAsa1s.o
+lcd_str@i 3E 0 COMRAM 1 cstackCOMRAM dist/default/production\Aula08.X.production.o
+__Hcomram 0 0 ABS 0 comram dist/default/production\Aula08.X.production.o
+__Hconfig 30000E 0 CONFIG 4 config dist/default/production\Aula08.X.production.o
+__Lbank0 0 0 ABS 0 bank0 dist/default/production\Aula08.X.production.o
+__Lbank1 0 0 ABS 0 bank1 dist/default/production\Aula08.X.production.o
+__Lbank2 0 0 ABS 0 bank2 dist/default/production\Aula08.X.production.o
+__Lbank3 0 0 ABS 0 bank3 dist/default/production\Aula08.X.production.o
+__Lbank4 0 0 ABS 0 bank4 dist/default/production\Aula08.X.production.o
+__Lbank5 0 0 ABS 0 bank5 dist/default/production\Aula08.X.production.o
+__Lcinit 0 0 ABS 0 cinit dist/default/production\Aula08.X.production.o
+__Lconst 0 0 CONST 0 const dist/default/production\Aula08.X.production.o
+__Lidata 0 0 CODE 0 idata dist/default/production\Aula08.X.production.o
+__Lidloc 0 0 IDLOC 5 idloc dist/default/production\Aula08.X.production.o
+i2_lcd_wr 64E 0 CODE 0 text16 dist/default/production\Aula08.X.production.o
+__Lnvbit 0 0 COMRAM 1 nvbit dist/default/production\Aula08.X.production.o
+__Lparam 0 0 COMRAM 1 rparam dist/default/production\Aula08.X.production.o
+__Lrdata 0 0 COMRAM 1 rdata dist/default/production\Aula08.X.production.o
+__Lstack 0 0 STACK 2 stack dist/default/production\Aula08.X.production.o
+__Ltext0 0 0 ABS 0 text0 dist/default/production\Aula08.X.production.o
+__Ltext1 0 0 ABS 0 text1 dist/default/production\Aula08.X.production.o
+__Ltext2 0 0 ABS 0 text2 dist/default/production\Aula08.X.production.o
+__Ltext3 0 0 ABS 0 text3 dist/default/production\Aula08.X.production.o
+__Ltext4 0 0 ABS 0 text4 dist/default/production\Aula08.X.production.o
+__Ltext5 0 0 ABS 0 text5 dist/default/production\Aula08.X.production.o
+__Ltext6 0 0 ABS 0 text6 dist/default/production\Aula08.X.production.o
+__Ltext9 0 0 ABS 0 text9 dist/default/production\Aula08.X.production.o
+loop2@mind1 23 0 COMRAM 1 dataCOMRAM dist/default/production\Aula08.X.production.o
+__Hfarbss 0 0 FARRAM 0 farbss dist/default/production\Aula08.X.production.o
+__Lintcode_body 0 0 ABS 0 intcode_body dist/default/production\Aula08.X.production.o
+_PORTEbits F84 0 ABS 0 - dist/default/production\Aula08.X.production.o
+ler_teclado@entrada 41 0 COMRAM 1 cstackCOMRAM dist/default/production\Aula08.X.production.o
+__Habs1 0 0 ABS 0 abs1 dist/default/production\Aula08.X.production.o
+__Hdata 0 0 ABS 0 data dist/default/production\Aula08.X.production.o
+__Hheap 0 0 HEAP 7 heap dist/default/production\Aula08.X.production.o
+__Hinit 2A 0 CODE 0 init dist/default/production\Aula08.X.production.o
+__Hrbit 0 0 COMRAM 1 rbit dist/default/production\Aula08.X.production.o
+__Hrbss 0 0 COMRAM 1 rbss dist/default/production\Aula08.X.production.o
+__Htemp 59 0 COMRAM 1 temp dist/default/production\Aula08.X.production.o
+__Htext 0 0 ABS 0 text dist/default/production\Aula08.X.production.o
+__Labs1 0 0 ABS 0 abs1 dist/default/production\Aula08.X.production.o
+__Ldata 0 0 ABS 0 data dist/default/production\Aula08.X.production.o
+__Lheap 0 0 HEAP 7 heap dist/default/production\Aula08.X.production.o
+__Linit 26 0 CODE 0 init dist/default/production\Aula08.X.production.o
+__Lrbit 0 0 COMRAM 1 rbit dist/default/production\Aula08.X.production.o
+__Lrbss 0 0 COMRAM 1 rbss dist/default/production\Aula08.X.production.o
+__Ltemp 58 0 COMRAM 1 temp dist/default/production\Aula08.X.production.o
+__Ltext 0 0 ABS 0 text dist/default/production\Aula08.X.production.o
+__end_ofi2_lcd_wr 656 0 CODE 0 text16 dist/default/production\Aula08.X.production.o
+int$flags 58 0 COMRAM 1 temp dist/default/production\Aula08.X.production.o
+__HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\Aula08.X.production.o
+__Hintret 0 0 ABS 0 intret dist/default/production\Aula08.X.production.o
+__Hirdata 0 0 CODE 0 irdata dist/default/production\Aula08.X.production.o
+_GIE 7F97 0 ABS 0 - dist/default/production\Aula08.X.production.o
+_PR2 FCB 0 ABS 0 - dist/default/production\Aula08.X.production.o
+__S0 65E 0 ABS 0 - dist/default/production\Aula08.X.production.o
+__S1 59 0 ABS 0 - dist/default/production\Aula08.X.production.o
+__S4 0 0 ABS 0 - dist/default/production\Aula08.X.production.o
+__S5 0 0 ABS 0 - dist/default/production\Aula08.X.production.o
+_sel 54 0 COMRAM 1 bssCOMRAM dist/default/production\Aula08.X.production.o
+__HidataCOMRAM 0 0 ABS 0 idataCOMRAM dist/default/production\Aula08.X.production.o
+__Lbigdata 0 0 BIGRAM 1 bigdata dist/default/production\Aula08.X.production.o
+__Hnvrram 0 0 COMRAM 1 nvrram dist/default/production\Aula08.X.production.o
+_estado 57 0 COMRAM 1 bssCOMRAM dist/default/production\Aula08.X.production.o
+_f_int0 65C 0 CODE 0 text20 dist/default/production\Aula08.X.production.o
+_f_int1 65A 0 CODE 0 text19 dist/default/production\Aula08.X.production.o
+_f_int2 658 0 CODE 0 text18 dist/default/production\Aula08.X.production.o
+int_func 26E 0 CODE 0 intcode_body dist/default/production\Aula08.X.production.o
+_lcd_init 408 0 CODE 0 text2 dist/default/production\Aula08.X.production.o
+__Lintentry 0 0 ABS 0 intentry dist/default/production\Aula08.X.production.o
+_lcd_cmd 5D0 0 CODE 0 text3 dist/default/production\Aula08.X.production.o
+_lcd_dat 614 0 CODE 0 text15 dist/default/production\Aula08.X.production.o
+_lcd_str 506 0 CODE 0 text14 dist/default/production\Aula08.X.production.o
+__Hramtop 600 0 RAM 0 ramtop dist/default/production\Aula08.X.production.o
+f_timer0@tempo2 4D 0 COMRAM 1 bssCOMRAM dist/default/production\Aula08.X.production.o
+f_timer0@tempo3 4B 0 COMRAM 1 bssCOMRAM dist/default/production\Aula08.X.production.o
+__Hrparam 0 0 COMRAM 1 rparam dist/default/production\Aula08.X.production.o
+__activetblptr 2 0 ABS 0 - dist/default/production\Aula08.X.production.o
+__Hstruct 0 0 COMRAM 1 struct dist/default/production\Aula08.X.production.o
+__end_of_lcd_init 46E 0 CODE 0 text2 dist/default/production\Aula08.X.production.o
+__Htext10 0 0 ABS 0 text10 dist/default/production\Aula08.X.production.o
+__Htext11 0 0 ABS 0 text11 dist/default/production\Aula08.X.production.o
+__Htext12 0 0 ABS 0 text12 dist/default/production\Aula08.X.production.o
+__Htext13 0 0 ABS 0 text13 dist/default/production\Aula08.X.production.o
+__Htext14 0 0 ABS 0 text14 dist/default/production\Aula08.X.production.o
+__Htext15 0 0 ABS 0 text15 dist/default/production\Aula08.X.production.o
+__Htext16 0 0 ABS 0 text16 dist/default/production\Aula08.X.production.o
+__Htext17 0 0 ABS 0 text17 dist/default/production\Aula08.X.production.o
+__Htext18 0 0 ABS 0 text18 dist/default/production\Aula08.X.production.o
+__Htext19 0 0 ABS 0 text19 dist/default/production\Aula08.X.production.o
+__Htext20 0 0 ABS 0 text20 dist/default/production\Aula08.X.production.o
+lcd_str@str 3C 0 COMRAM 1 cstackCOMRAM dist/default/production\Aula08.X.production.o
+_lcd_wr 646 0 CODE 0 text4 dist/default/production\Aula08.X.production.o
+_linha1 29 0 COMRAM 1 dataCOMRAM dist/default/production\Aula08.X.production.o
+_linha2 1 0 COMRAM 1 dataCOMRAM dist/default/production\Aula08.X.production.o
+ContDisplay7seg@estado 24 0 COMRAM 1 dataCOMRAM dist/default/production\Aula08.X.production.o
+__ptext10 5A6 0 CODE 0 text10 dist/default/production\Aula08.X.production.o
+__ptext11 2A 0 CODE 0 text11 dist/default/production\Aula08.X.production.o
+__ptext12 46E 0 CODE 0 text12 dist/default/production\Aula08.X.production.o
+__ptext13 5F2 0 CODE 0 text13 dist/default/production\Aula08.X.production.o
+__ptext14 506 0 CODE 0 text14 dist/default/production\Aula08.X.production.o
+__ptext15 614 0 CODE 0 text15 dist/default/production\Aula08.X.production.o
+__ptext16 64E 0 CODE 0 text16 dist/default/production\Aula08.X.production.o
+__ptext17 1B2 0 CODE 0 text17 dist/default/production\Aula08.X.production.o
+__ptext18 658 0 CODE 0 text18 dist/default/production\Aula08.X.production.o
+__ptext19 65A 0 CODE 0 text19 dist/default/production\Aula08.X.production.o
+__ptext20 65C 0 CODE 0 text20 dist/default/production\Aula08.X.production.o
+__pintcode_body 26E 0 CODE 0 intcode_body dist/default/production\Aula08.X.production.o
+__Lbigbss 0 0 BIGRAM 1 bigbss dist/default/production\Aula08.X.production.o
+__Lbigram 0 0 ABS 0 bigram dist/default/production\Aula08.X.production.o
+__Lbigsfr 0 0 ABS 0 bigsfr dist/default/production\Aula08.X.production.o
+__Lcomram 0 0 ABS 0 comram dist/default/production\Aula08.X.production.o
+__Lconfig 0 0 CONFIG 4 config dist/default/production\Aula08.X.production.o
+__end_ofi2_lcd_cmd 614 0 CODE 0 text13 dist/default/production\Aula08.X.production.o
+__Lfarbss 0 0 FARRAM 0 farbss dist/default/production\Aula08.X.production.o
+__Lfardata 0 0 FARRAM 0 fardata dist/default/production\Aula08.X.production.o
+isa$std 1 0 ABS 0 - C:\Users\ALUNO~1.LAP\AppData\Local\Temp\xcAsa1s.o
+stackhi 0 0 ABS 0 - C:\Users\ALUNO~1.LAP\AppData\Local\Temp\xcAsa1s.o
+stacklo 0 0 ABS 0 - C:\Users\ALUNO~1.LAP\AppData\Local\Temp\xcAsa1s.o
+__Lintcode 8 0 CODE 0 intcode dist/default/production\Aula08.X.production.o
+__Lintret 0 0 ABS 0 intret dist/default/production\Aula08.X.production.o
+__Lirdata 0 0 CODE 0 irdata dist/default/production\Aula08.X.production.o
+i2_lcd_cmd 5F2 0 CODE 0 text13 dist/default/production\Aula08.X.production.o
+__Lspace_0 0 0 ABS 0 - dist/default/production\Aula08.X.production.o
+__Lspace_1 0 0 ABS 0 - dist/default/production\Aula08.X.production.o
+__Lspace_2 0 0 ABS 0 - dist/default/production\Aula08.X.production.o
+__Lspace_4 0 0 ABS 0 - dist/default/production\Aula08.X.production.o
+__pbssCOMRAM 4B 0 COMRAM 1 bssCOMRAM dist/default/production\Aula08.X.production.o
+lcd_cmd@val 48 0 COMRAM 1 cstackCOMRAM dist/default/production\Aula08.X.production.o
+__LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\Aula08.X.production.o
+end_of_initialization 4F8 0 CODE 0 cinit dist/default/production\Aula08.X.production.o
+__Lnvrram 0 0 COMRAM 1 nvrram dist/default/production\Aula08.X.production.o
+__Hintentry 0 0 ABS 0 intentry dist/default/production\Aula08.X.production.o
+_ler_teclado 2A 0 CODE 0 text11 dist/default/production\Aula08.X.production.o
+__Hreset_vec 4 0 CODE 0 reset_vec dist/default/production\Aula08.X.production.o
+__Lramtop 600 0 RAM 0 ramtop dist/default/production\Aula08.X.production.o
+__Lrparam 0 0 COMRAM 1 rparam dist/default/production\Aula08.X.production.o
+__pcinit 4CC 0 CODE 0 cinit dist/default/production\Aula08.X.production.o
+__ptext0 636 0 CODE 0 text0 dist/default/production\Aula08.X.production.o
+__ptext1 3A0 0 CODE 0 text1 dist/default/production\Aula08.X.production.o
+__ptext2 408 0 CODE 0 text2 dist/default/production\Aula08.X.production.o
+__ptext3 5D0 0 CODE 0 text3 dist/default/production\Aula08.X.production.o
+__ptext4 646 0 CODE 0 text4 dist/default/production\Aula08.X.production.o
+__ptext5 57A 0 CODE 0 text5 dist/default/production\Aula08.X.production.o
+__ptext6 656 0 CODE 0 text6 dist/default/production\Aula08.X.production.o
+__ptext9 320 0 CODE 0 text9 dist/default/production\Aula08.X.production.o
+__Lstruct 0 0 COMRAM 1 struct dist/default/production\Aula08.X.production.o
+__Ltext10 0 0 ABS 0 text10 dist/default/production\Aula08.X.production.o
+__Ltext11 0 0 ABS 0 text11 dist/default/production\Aula08.X.production.o
+__Ltext12 0 0 ABS 0 text12 dist/default/production\Aula08.X.production.o
+__Ltext13 0 0 ABS 0 text13 dist/default/production\Aula08.X.production.o
+__Ltext14 0 0 ABS 0 text14 dist/default/production\Aula08.X.production.o
+__Ltext15 0 0 ABS 0 text15 dist/default/production\Aula08.X.production.o
+__Ltext16 0 0 ABS 0 text16 dist/default/production\Aula08.X.production.o
+__Ltext17 0 0 ABS 0 text17 dist/default/production\Aula08.X.production.o
+__Ltext18 0 0 ABS 0 text18 dist/default/production\Aula08.X.production.o
+__Ltext19 0 0 ABS 0 text19 dist/default/production\Aula08.X.production.o
+__Ltext20 0 0 ABS 0 text20 dist/default/production\Aula08.X.production.o
+__ramtop 600 0 RAM 0 ramtop C:\Users\ALUNO~1.LAP\AppData\Local\Temp\xcAsa1s.o
+__Lpowerup 26 0 CODE 0 powerup dist/default/production\Aula08.X.production.o
+__Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\Aula08.X.production.o
+__Lreset_vec 0 0 CODE 0 reset_vec dist/default/production\Aula08.X.production.o
+___heap_hi 0 0 ABS 0 - C:\Users\ALUNO~1.LAP\AppData\Local\Temp\xcAsa1s.o
+___heap_lo 0 0 ABS 0 - C:\Users\ALUNO~1.LAP\AppData\Local\Temp\xcAsa1s.o
+___param_bank 0 0 ABS 0 - dist/default/production\Aula08.X.production.o
+__Hbigdata 0 0 BIGRAM 1 bigdata dist/default/production\Aula08.X.production.o
+__end_of__initialization 4F8 0 CODE 0 cinit dist/default/production\Aula08.X.production.o
+_INTCON2 FF1 0 ABS 0 - dist/default/production\Aula08.X.production.o
+_INTCON3 FF0 0 ABS 0 - dist/default/production\Aula08.X.production.o
+__Libigdata 0 0 CODE 0 ibigdata dist/default/production\Aula08.X.production.o
+__Lclrtext 0 0 ABS 0 clrtext dist/default/production\Aula08.X.production.o
+__pintcodelo 18 0 CODE 0 intcodelo dist/default/production\Aula08.X.production.o
+__pcstackCOMRAM 3A 0 COMRAM 1 cstackCOMRAM dist/default/production\Aula08.X.production.o
+ler_teclado@i 3A 0 COMRAM 1 cstackCOMRAM dist/default/production\Aula08.X.production.o
+ler_teclado@i_152 3C 0 COMRAM 1 cstackCOMRAM dist/default/production\Aula08.X.production.o
+ler_teclado@i_153 3E 0 COMRAM 1 cstackCOMRAM dist/default/production\Aula08.X.production.o
+lcd_dat@val 3B 0 COMRAM 1 cstackCOMRAM dist/default/production\Aula08.X.production.o
+__end_of_loop 658 0 CODE 0 text6 dist/default/production\Aula08.X.production.o
+__end_of_main 646 0 CODE 0 text0 dist/default/production\Aula08.X.production.o
+ler_teclado@saida 40 0 COMRAM 1 cstackCOMRAM dist/default/production\Aula08.X.production.o
+__pintcode 8 0 CODE 0 intcode dist/default/production\Aula08.X.production.o
+__end_of_f_pwm 5A6 0 CODE 0 text5 dist/default/production\Aula08.X.production.o
+_LATA2 7C4A 0 ABS 0 - dist/default/production\Aula08.X.production.o
+_LATA3 7C4B 0 ABS 0 - dist/default/production\Aula08.X.production.o
+_LATA4 7C4C 0 ABS 0 - dist/default/production\Aula08.X.production.o
+_LATA5 7C4D 0 ABS 0 - dist/default/production\Aula08.X.production.o
+_PORTD F83 0 ABS 0 - dist/default/production\Aula08.X.production.o
+__end_of_loop2 4CC 0 CODE 0 text12 dist/default/production\Aula08.X.production.o
+__end_of_loop3 5D0 0 CODE 0 text10 dist/default/production\Aula08.X.production.o
+_T0CON FD5 0 ABS 0 - dist/default/production\Aula08.X.production.o
+_T2CON FCA 0 ABS 0 - dist/default/production\Aula08.X.production.o
+_TMR0L FD6 0 ABS 0 - dist/default/production\Aula08.X.production.o
+_TRISA F92 0 ABS 0 - dist/default/production\Aula08.X.production.o
+_TRISB F93 0 ABS 0 - dist/default/production\Aula08.X.production.o
+_TRISC F94 0 ABS 0 - dist/default/production\Aula08.X.production.o
+_TRISD F95 0 ABS 0 - dist/default/production\Aula08.X.production.o
+_TRISE F96 0 ABS 0 - dist/default/production\Aula08.X.production.o
+__end_of_setup 408 0 CODE 0 text1 dist/default/production\Aula08.X.production.o
+__HRAM 0 0 ABS 0 - dist/default/production\Aula08.X.production.o
+__Hbss 0 0 RAM 1 bss dist/default/production\Aula08.X.production.o
+__Hram 0 0 ABS 0 ram dist/default/production\Aula08.X.production.o
+__Hsfr 0 0 ABS 0 sfr dist/default/production\Aula08.X.production.o
+__LRAM 1 0 ABS 0 - dist/default/production\Aula08.X.production.o
+__Lbss 0 0 RAM 1 bss dist/default/production\Aula08.X.production.o
+__Lram 0 0 ABS 0 ram dist/default/production\Aula08.X.production.o
+__Lsfr 0 0 ABS 0 sfr dist/default/production\Aula08.X.production.o
+_f_pwm 57A 0 CODE 0 text5 dist/default/production\Aula08.X.production.o
+f_timer0@tempo 4F 0 COMRAM 1 bssCOMRAM dist/default/production\Aula08.X.production.o
+_loop2 46E 0 CODE 0 text12 dist/default/production\Aula08.X.production.o
+_loop3 5A6 0 CODE 0 text10 dist/default/production\Aula08.X.production.o
+_saida 53 0 COMRAM 1 bssCOMRAM dist/default/production\Aula08.X.production.o
+_setup 3A0 0 CODE 0 text1 dist/default/production\Aula08.X.production.o
+lcd_wr@val 47 0 COMRAM 1 cstackCOMRAM dist/default/production\Aula08.X.production.o
+_CCP1CON FBD 0 ABS 0 - dist/default/production\Aula08.X.production.o
+_conv7seg 12 0 COMRAM 1 dataCOMRAM dist/default/production\Aula08.X.production.o
+__initialization 4CC 0 CODE 0 cinit dist/default/production\Aula08.X.production.o
+_f_timer0 320 0 CODE 0 text9 dist/default/production\Aula08.X.production.o
+__pdataCOMRAM 1 0 COMRAM 1 dataCOMRAM dist/default/production\Aula08.X.production.o
+__Hfardata 0 0 FARRAM 0 fardata dist/default/production\Aula08.X.production.o
+__Hsmallconst 0 0 SMALLCONST 0 smallconst dist/default/production\Aula08.X.production.o
+__Lifardata 0 0 CODE 0 ifardata dist/default/production\Aula08.X.production.o
+__end_of_f_timer0 3A0 0 CODE 0 text9 dist/default/production\Aula08.X.production.o
+__Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\Aula08.X.production.o
+__Hintcode E 0 CODE 0 intcode dist/default/production\Aula08.X.production.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+intcodelo 0 18 18 561 1
+text5 0 57A 57A E4 1
+reset_vec 0 0 0 4 1
+intcode 0 8 8 6 1
+dataCOMRAM 1 1 1 58 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
